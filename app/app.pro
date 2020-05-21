@@ -14,3 +14,4 @@ QMAKE_CFLAGS += -Wall -Wextra -Werror
 QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage
 LIBS += -lgcov
 
+HEADERS +=
