@@ -1,4 +1,5 @@
 include(gtest_dependency.pri)
+include(SFML_dependency.pri)
 
 CONFIG += thread
 CONFIG -= qt
@@ -12,3 +13,6 @@ QMAKE_CFLAGS +=-fprofile-arcs -ftest-coverage
 LIBS += -lgcov -lsfml-audio -lsfml-system -lsfml-network -lsfml-window -lsfml-graphics
 
 INCLUDEPATH += ../app
+
+SOURCES += \
+    ../app/main.cpp
