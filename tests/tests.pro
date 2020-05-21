@@ -10,7 +10,7 @@ QMAKE_CFLAGS += -Wall -Wextra -Werror
 # gcov
 QMAKE_CXXFLAGS +=-fprofile-arcs -ftest-coverage
 QMAKE_CFLAGS +=-fprofile-arcs -ftest-coverage
-LIBS += -lgcov -lsfml-audio -lsfml-system -lsfml-network -lsfml-window -lsfml-graphics
+LIBS += -lgcov
 
 INCLUDEPATH += ../app
 
