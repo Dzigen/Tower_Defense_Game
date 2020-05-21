@@ -2,6 +2,7 @@
 
 int main()
 {
+    sf::Image as;
 
     return 0;
 }
