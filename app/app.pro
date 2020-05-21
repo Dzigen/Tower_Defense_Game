@@ -12,5 +12,4 @@ QMAKE_CFLAGS += -Wall -Wextra -Werror
 QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage
 LIBS += -lgcov -lsfml-audio -lsfml-system -lsfml-network -lsfml-window -lsfml-graphics
 
-RESOURCES += \
-    Sprites.qrc
+RESOURCES +=
