@@ -1,5 +1,4 @@
 include(gtest_dependency.pri)
-include(SFML_dependency.pri)
 
 CONFIG += thread
 CONFIG -= qt
@@ -14,5 +13,4 @@ LIBS += -lgcov
 
 INCLUDEPATH += ../app
 
-SOURCES += \
-    ../app/main.cpp
+SOURCES +=
