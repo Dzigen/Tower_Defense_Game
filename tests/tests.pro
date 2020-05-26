@@ -12,7 +12,19 @@ QMAKE_CXXFLAGS +=-fprofile-arcs -ftest-coverage
 QMAKE_CFLAGS +=-fprofile-arcs -ftest-coverage
 LIBS += -lgcov
 
-INCLUDEPATH += ../app
-
 SOURCES += \
-    ../app/main.cpp
+    ../app/game_draw.cpp \
+    ../app/game_process.cpp \
+    ../app/initialize_game.cpp \
+    ../app/main.cpp \
+    ../app/pause_menu.cpp
+
+HEADERS += \
+    ../app/cursors.h \
+    ../app/game_objects.h \
+    ../app/game_process.h \
+    ../app/main.h \
+    ../app/menu_bar.h \
+    ../app/tool_bar.h
+
+

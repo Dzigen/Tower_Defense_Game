@@ -1,14 +1,12 @@
-ROOT = $${PWD}/../external
-
-
+ROOT = $${PWD}/../external/SFML
 
 CONFIG(release, debug|release){
-LIBS+= -L"$${ROOT}/SFML/lib/release"
-LIBS += -lsfml-system -lsfml-window -lsfml-graphics -lsfml-network -lsfml-audio
+LIBS        += -L"$${ROOT}/SFML/lib/release/"
+LIBS += -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-window -lsfml-system
 }
 CONFIG(debug, debug|release){
-LIBS+= -L"$${ROOT}/SFML/lib/debug"
-LIBS += -lsfml-system-d -lsfml-window-d -lsfml-graphics-d -lsfml-network-d -lsfml-audio-d
+LIBS += -L"$${ROOT}/SFML/lib/debug/"
+LIBS += -lsfml-audio-d -lsfml-graphics-d -lsfml-network-d -lsfml-window-d -lsfml-system-d
 }
 
 INCLUDEPATH += "$${ROOT}/SFML/include"
