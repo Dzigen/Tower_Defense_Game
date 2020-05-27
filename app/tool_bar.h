@@ -59,7 +59,7 @@ class ToolBar{
         clock.restart();
         timer.setFont(font);
         timer.setPosition(50,693);
-        timer.setColor(sf::Color::Black);
+        timer.setFillColor(sf::Color(0,0,0));
     }
 
     private:

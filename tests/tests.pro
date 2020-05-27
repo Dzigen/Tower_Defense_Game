@@ -25,6 +25,7 @@ HEADERS += \
     ../app/game_process.h \
     ../app/main.h \
     ../app/menu_bar.h \
+    ../app/pause_menu.h \
     ../app/tool_bar.h
 
 

@@ -16,19 +16,19 @@ bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerPa
         sf::Vector2i Mouse = sf::Mouse::getPosition(window);
         cursor.cursore.setPosition(Mouse.x,Mouse.y);
 
-        upperParametr.ContinueText.setColor(sf::Color::White);
-        upperParametr.ExitText.setColor(sf::Color::White);
+        upperParametr.ContinueText.setFillColor(sf::Color::White);
+        upperParametr.ExitText.setFillColor(sf::Color::White);
 
         /*Если мышь была наведена на одну из кнопок, то меняем цвет текста соответствующей кнопки на чёрный.*/
         /*Также в переменную NumMenu записываем номер кнопки, на которую навели мышь*/
         if (sf::IntRect(20, 96, 260,60 ).contains(sf::Mouse::getPosition(window)))
         {
-             upperParametr.ContinueText.setColor(sf::Color::Black);
+             upperParametr.ContinueText.setFillColor(sf::Color::Black);
              numButton=1;
         }
         if (sf::IntRect(20, 166, 260,60 ).contains(sf::Mouse::getPosition(window)))
         {
-            upperParametr.ExitText.setColor(sf::Color::Black);
+            upperParametr.ExitText.setFillColor(sf::Color::Black);
             numButton=2;
         }
 

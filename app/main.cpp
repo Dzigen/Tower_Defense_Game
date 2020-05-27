@@ -90,25 +90,25 @@ int main()
             NumMenu=0;
 
             /*красим текст кнопок а белый*/
-            NewGameText.setColor(sf::Color::White);
-            AboutAutorText.setColor(sf::Color::White);
-            QuitText.setColor(sf::Color::White);
+            NewGameText.setFillColor(sf::Color::White);
+            AboutAutorText.setFillColor(sf::Color::White);
+            QuitText.setFillColor(sf::Color::White);
 
             /*Если мышь была наведена на одну из кнопок, то меняем цвет текста соответствующей кнопки на чёрный.*/
             /*Также в переменную NumMenu записываем номер кнопки, на которую навели мышь*/
             if (sf::IntRect(75, 240, 221,71 ).contains(sf::Mouse::getPosition(window)))
             {
-                 NewGameText.setColor(sf::Color::Black);
+                 NewGameText.setFillColor(sf::Color::Black);
                  NumMenu=1;
             }
             if (sf::IntRect(75, 320, 221,71 ).contains(sf::Mouse::getPosition(window)))
             {
-                AboutAutorText.setColor(sf::Color::Black);
+                AboutAutorText.setFillColor(sf::Color::Black);
                 NumMenu=2;
             }
             if (sf::IntRect(75, 410, 221,71 ).contains(sf::Mouse::getPosition(window)))
             {
-                QuitText.setColor(sf::Color::Black);
+                QuitText.setFillColor(sf::Color::Black);
                 NumMenu=3;
             }
 
