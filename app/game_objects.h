@@ -27,4 +27,29 @@ class GameObjects{
         sf::Texture shapeB;
 };
 
+class Hero{
+
+    public:
+        sf::Sprite hero;
+        int h;
+        int w;
+
+    Hero(){
+        heroImage.loadFromFile("../../Tower_Defense_Game/external/Sprites/hero.png");
+        heroImage.createMaskFromColor(sf::Color(255,255,255));
+        heroTexture.loadFromImage(heroImage);
+        hero.setTexture(heroTexture);
+        hero.setPosition(200,200);
+        h=64;
+        w=64;
+        hero.setTextureRect(sf::IntRect(0,0,h,w));
+
+    }
+
+    private:
+        sf::Texture heroTexture;
+        sf::Image heroImage;
+
+};
+
 #endif // GAME_OBJECTS_H

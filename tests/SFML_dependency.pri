@@ -12,5 +12,7 @@ LIBS += -L"$${ROOT}/SFML/lib/release/"
 LIBS += -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-window -lsfml-system
 }
 
-INCLUDEPATH += "$${ROOT}/SFML/include"
+INCLUDEPATH *= $${ROOT}/SFML/include \
+               $${ROOT}/..
+
 DEPENDPATH += "$${ROOT}/SFML/include"

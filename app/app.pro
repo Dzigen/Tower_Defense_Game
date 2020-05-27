@@ -24,6 +24,7 @@ HEADERS += \
     game_process.h \
     main.h \
     menu_bar.h \
+    pause_menu.h \
     tool_bar.h
 
 RESOURCES +=

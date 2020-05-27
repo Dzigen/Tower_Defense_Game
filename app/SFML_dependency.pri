@@ -9,5 +9,7 @@ LIBS += -L"$${ROOT}/SFML/lib/debug/"
 LIBS += -lsfml-audio-d -lsfml-graphics-d -lsfml-network-d -lsfml-window-d -lsfml-system-d
 }
 
-INCLUDEPATH += "$${ROOT}/SFML/include"
+INCLUDEPATH *= $${ROOT}/SFML/include \
+               $${ROOT}/..
+
 DEPENDPATH += "$${ROOT}/SFML/include"
