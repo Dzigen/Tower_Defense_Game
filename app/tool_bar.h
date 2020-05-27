@@ -43,6 +43,8 @@ class ToolBar{
         }
 
     ToolBar(){
+        addToTimer=0;
+
         /*загружаем текст шрифта*/
         font.loadFromFile("../../Tower_Defense_Game/external/Text/Roboto-Italic.ttf");
 
@@ -63,7 +65,7 @@ class ToolBar{
     }
 
     private:
-        int addToTimer=0;
+        int addToTimer;
 
         sf::Clock clock;
         sf::Time time;
