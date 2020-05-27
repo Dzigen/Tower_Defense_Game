@@ -9,5 +9,7 @@ LIBS += -L"$${ROOT}/lib/debug/"
 LIBS += -lsfml-audio-d -lsfml-graphics-d -lsfml-network-d -lsfml-window-d -lsfml-system-d
 }
 
-INCLUDEPATH +=$${ROOT}/include
+INCLUDEPATH +=$${ROOT}/include \
+              $${ROOT}/..
+
 DEPENDPATH +=$${ROOT}/include

@@ -12,12 +12,6 @@ SOURCES += \
         main.cpp \
         pause_menu.cpp
 
-QMAKE_CFLAGS += -Wall -Wextra -Werror
-
-# gcov
-QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage
-LIBS += -lgcov
-
 HEADERS += \
     cursors.h \
     game_objects.h \
@@ -27,4 +21,8 @@ HEADERS += \
     pause_menu.h \
     tool_bar.h
 
-RESOURCES +=
+QMAKE_CFLAGS += -Wall -Wextra -Werror
+
+# gcov
+QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage
+LIBS += -lgcov
