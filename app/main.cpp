@@ -7,7 +7,11 @@ int main()
     /*включаем вертикальную синхронизацию*/
     window.setVerticalSyncEnabled(true);
     /*задаём частоту кадров в секунду*/
-    window.setFramerateLimit(60);
+    window.setFramerateLimit(30);
+
+    sf::Image icon;
+    icon.loadFromFile("../../Tower_Defense_Game/external/Sprites/icon_game.png");
+    window.setIcon(32,32,icon.getPixelsPtr());
 
     /*выключаем обычный курсор*/
     window.setMouseCursorVisible(false);

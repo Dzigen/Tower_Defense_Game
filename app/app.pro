@@ -8,8 +8,8 @@ CONFIG -= qt
 SOURCES += \
         game_draw.cpp \
         game_process.cpp \
-        initialize_game.cpp \
         main.cpp \
+        move_hero.cpp \
         pause_menu.cpp
 
 HEADERS += \

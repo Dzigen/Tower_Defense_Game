@@ -1,6 +1,6 @@
 #include "pause_menu.h"
 
-bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerParametr ,GameObjects &object,Cursors &cursor,Hero &tank)
+bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerParametr ,Map &map,Cursors &cursor,Hero &tank,Base &base)
 {
     lowerParametr.add_to_time();
 
@@ -47,7 +47,7 @@ bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerPa
             }
         }
 
-        game_draw(window,upperParametr,lowerParametr,object,tank);
+        game_draw(window,upperParametr,lowerParametr,map,tank,base);
         window.draw(upperParametr.PauseMenu);
 
         window.draw(upperParametr.PauseMenuButtonContinue);

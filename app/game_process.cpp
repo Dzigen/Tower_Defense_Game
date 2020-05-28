@@ -2,8 +2,8 @@
 
 void game_process(sf::RenderWindow &window, Cursors &cursor){
 
-;
-    GameObjects object;
+    Map map;
+    Base base;
     MenuBar upperParametr;
     ToolBar lowerParametr;
     Hero tank;
@@ -11,7 +11,13 @@ void game_process(sf::RenderWindow &window, Cursors &cursor){
     bool inBtnField;
     bool exitFlag=false;
 
+    sf::Clock globalTime;
+
     while(true){
+
+        float time = globalTime.getElapsedTime().asMicroseconds();
+        globalTime.restart();
+        time = time / 800;
 
         inBtnField = false;
         upperParametr.pauseButtonText.setColor(sf::Color::White);
@@ -26,7 +32,7 @@ void game_process(sf::RenderWindow &window, Cursors &cursor){
         if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
             if (inBtnField){
                 /*получаем знак о нажатой кнопке меню "Пауза"*/
-                exitFlag=pause_menu(window,upperParametr,lowerParametr,object,cursor,tank);
+                exitFlag=pause_menu(window,upperParametr,lowerParametr,map,cursor,tank,base);
                 /*если true, то была нажата кнопка "выход в главное меню"*/
                 if(exitFlag)
                     break;
@@ -36,25 +42,14 @@ void game_process(sf::RenderWindow &window, Cursors &cursor){
         sf::Vector2i Mouse = sf::Mouse::getPosition(window);
         cursor.cursore.setPosition(Mouse.x,Mouse.y);
 
-        if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Left) || (sf::Keyboard::isKeyPressed(sf::Keyboard::A)))) {
-            tank.hero.setTextureRect(sf::IntRect(0,1*tank.h,tank.w,tank.h));
-            tank.hero.move(-5, 0);
-        }else if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Right) || (sf::Keyboard::isKeyPressed(sf::Keyboard::D)))){
-            tank.hero.setTextureRect(sf::IntRect(0,2*tank.h,tank.w,tank.h));
-            tank.hero.move(5, 0);
-        }else if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Up) || (sf::Keyboard::isKeyPressed(sf::Keyboard::W)))) {
-            tank.hero.setTextureRect(sf::IntRect(0,3*tank.h,tank.w,tank.h));
-            tank.hero.move(0, -5);
-        }else if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Down) || (sf::Keyboard::isKeyPressed(sf::Keyboard::S)))) {
-            tank.hero.setTextureRect(sf::IntRect(0,0*tank.h,tank.w,tank.h));
-            tank.hero.move(0, 5);
-        }
-
+        /*двигаем главного героя ,если были нажати клавиши управления*/
+        //move_hero(map,base,tank,time);
+        move_hero(map,base,tank,time);
 
 
         /*отрисовываем элементы в окне*/
         lowerParametr.get_time();
-        game_draw(window,upperParametr,lowerParametr,object,tank);
+        game_draw(window,upperParametr,lowerParametr,map,tank,base);
         window.draw(cursor.cursore);
         window.display();
     }

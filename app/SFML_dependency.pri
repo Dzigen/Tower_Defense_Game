@@ -2,11 +2,11 @@ ROOT = $${PWD}/../external/SFML
 
 CONFIG(release, debug|release){
 LIBS += -L"$${ROOT}/lib/release/"
-LIBS += -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-window -lsfml-system
+LIBS += -lsfml-system -lsfml-window -lsfml-graphics -lsfml-network -lsfml-audio
 }
 CONFIG(debug, debug|release){
 LIBS += -L"$${ROOT}/lib/debug/"
-LIBS += -lsfml-audio-d -lsfml-graphics-d -lsfml-network-d -lsfml-window-d -lsfml-system-d
+LIBS += -lsfml-system-d -lsfml-window-d -lsfml-graphics-d -lsfml-network-d -lsfml-audio-d
 }
 
 INCLUDEPATH +=$${ROOT}/include \

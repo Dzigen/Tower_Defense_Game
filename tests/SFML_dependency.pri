@@ -7,7 +7,7 @@ LIBS += -lsfml-system-d -lsfml-window-d -lsfml-graphics-d -lsfml-network-d -lsfm
 
 CONFIG(release, debug|release){
 LIBS += -L$${ROOT}/lib/release/
-LIBS += -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-window -lsfml-system
+LIBS += -lsfml-system -lsfml-window -lsfml-graphics -lsfml-network -lsfml-audio
 }
 
 INCLUDEPATH +=$${ROOT}/include \

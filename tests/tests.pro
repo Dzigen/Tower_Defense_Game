@@ -20,7 +20,7 @@ INCLUDEPATH += ../app
 SOURCES += \
     ../app/game_draw.cpp \
     ../app/game_process.cpp \
-    ../app/initialize_game.cpp \
+    ../app/move_hero.cpp \
     ../app/pause_menu.cpp \
     main.cpp
 
