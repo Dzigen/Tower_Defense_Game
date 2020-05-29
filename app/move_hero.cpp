@@ -1,64 +1,104 @@
 #include "game_objects.h"
 #include <iostream>
 
-void move_hero(Map &map,Base &base,Hero &tank,float time){
+void move_hero(GameObject &object,float time){
 
-    std::cout<<tank.hero.getPosition().y<<std::endl;
+    /*если была нажата клавиша "A" или "Cтрелка влево",то осуществляем поворот героя влево*/
+    if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Left) || (sf::Keyboard::isKeyPressed(sf::Keyboard::A)))){
 
-    if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Left) || (sf::Keyboard::isKeyPressed(sf::Keyboard::A)))) {
-        tank.hero.setTextureRect(sf::IntRect(0,1*tank.h,tank.w,tank.h));
+        /*загружаем в спрайт танка картинку поворота влево*/
+        object.hero.sprite.setTextureRect(sf::IntRect(0,1*object.hero.h,object.hero.w,object.hero.h));
 
-        if((tank.hero.getPosition().x-(0.2*time))<0){
-            tank.hero.setPosition(0,tank.hero.getPosition().y);
+        /*проверка на столкновение с левой границой карты*/
+        if((object.hero.sprite.getPosition().x-(0.2*time))<0){
+
+            /*упираемся в левую границу карты*/
+            object.hero.sprite.setPosition(0,object.hero.sprite.getPosition().y);
         }else{
-            if(sf::IntRect(base.base.getPosition().x+base.w, base.base.getPosition().y, map.w-base.base.getPosition().x+base.w, base.h).contains(tank.hero.getPosition().x,tank.hero.getPosition().y+tank.h-10)
-                &&((tank.hero.getPosition().x-(base.base.getPosition().x+base.w))<(0.2*time))){
+            /*проверка столкновения с правой стенкой базы*/
+            if(sf::IntRect(object.base.box_x+object.base.w, object.base.box_y, object.map.w-(object.base.box_x+object.base.w), object.base.h).contains((object.hero.sprite.getPosition().x+(object.hero.w*0.5)),(object.hero.sprite.getPosition().y+(object.hero.h*0.5)))
+                &&((object.hero.sprite.getPosition().x-(object.base.box_x+object.base.w))<(0.2*time))){
 
-                tank.hero.setPosition((base.base.getPosition().x+base.w),tank.hero.getPosition().y);
-
+                /*упираемся в правую стенку базы*/
+                object.hero.sprite.setPosition((object.base.box_x+object.base.w),object.hero.sprite.getPosition().y);
             }else{
-                tank.hero.move(-0.2*time, 0);
+
+                /*если танк ни с чем не взаимодействует, то прибавляем стандартную скорость*/
+                object.hero.sprite.move(-0.2*time, 0);
             }
         }
+
+    /*если была нажата клавиша "D" или "Cтрелка направо",то осуществляем поворот героя вправо*/
     }else if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Right) || (sf::Keyboard::isKeyPressed(sf::Keyboard::D)))){
-        tank.hero.setTextureRect(sf::IntRect(0,2*tank.h,tank.w,tank.h));
 
-        if(((tank.hero.getPosition().x+tank.w)+(0.2*time))>map.w){
-            tank.hero.setPosition((map.w-tank.w),tank.hero.getPosition().y);
+        /*загружаем в спрайт танка картинку поворота вправо*/
+        object.hero.sprite.setTextureRect(sf::IntRect(0,2*object.hero.h,object.hero.w,object.hero.h));
+
+        /*проверка на столкновение с правой границой карты*/
+        if(((object.hero.sprite.getPosition().x+object.hero.w)+(0.2*time))>object.map.w){
+
+            /*упираемся в правую границу карты*/
+            object.hero.sprite.setPosition((object.map.w-object.hero.w),object.hero.sprite.getPosition().y);
         }else{
-            if(sf::IntRect(0, base.base.getPosition().y,(base.base.getPosition().x+18), base.h).contains(tank.hero.getPosition().x,tank.hero.getPosition().y+tank.h-10)
-                &&(((base.base.getPosition().x+18)-(tank.hero.getPosition().x+tank.w))<(0.2*time))){
+            /*проверка столкновения с левой стенкой базы*/
+            if(sf::IntRect(0, object.base.box_y,object.base.box_x, object.base.h).contains((object.hero.sprite.getPosition().x+(object.hero.w*0.5)),(object.hero.sprite.getPosition().y+(object.hero.h*0.5)))
+                &&((object.base.box_x-(object.hero.sprite.getPosition().x+object.hero.w))<(0.2*time))){
 
-                tank.hero.setPosition(((base.base.getPosition().x+18)-tank.w),tank.hero.getPosition().y);
-
+                /*упираемся в левую стенку базы*/
+                object.hero.sprite.setPosition((object.base.box_x-object.hero.w),object.hero.sprite.getPosition().y);
             }else{
-                tank.hero.move(0.2*time, 0);
+
+                /*если танк ни с чем не взаимодействует, то прибавляем стандартную скорость*/
+                object.hero.sprite.move(0.2*time, 0);
             }
         }
+
+    /*если была нажата клавиша "W" или "Cтрелка вверх",то осуществляем поворот героя в сторону верхней границы окна*/
     }else if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Up) || (sf::Keyboard::isKeyPressed(sf::Keyboard::W)))) {
-        tank.hero.setTextureRect(sf::IntRect(0,3*tank.h,tank.w,tank.h));
 
-        if((tank.hero.getPosition().y-55)<(0.2*time)){
-            tank.hero.setPosition(tank.hero.getPosition().x,55);
+        /*загружаем в спрайт танка картинку поворота в сторону верхней границы окна*/
+        object.hero.sprite.setTextureRect(sf::IntRect(0,3*object.hero.h,object.hero.w,object.hero.h));
+
+        /*проверка на столкновение с верхней границой карты*/
+        if((object.hero.sprite.getPosition().y-55)<(0.2*time)){
+
+            /*упираемся в верхнюю границу карты*/
+            object.hero.sprite.setPosition(object.hero.sprite.getPosition().x,55);
         }else{
-            /*if(){
+            /*проверка столкновения с нижней стенкой базы*/
+            if(sf::IntRect(object.base.box_x,(object.base.box_y+object.base.h),object.base.w,((object.map.h+55)-(object.base.box_y+object.base.h))).contains((object.hero.sprite.getPosition().x+(object.hero.w*0.5)),(object.hero.sprite.getPosition().y+(object.hero.h*0.5)))
+                &&((object.hero.sprite.getPosition().y-(object.base.box_y+object.base.h))<(0.2*time))){
 
-            }else{*/
-                tank.hero.move(0, -0.2*time);
-            //}
-        }
-    }else if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Down) || (sf::Keyboard::isKeyPressed(sf::Keyboard::S)))) {
-        tank.hero.setTextureRect(sf::IntRect(0,0*tank.h,tank.w,tank.h));
-
-        if(((map.h+55)-(tank.hero.getPosition().y+tank.h))<(0.2*time)){
-            tank.hero.setPosition(tank.hero.getPosition().x,((map.h+55)-tank.h));
-        }else{
-            if(sf::IntRect(base.base.getPosition().x,55,base.w,(map.h+55)).contains(tank.hero.getPosition().x,(tank.hero.getPosition().y+tank.h))
-            &&((base.base.getPosition().y-(tank.hero.getPosition().y+tank.h))<(0.2*time))){
-
-               // tank.hero.setPosition(tank.hero.getPosition().x,(base.base.getPosition().y-tank.h));
+               /*упираемся в нижнюю стенку базы*/
+               object.hero.sprite.setPosition(object.hero.sprite.getPosition().x,(object.base.box_y+object.base.h));
             }else{
-                tank.hero.move(0, 0.2*time);
+
+                /*если танк ни с чем не взаимодействует, то прибавляем стандартную скорость*/
+                object.hero.sprite.move(0, -0.2*time);
+            }
+        }
+    /*если была нажата клавиша "S" или "Cтрелка вниз",то осуществляем поворот героя в сторону нижней границы окна*/
+    }else if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Down) || (sf::Keyboard::isKeyPressed(sf::Keyboard::S)))) {
+
+        /*загружаем в спрайт танка картинку поворота в сторону нижней границы окна*/
+        object.hero.sprite.setTextureRect(sf::IntRect(0,0*object.hero.h,object.hero.w,object.hero.h));
+
+        /*проверка на столкновение с нижней границой карты*/
+        if(((object.map.h+55)-(object.hero.sprite.getPosition().y+object.hero.h))<(0.2*time)){
+
+            /*упираемся в нижнюю границу карты*/
+            object.hero.sprite.setPosition(object.hero.sprite.getPosition().x,((object.map.h+55)-object.hero.h));
+        }else{
+            /*проверка столкновения с верхней стенкой базы*/
+            if(sf::IntRect(object.base.box_x,0,object.base.w,object.base.box_y).contains((object.hero.sprite.getPosition().x+(object.hero.w*0.5)),(object.hero.sprite.getPosition().y+(object.hero.h*0.5)))
+            &&((object.base.box_y-(object.hero.sprite.getPosition().y+object.hero.h))<(0.2*time))){
+
+                /*упираемся в верхнюю стенку базы*/
+                object.hero.sprite.setPosition(object.hero.sprite.getPosition().x,(object.base.box_y-object.hero.h));
+            }else{
+
+                /*если танк ни с чем не взаимодействует, то прибавляем стандартную скорость*/
+                object.hero.sprite.move(0, 0.2*time);
             }
         }
     }

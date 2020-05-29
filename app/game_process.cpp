@@ -2,16 +2,15 @@
 
 void game_process(sf::RenderWindow &window, Cursors &cursor){
 
-    Map map;
-    Base base;
     MenuBar upperParametr;
     ToolBar lowerParametr;
-    Hero tank;
+    GameObject object;
 
     bool inBtnField;
     bool exitFlag=false;
 
     sf::Clock globalTime;
+    float runeUPDATEtime;
 
     while(true){
 
@@ -32,7 +31,7 @@ void game_process(sf::RenderWindow &window, Cursors &cursor){
         if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
             if (inBtnField){
                 /*получаем знак о нажатой кнопке меню "Пауза"*/
-                exitFlag=pause_menu(window,upperParametr,lowerParametr,map,cursor,tank,base);
+                exitFlag=pause_menu(window,upperParametr,lowerParametr,cursor,object);
                 /*если true, то была нажата кнопка "выход в главное меню"*/
                 if(exitFlag)
                     break;
@@ -42,14 +41,22 @@ void game_process(sf::RenderWindow &window, Cursors &cursor){
         sf::Vector2i Mouse = sf::Mouse::getPosition(window);
         cursor.cursore.setPosition(Mouse.x,Mouse.y);
 
+        runeUPDATEtime+=time;
+        if(runeUPDATEtime>250){
+            runeUPDATEtime=0;
+            object.rune.update_frame("hp_hero");
+            object.rune.update_frame("hp_base");
+            object.rune.update_frame("double_damage");
+            object.rune.update_frame("coin");
+        }
+
         /*двигаем главного героя ,если были нажати клавиши управления*/
-        //move_hero(map,base,tank,time);
-        move_hero(map,base,tank,time);
+        move_hero(object,time);
 
 
         /*отрисовываем элементы в окне*/
         lowerParametr.get_time();
-        game_draw(window,upperParametr,lowerParametr,map,tank,base);
+        game_draw(window,upperParametr,lowerParametr,object);
         window.draw(cursor.cursore);
         window.display();
     }

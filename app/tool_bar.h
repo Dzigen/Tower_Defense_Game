@@ -20,13 +20,19 @@ class ToolBar{
         sf::Sprite hp_hero_red;
         sf::Sprite hp_hero_green;
         sf::Text textHHP;
+        sf::Sprite iconHPhero;
         sf::Text valueHHPof;
 
         /*здоровье базы*/
         sf::Sprite hp_base_red_orange;
         sf::Sprite hp_base_green;
         sf::Text textBHP;
+        sf::Sprite iconHPbase;
         sf::Text valueBHPof;
+
+        /*таймер спавна случайно руны в случайном месте*/
+        sf::Text spawnTimer;
+        sf::Sprite iconTimer;
 
         /*получить строку с текущим временем игры: hh:mm:ss*/
         void get_time(){
@@ -122,7 +128,7 @@ class ToolBar{
         timer.setPosition(50,693);
         timer.setFillColor(sf::Color(0,0,0));
 
-        /*загружаем полоску здоровья танка и соответствующий текст "Здоровье Героя"*/
+        /*загружаем полоску здоровья танка , соответствующий текст "Здоровье Героя" , а также иконку*/
         shapeHPF.loadFromFile("../../Tower_Defense_Game/external/Sprites/hp_foreground.png");
         hp_hero_green.setTexture(shapeHPF);
         hp_hero_green.setPosition(300,720);
@@ -137,13 +143,19 @@ class ToolBar{
         textHHP.setCharacterSize(20);
         textHHP.setPosition(300,695);
 
+        iconH.loadFromFile("../../Tower_Defense_Game/external/Sprites/icon_hp_hero.png");
+        iconH.createMaskFromColor(sf::Color::White);
+        shapeIHPH.loadFromImage(iconH);
+        iconHPhero.setTexture(shapeIHPH);
+        iconHPhero.setPosition(480,695);
+
         valueHHPof.setFont(font);
         valueHHPof.setString("100");
         valueHHPof.setFillColor(sf::Color::Black);
         valueHHPof.setCharacterSize(20);
-        valueHHPof.setPosition(470,695);
+        valueHHPof.setPosition(440,695);
 
-        /*загружаем полоску здоровья базы и соответствующий текст "Здоровье базы"*/
+        /*загружаем полоску здоровья базы , соответствующий текст "Здоровье базы",а также иконку*/
         shapeHPF.loadFromFile("../../Tower_Defense_Game/external/Sprites/hp_foreground.png");
         hp_base_green.setTexture(shapeHPF);
         hp_base_green.setPosition(520,720);
@@ -158,11 +170,17 @@ class ToolBar{
         textBHP.setCharacterSize(20);
         textBHP.setPosition(520,695);
 
+        iconB.loadFromFile("../../Tower_Defense_Game/external/Sprites/icon_hp_base.png");
+        iconB.createMaskFromColor(sf::Color::White);
+        shapeIHPB.loadFromImage(iconB);
+        iconHPbase.setTexture(shapeIHPB);
+        iconHPbase.setPosition(700,695);
+
         valueBHPof.setFont(font);
         valueBHPof.setString("200");
         valueBHPof.setFillColor(sf::Color::Black);
         valueBHPof.setCharacterSize(20);
-        valueBHPof.setPosition(690,695);
+        valueBHPof.setPosition(660,695);
 
     }
 
@@ -177,6 +195,11 @@ class ToolBar{
         sf::Texture shapeHPB;
         sf::Texture shapeHPAB;
         sf::Texture shapeHPF;
+
+        sf::Image iconB;
+        sf::Texture shapeIHPB;
+        sf::Image iconH;
+        sf::Texture shapeIHPH;
 
         sf::Image shape;
         sf::Texture shapeIC;
