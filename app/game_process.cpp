@@ -10,7 +10,7 @@ void game_process(sf::RenderWindow &window, Cursors &cursor){
     bool exitFlag=false;
 
     sf::Clock globalTime;
-    float runeUPDATEtime;
+    float runeUPDATEtime=0;
 
     while(true){
 
