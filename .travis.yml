@@ -13,7 +13,7 @@ addons:
 script:
   - qmake
   - make
-  - LD_LIBRARY_PATH=$LD_LIBRARY_PATH:../../Tower_Defense_Game/external/SFML/lib/release/ ./tests/tests
+  - LD_LIBRARY_PATH=$LD_LIBRARY_PATH:../Tower_Defense_Game/external/SFML/lib/release/ ./tests/tests
 
 after_success:
   - coveralls --root . -E ".*external.*" -E ".*tests.*"
