@@ -3,9 +3,10 @@
 #include <random>
 
 
+
 void randomizeRuneCoordinates(GameObject &object,ToolBar &toolbar){
 
-    std:: minstd_rand simple_rand;
+    std::minstd_rand simple_rand;
 
     int x=simple_rand();
     int y=simple_rand();
