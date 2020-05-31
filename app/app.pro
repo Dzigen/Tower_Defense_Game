@@ -29,5 +29,5 @@ HEADERS += \
 QMAKE_CFLAGS += -Wall -Wextra -Werror -std=c++11
 
 # gcov
-QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage
+QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage -std=c++11
 LIBS += -lgcov
