@@ -10,7 +10,7 @@ CONFIG+=c++11
 
 
 QMAKE_CXXFLAGS += -std=c++11 -Wall -Wextra -Werror
-QMAKE_CFLAGS += -std=c++11 -Wall -Wextra -Werror
+QMAKE_CFLAGS += -Wall -Wextra -Werror
 
 # gcov
 QMAKE_CXXFLAGS +=-fprofile-arcs -ftest-coverage
