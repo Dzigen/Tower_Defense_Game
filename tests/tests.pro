@@ -8,13 +8,13 @@ CONFIG += thread
 CONFIG -= qt
 CONFIG+=c++11
 
-QMAKE_CXXFLAGS += -Wall -Wextra -Werror -std=c++11
-QMAKE_CFLAGS += -Wall -Wextra -Werror -std=c++11
-QMAKE_LFLAGS +=  -std=c++11
+
+QMAKE_CXXFLAGS += -std=c++11 -Wall -Wextra -Werror
+QMAKE_CFLAGS += -std=c++11 -Wall -Wextra -Werror
 
 # gcov
-QMAKE_CXXFLAGS +=-fprofile-arcs -ftest-coverage -std=c++11
-QMAKE_CFLAGS +=-fprofile-arcs -ftest-coverage -std=c++11
+QMAKE_CXXFLAGS +=-fprofile-arcs -ftest-coverage
+QMAKE_CFLAGS +=-fprofile-arcs -ftest-coverage
 LIBS +=-lgcov
 
 INCLUDEPATH += ../app

@@ -26,9 +26,9 @@ HEADERS += \
     take_rune.h \
     tool_bar.h
 
-QMAKE_CFLAGS += -Wall -Wextra -Werror -std=c++11
-QMAKE_LFLAGS +=  -std=c++11
+QMAKE_CFLAGS += -std=c++11 -Wall -Wextra -Werror
+
 
 # gcov
-QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage -std=c++11
+QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage
 LIBS += -lgcov
