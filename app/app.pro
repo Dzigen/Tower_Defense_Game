@@ -4,6 +4,7 @@ TEMPLATE = app
 CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
+CONFIG+=c++11
 
 SOURCES += \
         effect_of_the_rune.cpp \
@@ -29,4 +30,4 @@ QMAKE_CFLAGS += -Wall -Wextra -Werror -std=c++11
 
 # gcov
 QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage
-LIBS += -lgcov -std=c++11
+LIBS += -lgcov

@@ -6,6 +6,7 @@ CONFIG += console
 CONFIG -= app_bundle
 CONFIG += thread
 CONFIG -= qt
+CONFIG+=c++11
 
 QMAKE_CXXFLAGS += -Wall -Wextra -Werror -std=c++11
 QMAKE_CFLAGS += -Wall -Wextra -Werror -std=c++11
