@@ -6,6 +6,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <cstdlib>
+#include <random>
 
 class ToolBar{
 
@@ -75,7 +76,9 @@ class ToolBar{
         /*случайныйм образом определяем руну, которую будем спавнить и ставим флаг для вызова функции-выбора случайных координат расположения*/
         void randomizeRune(){
             int randomedValue;
-            randomedValue=std::rand();
+            std:: minstd_rand simple_rand;
+
+            randomedValue=simple_rand();
             typeRandomedRune=(randomedValue % 4);
             randomizeCoordinates=true;
         }

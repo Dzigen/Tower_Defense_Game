@@ -1,10 +1,14 @@
 #include <game_objects.h>
 #include <tool_bar.h>
+#include <random>
+
 
 void randomizeRuneCoordinates(GameObject &object,ToolBar &toolbar){
 
-    int x=rand();
-    int y=rand();
+    std:: minstd_rand simple_rand;
+
+    int x=simple_rand();
+    int y=simple_rand();
 
     x=x%(1200-object.rune.hp_hero.w);
     y=((y%(630-object.rune.hp_hero.h))+toolbar.toolbarline.getScale().y);
