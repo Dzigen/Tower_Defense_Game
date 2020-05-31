@@ -133,7 +133,7 @@ class ToolBar{
 
         /*обновляем счётчик, отвечающий за количество секунд до следующего спавна руны*/
         void update_spawnTimer(){
-           const int lenght=3;
+           const int lenght=7;
            char seconds[lenght]="";
            snprintf(seconds,lenght,"%d sec",secondsUntilSpawn);
            spawnTimer.setString(seconds);
