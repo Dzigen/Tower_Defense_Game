@@ -11,7 +11,7 @@ void effect_of_the_rune(GameObject &object,ToolBar &toolbar,MenuBar &menubar){
     }else if(toolbar.typeRandomedRune==2){
         menubar.incr_counter_added_damage(object.rune.plus_damage.addedDamage);
     }else if(toolbar.typeRandomedRune==3){
-        menubar.incr_counter_coins();
+        menubar.incr_counter_coins(object.rune.coin.value);
     }else{
         std::cout<<"unititilized parametr of type rune in function effect_of_the_rune"<<std::endl;
         exit(1);

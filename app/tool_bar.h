@@ -44,7 +44,7 @@ class ToolBar{
             int seconds=0;
             int minutes=0;
             int hours=0;
-            char str[10]="";
+            char str[12]="";
 
             time=clock.getElapsedTime();
             seconds = time.asSeconds();
@@ -128,7 +128,9 @@ class ToolBar{
 
         /*обновляем счётчик, отвечающий за количество секунд до следующего спавна руны*/
         void update_spawnTimer(){
-           spawnTimer.setString(std::to_string(secondsUntilSpawn)+" sec");
+           char seconds[3]="";
+           sprintf(seconds,"%d sec",secondsUntilSpawn);
+           spawnTimer.setString(seconds);
         }
 
     ToolBar(){
@@ -225,8 +227,7 @@ class ToolBar{
         spawnTimer.setFont(font);
         spawnTimer.setFillColor(sf::Color::Black);
         spawnTimer.setPosition(1095,692);
-        spawnTimer.setString(std::to_string(secondsUntilSpawn)+" sec");
-
+        update_spawnTimer();
 
     }
 

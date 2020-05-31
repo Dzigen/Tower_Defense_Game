@@ -203,6 +203,7 @@ class GameObject{
                             int h;
                             int frames;
                             int current_frame;
+                            int value;
 
                         Coin(){
                             iconC.loadFromFile("../../Tower_Defense_Game/external/Sprites/rune_point.png");
@@ -214,6 +215,7 @@ class GameObject{
                             h=47;
                             frames=10;
                             current_frame=0;
+                            value=1;
 
                             sprite.setTextureRect(sf::IntRect(0,0,w,h));
                         }

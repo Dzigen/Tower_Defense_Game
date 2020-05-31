@@ -35,25 +35,37 @@ class MenuBar{
         sf::Text textCounterAddedDamage;
 
 
-        void incr_counter_coins(){
-            counterCoins+=1;
-            textCounterCoins.setString(std::to_string(counterCoins));
+        void incr_counter_coins(int value){
+            char strCoins[5]="";
+
+            counterCoins+=value;
+            sprintf(strCoins,"%d",counterCoins);
+
+            textCounterCoins.setString(strCoins);
         }
 
         void incr_counter_added_damage(int value){
+            char strAddedDamage[6]="";
+
             counterAddedDamage+=value;
-            textCounterAddedDamage.setString("+"+std::to_string(counterAddedDamage));
+            sprintf(strAddedDamage,"+%d",counterAddedDamage);
+
+            textCounterAddedDamage.setString(strAddedDamage);
         }
 
         void check_for_next_round(sf::Clock clock){
             int time;
             int minutes;
+            char strRound[10]="";
+
+            sprintf(strRound,"Round %d",round);
+
             time=clock.getElapsedTime().asSeconds();
             minutes=((time / 60)%60);
 
             if(((minutes%10==0)&&(minutes==bufferTime))||((bufferTime==60)&&(minutes<10))){
                 round++;
-                roundText.setString("Round "+std::to_string(round));
+                roundText.setString(strRound);
 
                 if(bufferTime==60)
                     bufferTime=10;
@@ -127,7 +139,7 @@ class MenuBar{
         textCounterAddedDamage.setFont(font);
         textCounterAddedDamage.setFillColor(sf::Color(5,171,5));
         textCounterAddedDamage.setPosition(950,7);
-        textCounterAddedDamage.setString("+"+std::to_string(counterAddedDamage));
+        incr_counter_added_damage(0);
 
         /*инициализация счётчика собранных монет*/
         shapeCoin.loadFromFile("../../Tower_Defense_Game/external/Sprites/iconCoin.png");
@@ -137,7 +149,7 @@ class MenuBar{
         textCounterCoins.setFont(font);
         textCounterCoins.setFillColor(sf::Color::Black);
         textCounterCoins.setPosition(1100,7);
-        textCounterCoins.setString(std::to_string(counterCoins));
+        incr_counter_coins(0);
 
         bufferTime=10;
 
