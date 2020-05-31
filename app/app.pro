@@ -6,11 +6,14 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        effect_of_the_rune.cpp \
         game_draw.cpp \
         game_process.cpp \
         main.cpp \
         move_hero.cpp \
-        pause_menu.cpp
+        pause_menu.cpp \
+        randomize_rune_coordinates.cpp \
+        take_rune.cpp
 
 HEADERS += \
     cursors.h \
@@ -19,6 +22,7 @@ HEADERS += \
     main.h \
     menu_bar.h \
     pause_menu.h \
+    take_rune.h \
     tool_bar.h
 
 QMAKE_CFLAGS += -Wall -Wextra -Werror

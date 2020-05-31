@@ -9,6 +9,13 @@ void move_hero(GameObject &object,float time){
         /*загружаем в спрайт танка картинку поворота влево*/
         object.hero.sprite.setTextureRect(sf::IntRect(0,1*object.hero.h,object.hero.w,object.hero.h));
 
+
+        /*определяем направление ствола танка и позицию спавна снаряда при выстреле*/
+        /*значение 3 - ствол направлен влево*/
+        object.hero.gun_deirection=3;
+        object.hero.pos_gun_dir_x=object.hero.sprite.getPosition().x;
+        object.hero.pos_gin_dir_y=(object.hero.sprite.getPosition().y+(object.hero.h/2));
+
         /*проверка на столкновение с левой границой карты*/
         if((object.hero.sprite.getPosition().x-(0.2*time))<0){
 
@@ -33,6 +40,12 @@ void move_hero(GameObject &object,float time){
 
         /*загружаем в спрайт танка картинку поворота вправо*/
         object.hero.sprite.setTextureRect(sf::IntRect(0,2*object.hero.h,object.hero.w,object.hero.h));
+
+        /*определяем направление ствола танка и позицию спавна снаряда при выстреле*/
+        /*значение 1 - ствол направлен вправо*/
+        object.hero.gun_deirection=1;
+        object.hero.pos_gun_dir_x=(object.hero.sprite.getPosition().x+object.hero.w);
+        object.hero.pos_gin_dir_y=(object.hero.sprite.getPosition().y+(object.hero.h/2));
 
         /*проверка на столкновение с правой границой карты*/
         if(((object.hero.sprite.getPosition().x+object.hero.w)+(0.2*time))>object.map.w){
@@ -59,6 +72,13 @@ void move_hero(GameObject &object,float time){
         /*загружаем в спрайт танка картинку поворота в сторону верхней границы окна*/
         object.hero.sprite.setTextureRect(sf::IntRect(0,3*object.hero.h,object.hero.w,object.hero.h));
 
+        /*определяем направление ствола танка и позицию спавна снаряда при выстреле*/
+        /*значение 0 - ствол направлен вверх*/
+        object.hero.gun_deirection=0;
+        object.hero.pos_gun_dir_x=(object.hero.sprite.getPosition().x+(object.hero.w/2));
+        object.hero.pos_gin_dir_y=object.hero.sprite.getPosition().y;
+
+
         /*проверка на столкновение с верхней границой карты*/
         if((object.hero.sprite.getPosition().y-55)<(0.2*time)){
 
@@ -82,6 +102,13 @@ void move_hero(GameObject &object,float time){
 
         /*загружаем в спрайт танка картинку поворота в сторону нижней границы окна*/
         object.hero.sprite.setTextureRect(sf::IntRect(0,0*object.hero.h,object.hero.w,object.hero.h));
+
+        /*определяем направление ствола танка и позицию спавна снаряда при выстреле*/
+        /*значение 2 - ствол направлен вниз*/
+        object.hero.gun_deirection=2;
+        object.hero.pos_gun_dir_x=(object.hero.sprite.getPosition().x+(object.hero.w/2));
+        object.hero.pos_gin_dir_y=(object.hero.sprite.getPosition().y+object.hero.h);
+
 
         /*проверка на столкновение с нижней границой карты*/
         if(((object.map.h+55)-(object.hero.sprite.getPosition().y+object.hero.h))<(0.2*time)){

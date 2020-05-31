@@ -11,11 +11,17 @@ void game_draw(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerPar
     /*игровое поле и его объекты*/
     window.draw(object.map.sprite);
     window.draw(object.base.sprite);
-    window.draw(object.rune.coin.sprite);
-    window.draw(object.rune.hp_base.sprite);
-    window.draw(object.rune.hp_hero.sprite);
-    window.draw(object.rune.double_damage.sprite);
     window.draw(object.hero.sprite);
+
+    if(lowerParametr.typeRandomedRune==0)
+        window.draw(object.rune.hp_base.sprite);
+    else if(lowerParametr.typeRandomedRune==1)
+        window.draw(object.rune.hp_hero.sprite);
+    else if(lowerParametr.typeRandomedRune==2)
+        window.draw(object.rune.plus_damage.sprite);
+    else if(lowerParametr.typeRandomedRune==3)
+        window.draw(object.rune.coin.sprite);
+
     window.draw(object.base.base_roof);
 
 
@@ -25,10 +31,21 @@ void game_draw(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerPar
     window.draw(upperParametr.pauseButton);
     window.draw(upperParametr.pauseButtonText);
 
+    window.draw(upperParametr.roundText);
+
+    window.draw(upperParametr.iconCounterAddedDamage);
+    window.draw(upperParametr.textCounterAddedDamage);
+
+    window.draw(upperParametr.iconCounterCoins);
+    window.draw(upperParametr.textCounterCoins);
+
+
     /*тул бар с его датчиками*/
     window.draw(lowerParametr.toolbarline);
 
     window.draw(lowerParametr.timer);
+    window.draw(lowerParametr.spawnTimer);
+
     window.draw(lowerParametr.iconClock);
 
     window.draw(lowerParametr.hp_hero_red);
@@ -43,5 +60,6 @@ void game_draw(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerPar
     window.draw(lowerParametr.iconHPbase);
     window.draw(lowerParametr.valueBHPof);
 
+    window.draw(lowerParametr.iconTimer);
 
 }

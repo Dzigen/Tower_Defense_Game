@@ -5,6 +5,7 @@
 #include <string>
 #include <iostream>
 #include <stdio.h>
+#include <cstdlib>
 
 class ToolBar{
 
@@ -30,12 +31,16 @@ class ToolBar{
         sf::Sprite iconHPbase;
         sf::Text valueBHPof;
 
-        /*таймер спавна случайно руны в случайном месте*/
+        /*таймер спавна случайной руны в случайном месте*/
         sf::Text spawnTimer;
+        int secondsUntilSpawn;
+        int bufferSeconds;
+        int typeRandomedRune;
+        bool randomizeCoordinates;
         sf::Sprite iconTimer;
 
         /*получить строку с текущим временем игры: hh:mm:ss*/
-        void get_time(){
+        void get_time(sf::Clock clock){
             int seconds=0;
             int minutes=0;
             int hours=0;
@@ -45,26 +50,47 @@ class ToolBar{
             seconds = time.asSeconds();
 
             seconds+=addToTimer;
-
-            minutes=seconds / 60;
-            seconds=seconds % 60;
+            minutes=((seconds / 60)%60);
             hours=seconds / 3600;
+            seconds=seconds % 60;
 
             sprintf(str,"%d:%d:%d",hours,minutes,seconds);
             timer.setString(str);
 
+            if((bufferSeconds<seconds)||(bufferSeconds==59&&seconds==0)){
+
+                    bufferSeconds=seconds;
+
+                if(secondsUntilSpawn==1){
+                    secondsUntilSpawn=60;
+                    randomizeRune();
+                }else{
+                    secondsUntilSpawn--;
+                }
+                update_spawnTimer();
+            }
+
+        }
+
+        /*случайныйм образом определяем руну, которую будем спавнить и ставим флаг для вызова функции-выбора случайных координат расположения*/
+        void randomizeRune(){
+            int randomedValue;
+            randomedValue=std::rand();
+            typeRandomedRune=(randomedValue % 4);
+            randomizeCoordinates=true;
         }
 
         /*получаем время,с которого должен пойти отсчёт при возвражении в игру после паузы*/
-        void add_to_time(){
+        void add_to_time(sf::Clock &clock){
             time=clock.getElapsedTime();
             addToTimer+=time.asSeconds();
         }
 
         /*функция перезагрузки времени*/
-        void reset_clock(){
+        void reset_clock(sf::Clock &clock){
             clock.restart();
         }
+
 
         void change_hero_base_hp(std::string object,std::string str,int value,int &objecthealth){
             char strHP[4]="";
@@ -100,6 +126,10 @@ class ToolBar{
 
         }
 
+        /*обновляем счётчик, отвечающий за количество секунд до следующего спавна руны*/
+        void update_spawnTimer(){
+           spawnTimer.setString(std::to_string(secondsUntilSpawn)+" sec");
+        }
 
     ToolBar(){
         /*инициализация добавочного значения к таймеру игры*/
@@ -119,9 +149,6 @@ class ToolBar{
         shapeIC.loadFromImage(shape);
         iconClock.setTexture(shapeIC);
         iconClock.setPosition(5,692);
-
-        /*начинаем отсчёт времени*/
-        clock.restart();
 
         /*опредеояем шрифт,цыет и расположение таймера*/
         timer.setFont(font);
@@ -182,6 +209,25 @@ class ToolBar{
         valueBHPof.setCharacterSize(20);
         valueBHPof.setPosition(660,695);
 
+
+        /*загружаем иконку случайной руны и указываем позиции таймера на понеле тул бара*/
+        iconRR.loadFromFile("../../Tower_Defense_Game/external/Sprites/iconRandomRune.png");
+        iconRR.createMaskFromColor(sf::Color::White);
+        shapeRR.loadFromImage(iconRR);
+        iconTimer.setTexture(shapeRR);
+        iconTimer.setPosition(1050,692);
+
+        secondsUntilSpawn=60;
+        bufferSeconds=0;
+        typeRandomedRune=-1;
+        randomizeCoordinates=false;
+
+        spawnTimer.setFont(font);
+        spawnTimer.setFillColor(sf::Color::Black);
+        spawnTimer.setPosition(1095,692);
+        spawnTimer.setString(std::to_string(secondsUntilSpawn)+" sec");
+
+
     }
 
     private:
@@ -189,7 +235,6 @@ class ToolBar{
 
         sf::Font font;
 
-        sf::Clock clock;
         sf::Time time;
 
         sf::Texture shapeHPB;
@@ -203,6 +248,9 @@ class ToolBar{
 
         sf::Image shape;
         sf::Texture shapeIC;
+
+        sf::Image iconRR;
+        sf::Texture shapeRR;
 
         sf::Texture shapeTBL;
 };

@@ -10,12 +10,18 @@ void game_process(sf::RenderWindow &window, Cursors &cursor){
     bool exitFlag=false;
 
     sf::Clock globalTime;
+
+    sf::Clock gameTime;
     float runeUPDATEtime=0;
+
+    lowerParametr.change_hero_base_hp("hero","damaging",50,object.hero.health);
+    lowerParametr.change_hero_base_hp("base","damaging",120,object.base.health);
 
     while(true){
 
-        float time = globalTime.getElapsedTime().asMicroseconds();
-        globalTime.restart();
+
+        float time = gameTime.getElapsedTime().asMicroseconds();
+        gameTime.restart();
         time = time / 800;
 
         inBtnField = false;
@@ -31,7 +37,7 @@ void game_process(sf::RenderWindow &window, Cursors &cursor){
         if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
             if (inBtnField){
                 /*получаем знак о нажатой кнопке меню "Пауза"*/
-                exitFlag=pause_menu(window,upperParametr,lowerParametr,cursor,object);
+                exitFlag=pause_menu(window,upperParametr,lowerParametr,cursor,object,globalTime);
                 /*если true, то была нажата кнопка "выход в главное меню"*/
                 if(exitFlag)
                     break;
@@ -41,21 +47,40 @@ void game_process(sf::RenderWindow &window, Cursors &cursor){
         sf::Vector2i Mouse = sf::Mouse::getPosition(window);
         cursor.cursore.setPosition(Mouse.x,Mouse.y);
 
-        runeUPDATEtime+=time;
-        if(runeUPDATEtime>250){
-            runeUPDATEtime=0;
-            object.rune.update_frame("hp_hero");
-            object.rune.update_frame("hp_base");
-            object.rune.update_frame("double_damage");
-            object.rune.update_frame("coin");
-        }
 
         /*двигаем главного героя ,если были нажати клавиши управления*/
         move_hero(object,time);
 
+        /*если на карте есть заспавненная руна, то обрабатываем её взаимодействие с героем*/
+        if(lowerParametr.typeRandomedRune!=-1)
+            take_rune(object,lowerParametr,upperParametr);
+
+        /*обновляем игровой таймер*/
+        lowerParametr.get_time(globalTime);
+
+        /*если прошло 10 минут,то начинается следующий раунд*/
+        upperParametr.check_for_next_round(globalTime);
+
+        /*если прошло 60 секунд то выбираем случайные координаты для новой случайной руны*/
+        if(lowerParametr.randomizeCoordinates){
+            randomizeRuneCoordinates(object,lowerParametr);
+        }else{
+            /*иначе продолжаем выводить текущую руну на игровом поле*/
+            runeUPDATEtime+=time;
+            if(runeUPDATEtime>250){
+                runeUPDATEtime=0;
+                if(lowerParametr.typeRandomedRune==0)
+                    object.rune.update_frame(0);
+                else if(lowerParametr.typeRandomedRune==1)
+                    object.rune.update_frame(1);
+                else if(lowerParametr.typeRandomedRune==2)
+                    object.rune.update_frame(2);
+                else if(lowerParametr.typeRandomedRune==3)
+                    object.rune.update_frame(3);
+             }
+        }
 
         /*отрисовываем элементы в окне*/
-        lowerParametr.get_time();
         game_draw(window,upperParametr,lowerParametr,object);
         window.draw(cursor.cursore);
         window.display();

@@ -7,12 +7,14 @@ class MenuBar{
 
     public:
 
-        int round;
-
+        /*полоска меню-бара*/
         sf::Sprite menubarline;
+
+        /*кнопка паузы*/
         sf::Sprite pauseButton;
         sf::Sprite pauseButtonText;
 
+        /*окно паузы с кнопками*/
         sf::Sprite PauseMenu;
 
         sf::Sprite PauseMenuButtonExit;
@@ -20,13 +22,56 @@ class MenuBar{
         sf::Sprite PauseMenuButtonContinue;
         sf::Text ContinueText;
 
+        /*текст с номером текущего раунда*/
+        sf::Text roundText;
+
+        /*счётчик подобранных рун-монеток*/
+        sf::Sprite iconCounterCoins;
+        sf::Text textCounterCoins;
+
+        /*счётчик полобранных рун,увеличивающих урон героя*/
+        /*счётчик показывает количество добавачного урона героя*/
+        sf::Sprite iconCounterAddedDamage;
+        sf::Text textCounterAddedDamage;
+
+
+        void incr_counter_coins(){
+            counterCoins+=1;
+            textCounterCoins.setString(std::to_string(counterCoins));
+        }
+
+        void incr_counter_added_damage(int value){
+            counterAddedDamage+=value;
+            textCounterAddedDamage.setString("+"+std::to_string(counterAddedDamage));
+        }
+
+        void check_for_next_round(sf::Clock clock){
+            int time;
+            int minutes;
+            time=clock.getElapsedTime().asSeconds();
+            minutes=((time / 60)%60);
+
+            if(((minutes%10==0)&&(minutes==bufferTime))||((bufferTime==60)&&(minutes<10))){
+                round++;
+                roundText.setString("Round "+std::to_string(round));
+
+                if(bufferTime==60)
+                    bufferTime=10;
+                else
+                    bufferTime+=10;
+            }
+        }
+
     MenuBar(){
         /*загружаем текст шрифта*/
         font.loadFromFile("../../Tower_Defense_Game/external/Text/Roboto-Italic.ttf");
 
-        /*инициализируем первый раунд*/
-        std::string strR = "Round ";
+        /*инициализируем иекси "первый раунд"*/
         round = 1;
+        roundText.setFont(font);
+        roundText.setFillColor(sf::Color::Black);
+        roundText.setPosition(520,7);
+        roundText.setString("Round "+std::to_string(round));
 
     //=====
         /*загружаем полоску меню бара*/
@@ -71,9 +116,40 @@ class MenuBar{
         ExitText.setPosition(35,170);
     //=====
 
+        counterAddedDamage=0;
+        counterCoins=0;
+
+        /*инициализация счётчика добавочного урона*/
+        shapeAddedDamage.loadFromFile("../../Tower_Defense_Game/external/Sprites/iconAddedDamage.png");
+        iconCounterAddedDamage.setTexture(shapeAddedDamage);
+        iconCounterAddedDamage.setPosition(900,7);
+
+        textCounterAddedDamage.setFont(font);
+        textCounterAddedDamage.setFillColor(sf::Color(5,171,5));
+        textCounterAddedDamage.setPosition(950,7);
+        textCounterAddedDamage.setString("+"+std::to_string(counterAddedDamage));
+
+        /*инициализация счётчика собранных монет*/
+        shapeCoin.loadFromFile("../../Tower_Defense_Game/external/Sprites/iconCoin.png");
+        iconCounterCoins.setTexture(shapeCoin);
+        iconCounterCoins.setPosition(1050,7);
+
+        textCounterCoins.setFont(font);
+        textCounterCoins.setFillColor(sf::Color::Black);
+        textCounterCoins.setPosition(1100,7);
+        textCounterCoins.setString(std::to_string(counterCoins));
+
+        bufferTime=10;
+
     }
 
     private:
+        int round;
+        int counterCoins;
+        int counterAddedDamage;
+
+        int bufferTime;
+
         sf::Font font;
 
         sf::Texture shapePB;
@@ -85,6 +161,10 @@ class MenuBar{
 
         sf::Image pausePict;
         sf::Texture shapePBT;
+
+        sf::Texture shapeAddedDamage;
+
+        sf::Texture shapeCoin;
 
 };
 

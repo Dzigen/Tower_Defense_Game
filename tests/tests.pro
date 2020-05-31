@@ -18,10 +18,13 @@ LIBS +=-lgcov
 INCLUDEPATH += ../app
 
 SOURCES += \
+    ../app/effect_of_the_rune.cpp \
     ../app/game_draw.cpp \
     ../app/game_process.cpp \
     ../app/move_hero.cpp \
     ../app/pause_menu.cpp \
+    ../app/randomize_rune_coordinates.cpp \
+    ../app/take_rune.cpp \
     main.cpp
 
 HEADERS += \
@@ -32,6 +35,11 @@ HEADERS += \
     ../app/menu_bar.h \
     ../app/pause_menu.h \
     ../app/tool_bar.h \
-    check_test.h
+    effect_of_the_rune_test.h \
+    game_process_test.h \
+    move_hero_test.h \
+    pause_menu_test.h \
+    randomize_rune_coordinatest_test.h \
+    take_rune_test.h
 
 

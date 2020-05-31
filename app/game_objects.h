@@ -79,6 +79,11 @@ class GameObject{
                    int w;
                    int health;
 
+                   int gun_deirection;
+                   int pos_gun_dir_x;
+                   int pos_gin_dir_y;
+
+
              Hero(){
                    heroImage.loadFromFile("../../Tower_Defense_Game/external/Sprites/hero.png");
                    heroImage.createMaskFromColor(sf::Color(255,255,255));
@@ -109,18 +114,19 @@ class GameObject{
                             int h;
                             int frames;
                             int current_frame;
+                            int regenHP;
 
                         Hp_hero(){
                             iconHPH.loadFromFile("../../Tower_Defense_Game/external/Sprites/rune_hp_hero.png");
                             iconHPH.createMaskFromColor(sf::Color::White);
                             shapeHPH.loadFromImage(iconHPH);
                             sprite.setTexture(shapeHPH);
-                            sprite.setPosition(100,100);
 
                             w=53;
                             h=50;
                             frames=5;
                             current_frame=0;
+                            regenHP=5;
 
                             sprite.setTextureRect(sf::IntRect(0,0,w,h));
                         }
@@ -138,18 +144,19 @@ class GameObject{
                             int h;
                             int frames;
                             int current_frame;
+                            int regenHP;
 
                         Hp_base(){
                             iconHPB.loadFromFile("../../Tower_Defense_Game/external/Sprites/rune_hp_base.png");
                             iconHPB.createMaskFromColor(sf::Color::White);
                             shapeHPB.loadFromImage(iconHPB);
                             sprite.setTexture(shapeHPB);
-                            sprite.setPosition(200,200);
 
                             w=53;
                             h=50;
                             frames=5;
                             current_frame=0;
+                            regenHP=10;
 
                             sprite.setTextureRect(sf::IntRect(0,0,w,h));
                         }
@@ -159,24 +166,25 @@ class GameObject{
                             sf::Texture shapeHPB;
                     };
 
-                    class Double_damage{
+                    class Plus_damage{
                         public:
                             sf::Sprite sprite;
                             int w;
                             int h;
                             int frames;
                             int current_frame;
+                            int addedDamage;
 
-                        Double_damage(){
-                            iconDD.loadFromFile("../../Tower_Defense_Game/external/Sprites/rune_double_damage.png");
+                        Plus_damage(){
+                            iconDD.loadFromFile("../../Tower_Defense_Game/external/Sprites/rune_plus_damage.png");
                             iconDD.createMaskFromColor(sf::Color(255,0,0));
                             shapeDD.loadFromImage(iconDD);
                             sprite.setTexture(shapeDD);
-                            sprite.setPosition(300,300);
 
                             w=47;
                             h=47;
                             frames=10;
+                            addedDamage=5;
 
                             sprite.setTextureRect(sf::IntRect(0,0,w,h));
                         }
@@ -201,8 +209,6 @@ class GameObject{
                             iconC.createMaskFromColor(sf::Color(0,255,0));
                             shapeC.loadFromImage(iconC);
                             sprite.setTexture(shapeC);
-                            sprite.setPosition(400,400);
-
 
                             w=47;
                             h=47;
@@ -218,7 +224,7 @@ class GameObject{
 
                     };
 
-                    void update_frame(std::string type){
+                    void update_frame(int type){
 
                         int* current_frame=0;
                         int frames=0;
@@ -226,28 +232,28 @@ class GameObject{
                         int rune_h=0;
                         sf::Sprite* rune_sprite;
 
-                        if(type=="hp_base"){
+                        if(type==0){
                              current_frame=&hp_base.current_frame;
                              frames=hp_base.frames;
                              rune_w=hp_base.w;
                              rune_h=hp_base.h;
                              rune_sprite=&hp_base.sprite;
 
-                        }else if(type=="hp_hero"){
+                        }else if(type==1){
                              current_frame=&hp_hero.current_frame;
                              frames=hp_hero.frames;
                              rune_w=hp_hero.w;
                              rune_h=hp_hero.h;
                              rune_sprite=&hp_hero.sprite;
 
-                        }else if(type=="double_damage"){
-                             current_frame=&double_damage.current_frame;
-                             frames=double_damage.frames;
-                             rune_w=double_damage.w;
-                             rune_h=double_damage.h;
-                             rune_sprite=&double_damage.sprite;
+                        }else if(type==2){
+                             current_frame=&plus_damage.current_frame;
+                             frames=plus_damage.frames;
+                             rune_w=plus_damage.w;
+                             rune_h=plus_damage.h;
+                             rune_sprite=&plus_damage.sprite;
 
-                        }else if(type=="coin"){
+                        }else if(type==3){
                             current_frame=&coin.current_frame;
                             frames=coin.frames;
                             rune_w=coin.w;
@@ -270,7 +276,7 @@ class GameObject{
 
                     Hp_hero hp_hero;
                     Hp_base hp_base;
-                    Double_damage double_damage;
+                    Plus_damage plus_damage;
                     Coin coin;
    };
 

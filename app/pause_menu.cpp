@@ -1,10 +1,10 @@
 #include "pause_menu.h"
 
-bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerParametr ,Cursors &cursor, GameObject &object)
+bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerParametr ,Cursors &cursor, GameObject &object,sf::Clock &globalTime)
 {
 
 
-    lowerParametr.add_to_time();
+    lowerParametr.add_to_time(globalTime);
 
     bool exitFlag=false;
     int numButton;
@@ -62,7 +62,7 @@ bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerPa
         window.display();
     }
 
-    lowerParametr.reset_clock();
+    lowerParametr.reset_clock(globalTime);
 
     return exitFlag;
 }

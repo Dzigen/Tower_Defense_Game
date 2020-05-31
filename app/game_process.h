@@ -10,8 +10,12 @@
 
 void game_draw(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerParametr ,GameObject &object);
 
-bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerParametr ,Cursors &cursor,GameObject &object);
+bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerParametr ,Cursors &cursor,GameObject &object,sf::Clock &globalTime);
 
 void move_hero(GameObject &object ,float time);
+
+void randomizeRuneCoordinates(GameObject &object,ToolBar &toolbar);
+
+void take_rune(GameObject &object,ToolBar &toolbar,MenuBar &menubar);
 
 #endif // GAME_PROCESS_H

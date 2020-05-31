@@ -9,6 +9,10 @@ int main()
     /*задаём частоту кадров в секунду*/
     window.setFramerateLimit(30);
 
+    /*устанавливаем позицию окна на экране монитора*/
+    sf::Vector2i centerWindow((sf::VideoMode::getDesktopMode().width/2)-600,0);
+    window.setPosition(centerWindow);
+
     sf::Image icon;
     icon.loadFromFile("../../Tower_Defense_Game/external/Sprites/icon_game.png");
     window.setIcon(32,32,icon.getPixelsPtr());
