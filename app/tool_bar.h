@@ -45,7 +45,8 @@ class ToolBar{
             int seconds=0;
             int minutes=0;
             int hours=0;
-            char str[12]="";
+            const int lenght=12;
+            char str[lenght]="";
 
             time=clock.getElapsedTime();
             seconds = time.asSeconds();
@@ -55,7 +56,7 @@ class ToolBar{
             hours=seconds / 3600;
             seconds=seconds % 60;
 
-            sprintf(str,"%d:%d:%d",hours,minutes,seconds);
+            snprintf(str,lenght,"%d:%d:%d",hours,minutes,seconds);
             timer.setString(str);
 
             if((bufferSeconds<seconds)||(bufferSeconds==59&&seconds==0)){
@@ -76,7 +77,7 @@ class ToolBar{
         /*случайныйм образом определяем руну, которую будем спавнить и ставим флаг для вызова функции-выбора случайных координат расположения*/
         void randomizeRune(){
             int randomedValue;
-            std:: minstd_rand simple_rand;
+            std::minstd_rand simple_rand;
 
             randomedValue=simple_rand();
             typeRandomedRune=(randomedValue % 4);
@@ -96,7 +97,8 @@ class ToolBar{
 
 
         void change_hero_base_hp(std::string object,std::string str,int value,int &objecthealth){
-            char strHP[4]="";
+            const int lenght=4;
+            char strHP[lenght]="";
 
             if(str=="healing"){
                 objecthealth+=value;
@@ -116,11 +118,11 @@ class ToolBar{
 
             if(object=="hero"){
                 hp_hero_green.setTextureRect(sf::IntRect(0,0,objecthealth*2,shapeHPF.getSize().y));
-                sprintf(strHP,"%d",objecthealth);
+                snprintf(strHP,lenght,"%d",objecthealth);
                 valueHHPof.setString(strHP);
             }else if(object=="base"){
                 hp_base_green.setTextureRect(sf::IntRect(0,0,objecthealth,shapeHPF.getSize().y));
-                sprintf(strHP,"%d",objecthealth);
+                snprintf(strHP,lenght,"%d",objecthealth);
                 valueBHPof.setString(strHP);
             }else{
                 std::cout<<"Введена неверная команда для определения объекта: "<<object<<std::endl;
@@ -131,8 +133,9 @@ class ToolBar{
 
         /*обновляем счётчик, отвечающий за количество секунд до следующего спавна руны*/
         void update_spawnTimer(){
-           char seconds[3]="";
-           sprintf(seconds,"%d sec",secondsUntilSpawn);
+           const int lenght=3;
+           char seconds[lenght]="";
+           snprintf(seconds,lenght,"%d sec",secondsUntilSpawn);
            spawnTimer.setString(seconds);
         }
 

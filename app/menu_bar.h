@@ -36,19 +36,21 @@ class MenuBar{
 
 
         void incr_counter_coins(int value){
-            char strCoins[5]="";
+            const int lenght=5;
+            char strCoins[lenght]="";
 
             counterCoins+=value;
-            sprintf(strCoins,"%d",counterCoins);
+            snprintf(strCoins,lenght,"%d",counterCoins);
 
             textCounterCoins.setString(strCoins);
         }
 
         void incr_counter_added_damage(int value){
-            char strAddedDamage[6]="";
+            const int lenght=6;
+            char strAddedDamage[lenght]="";
 
             counterAddedDamage+=value;
-            sprintf(strAddedDamage,"+%d",counterAddedDamage);
+            snprintf(strAddedDamage,lenght,"+%d",counterAddedDamage);
 
             textCounterAddedDamage.setString(strAddedDamage);
         }
@@ -71,10 +73,11 @@ class MenuBar{
         }
 
         void change_round(){
-            char strRound[10]="";
+            const int lenght =10;
+            char strRound[lenght]="";
 
             round++;
-            sprintf(strRound,"Round %d",round);
+            snprintf(strRound,lenght,"Round %d",round);
             roundText.setString(strRound);
         }
 
