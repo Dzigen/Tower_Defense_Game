@@ -27,6 +27,7 @@ HEADERS += \
     tool_bar.h
 
 QMAKE_CFLAGS += -Wall -Wextra -Werror -std=c++11
+QMAKE_LFLAGS +=  -std=c++11
 
 # gcov
 QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage -std=c++11
