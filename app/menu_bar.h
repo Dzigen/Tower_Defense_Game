@@ -56,22 +56,26 @@ class MenuBar{
         void check_for_next_round(sf::Clock clock){
             int time;
             int minutes;
-            char strRound[10]="";
-
-            sprintf(strRound,"Round %d",round);
 
             time=clock.getElapsedTime().asSeconds();
             minutes=((time / 60)%60);
 
             if(((minutes%10==0)&&(minutes==bufferTime))||((bufferTime==60)&&(minutes<10))){
-                round++;
-                roundText.setString(strRound);
-
+                    change_round();
                 if(bufferTime==60)
                     bufferTime=10;
                 else
                     bufferTime+=10;
             }
+
+        }
+
+        void change_round(){
+            char strRound[10]="";
+
+            round++;
+            sprintf(strRound,"Round %d",round);
+            roundText.setString(strRound);
         }
 
     MenuBar(){
@@ -79,11 +83,11 @@ class MenuBar{
         font.loadFromFile("../../Tower_Defense_Game/external/Text/Roboto-Italic.ttf");
 
         /*инициализируем иекси "первый раунд"*/
-        round = 1;
+        round = 0;
         roundText.setFont(font);
         roundText.setFillColor(sf::Color::Black);
         roundText.setPosition(520,7);
-        roundText.setString("Round "+std::to_string(round));
+        change_round();
 
     //=====
         /*загружаем полоску меню бара*/
