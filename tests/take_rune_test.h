@@ -1,5 +1,6 @@
 #ifndef TAKE_RUNE_TEST_H
 #define TAKE_RUNE_TEST_H
+
 #include "gtest/gtest.h"
 #include <gmock/gmock-matchers.h>
 
