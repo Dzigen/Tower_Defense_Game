@@ -36,12 +36,12 @@ TEST(PositiveTest_TakeRune,DeterminatedTypeRune){
     ASSERT_EQ(3,toolbar.typeRandomedRune);
 }
 
-TEST(PositiveTest_TakeRune,EffectOfRune){
+/*TEST(PositiveTest_TakeRune,EffectOfRune){
 
 }
 
 TEST(NegativeTest_TakeRune,UnititilizedTypeRune){
 
-}
+}*/
 
 #endif // TAKE_RUNE_TEST_H
