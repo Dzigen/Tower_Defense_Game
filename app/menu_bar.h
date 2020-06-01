@@ -13,6 +13,8 @@ class MenuBar{
         /*кнопка паузы*/
         sf::Sprite pauseButton;
         sf::Sprite pauseButtonText;
+        int w;
+        int h;
 
         /*окно паузы с кнопками*/
         sf::Sprite PauseMenu;
@@ -101,6 +103,8 @@ class MenuBar{
         shapePB.loadFromFile("../../Tower_Defense_Game/external/Sprites/pauseButton.png");
         pauseButton.setTexture(shapePB);
         pauseButton.setPosition(7,7);
+        w=40;
+        h=40;
 
         /*загружаем содержимое кнопки*/
         pausePict.loadFromFile("../../Tower_Defense_Game/external/Sprites/pauseButtonText.png");

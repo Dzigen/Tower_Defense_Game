@@ -11,10 +11,12 @@ SOURCES += \
         game_draw.cpp \
         game_process.cpp \
         main.cpp \
+        mouse_click.cpp \
         move_hero.cpp \
         pause_menu.cpp \
         randomize_rune_coordinates.cpp \
-        take_rune.cpp
+        take_rune.cpp \
+        update_spawn_rune.cpp
 
 HEADERS += \
     cursors.h \
@@ -22,9 +24,11 @@ HEADERS += \
     game_process.h \
     main.h \
     menu_bar.h \
+    mouse_click.h \
     pause_menu.h \
     take_rune.h \
-    tool_bar.h
+    tool_bar.h \
+    update_spawn_rune.h
 
 QMAKE_CFLAGS +=  -Wall -Wextra -Werror
 QMAKE_CXXFLAGS +=-std=c++11

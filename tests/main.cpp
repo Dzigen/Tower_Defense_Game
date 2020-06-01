@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "game_process_test.h"
+
 #include "move_hero_test.h"
 #include "pause_menu_test.h"
 #include "randomize_rune_coordinatest_test.h"

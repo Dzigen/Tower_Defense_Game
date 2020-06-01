@@ -1,4 +1,0 @@
-#ifndef GAME_PROCESS_TEST_H
-#define GAME_PROCESS_TEST_H
-
-#endif // GAME_PROCESS_TEST_H

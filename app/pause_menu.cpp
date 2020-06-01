@@ -6,7 +6,7 @@ bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerPa
 
     lowerParametr.add_to_time(globalTime);
 
-    bool exitFlag=false;
+    bool runFlag=true;
     int numButton;
     bool loopflag = true;
 
@@ -45,7 +45,7 @@ bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerPa
             if (numButton == 2)
             {
                 loopflag = false;
-                exitFlag = true;
+                runFlag = false;
             }
         }
 
@@ -64,5 +64,5 @@ bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerPa
 
     lowerParametr.reset_clock(globalTime);
 
-    return exitFlag;
+    return runFlag;
 }
