@@ -21,10 +21,7 @@ INCLUDEPATH += ../app
 
 SOURCES += \
     ../app/effect_of_the_rune.cpp \
-    ../app/game_draw.cpp \
-    ../app/mouse_click.cpp \
     ../app/move_hero.cpp \
-    ../app/pause_menu.cpp \
     ../app/randomize_rune_coordinates.cpp \
     ../app/take_rune.cpp \
     ../app/update_spawn_rune.cpp \
@@ -34,14 +31,10 @@ HEADERS += \
     ../app/cursors.h \
     ../app/game_objects.h \
     ../app/menu_bar.h \
-    ../app/mouse_click.h \
-    ../app/pause_menu.h \
     ../app/take_rune.h \
     ../app/tool_bar.h \
     ../app/update_spawn_rune.h \
-    mouse_click_test.h \
     move_hero_test.h \
-    pause_menu_test.h \
     randomize_rune_coordinatest_test.h \
     take_rune_test.h \
     update_spawn_rune_test.h

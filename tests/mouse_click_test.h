@@ -1,4 +1,0 @@
-#ifndef MOUSE_CLICK_TEST_H
-#define MOUSE_CLICK_TEST_H
-
-#endif // MOUSE_CLICK_TEST_H

@@ -1,4 +1,0 @@
-#ifndef PAUSE_MENU_TEST_H
-#define PAUSE_MENU_TEST_H
-
-#endif // PAUSE_MENU_TEST_H
