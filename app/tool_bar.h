@@ -76,11 +76,9 @@ class ToolBar{
 
         /*случайныйм образом определяем руну, которую будем спавнить и ставим флаг для вызова функции-выбора случайных координат расположения*/
         void randomizeRune(std::minstd_rand &simple_rand){
-            int value;
-
-            value=simple_rand();
-            typeRandomedRune=(value % 4);
+            typeRandomedRune=(simple_rand() % 4);
             randomizeCoordinates=true;
+
         }
 
         /*получаем время,с которого должен пойти отсчёт при возвражении в игру после паузы*/
@@ -95,7 +93,7 @@ class ToolBar{
         }
 
 
-        void change_hero_base_hp(std::string object,std::string str,int value,int &objecthealth){
+        bool change_hero_base_hp(std::string object,std::string str,int value,int &objecthealth){
             const int lenght=4;
             char strHP[lenght]="";
 
@@ -111,8 +109,7 @@ class ToolBar{
                 if(objecthealth<0)
                   objecthealth=0;
             }else{
-                std::cout<<"Введена неверная команда для изменения здоровья героя: "<<str<<std::endl;
-                exit(1);
+                return false;
             }
 
             if(object=="hero"){
@@ -124,10 +121,10 @@ class ToolBar{
                 snprintf(strHP,lenght,"%d",objecthealth);
                 valueBHPof.setString(strHP);
             }else{
-                std::cout<<"Введена неверная команда для определения объекта: "<<object<<std::endl;
-                exit(1);
+                return false;
             }
 
+            return true;
         }
 
         /*обновляем счётчик, отвечающий за количество секунд до следующего спавна руны*/

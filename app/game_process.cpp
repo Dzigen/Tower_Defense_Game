@@ -26,7 +26,7 @@ void game_process(sf::RenderWindow &window, Cursors &cursor){
         gameRun=mouse_click(upperParametr,lowerParametr,object,globalTime,cursor,window);
 
         /*двигаем главного героя ,если были нажати клавиши управления*/
-        move_hero(object,time);
+        move_hero(object,time,-1);
 
         /*если на карте есть заспавненная руна, то обрабатываем её взаимодействие с героем*/
         if(lowerParametr.typeRandomedRune!=-1)

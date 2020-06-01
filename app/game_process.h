@@ -10,7 +10,7 @@
 
 void game_draw(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerParametr ,GameObject &object);
 
-void move_hero(GameObject &object ,float time);
+void move_hero(GameObject &object ,float time,int flag);
 
 bool mouse_click(MenuBar &menubar,ToolBar &toolbar,GameObject &object,sf::Clock &globalTime,Cursors &cursor,sf::RenderWindow &window);
 

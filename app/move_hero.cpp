@@ -1,10 +1,10 @@
 #include "game_objects.h"
 #include <iostream>
 
-void move_hero(GameObject &object,float time){
+void move_hero(GameObject &object,float time,int flag){
 
     /*если была нажата клавиша "A" или "Cтрелка влево",то осуществляем поворот героя влево*/
-    if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Left) || (sf::Keyboard::isKeyPressed(sf::Keyboard::A)))){
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) || sf::Keyboard::isKeyPressed(sf::Keyboard::A) || (flag==3) ){
 
         /*загружаем в спрайт танка картинку поворота влево*/
         object.hero.sprite.setTextureRect(sf::IntRect(0,1*object.hero.h,object.hero.w,object.hero.h));
@@ -36,7 +36,7 @@ void move_hero(GameObject &object,float time){
         }
 
     /*если была нажата клавиша "D" или "Cтрелка направо",то осуществляем поворот героя вправо*/
-    }else if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Right) || (sf::Keyboard::isKeyPressed(sf::Keyboard::D)))){
+    }else if ( sf::Keyboard::isKeyPressed(sf::Keyboard::Right) || sf::Keyboard::isKeyPressed(sf::Keyboard::D)|| (flag==1) ){
 
         /*загружаем в спрайт танка картинку поворота вправо*/
         object.hero.sprite.setTextureRect(sf::IntRect(0,2*object.hero.h,object.hero.w,object.hero.h));
@@ -67,7 +67,7 @@ void move_hero(GameObject &object,float time){
         }
 
     /*если была нажата клавиша "W" или "Cтрелка вверх",то осуществляем поворот героя в сторону верхней границы окна*/
-    }else if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Up) || (sf::Keyboard::isKeyPressed(sf::Keyboard::W)))) {
+    }else if ( sf::Keyboard::isKeyPressed(sf::Keyboard::Up) || sf::Keyboard::isKeyPressed(sf::Keyboard::W) || (flag==0) ) {
 
         /*загружаем в спрайт танка картинку поворота в сторону верхней границы окна*/
         object.hero.sprite.setTextureRect(sf::IntRect(0,3*object.hero.h,object.hero.w,object.hero.h));
@@ -98,7 +98,7 @@ void move_hero(GameObject &object,float time){
             }
         }
     /*если была нажата клавиша "S" или "Cтрелка вниз",то осуществляем поворот героя в сторону нижней границы окна*/
-    }else if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Down) || (sf::Keyboard::isKeyPressed(sf::Keyboard::S)))) {
+    }else if ( sf::Keyboard::isKeyPressed(sf::Keyboard::Down) || sf::Keyboard::isKeyPressed(sf::Keyboard::S)|| (flag==2) ) {
 
         /*загружаем в спрайт танка картинку поворота в сторону нижней границы окна*/
         object.hero.sprite.setTextureRect(sf::IntRect(0,0*object.hero.h,object.hero.w,object.hero.h));
