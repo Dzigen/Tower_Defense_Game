@@ -28,16 +28,15 @@ void take_rune(GameObject &object,ToolBar &toolbar,MenuBar &menubar){
         h=object.rune.coin.h;
         w=object.rune.coin.w;
     }else{
-        std::cout<<"unititilized parametr of type rune in function take_rune"<<std::endl;
-        exit(1);
+        toolbar.typeRandomedRune=-1;
+        return;
     }
 
-    /*если ствол танка пересёк прямоугольник , в которос расположена руна,то герой её взял*/
+    /*если ствол танка пересёк прямоугольник , в котором расположена руна,то герой её взял*/
     if(sf::IntRect(x_y_cord.x,x_y_cord.y,w,h).contains(object.hero.pos_gun_dir_x,object.hero.pos_gin_dir_y)){
         effect_of_the_rune(object,toolbar,menubar);
         toolbar.typeRandomedRune=-1;
         toolbar.randomizeCoordinates=false;
 
     }
-
 }

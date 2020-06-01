@@ -1,6 +1,5 @@
 #include <gtest/gtest.h>
 
-#include "effect_of_the_rune_test.h"
 #include "game_process_test.h"
 #include "move_hero_test.h"
 #include "pause_menu_test.h"
