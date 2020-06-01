@@ -3,7 +3,6 @@
 bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerParametr ,Cursors &cursor, GameObject &object,sf::Clock &globalTime)
 {
 
-
     lowerParametr.add_to_time(globalTime);
 
     bool runFlag=true;

@@ -14,7 +14,7 @@ void move_hero(GameObject &object ,float time);
 
 bool mouse_click(MenuBar &menubar,ToolBar &toolbar,GameObject &object,sf::Clock &globalTime,Cursors &cursor,sf::RenderWindow &window);
 
-void update_spawn_rune(GameObject &object,ToolBar &toolbar,float &runeUPDATEtime,float &time);
+void update_spawn_rune(GameObject &object,ToolBar &toolbar,float &runeUPDATEtime,float &time,std::minstd_rand &simple_rand);
 
 void take_rune(GameObject &object,ToolBar &toolbar,MenuBar &menubar);
 

@@ -41,7 +41,7 @@ class ToolBar{
         sf::Sprite iconTimer;
 
         /*получить строку с текущим временем игры: hh:mm:ss*/
-        void get_time(sf::Clock clock){
+        void get_time(sf::Clock clock,std::minstd_rand &simple_rand){
             int seconds=0;
             int minutes=0;
             int hours=0;
@@ -65,7 +65,7 @@ class ToolBar{
 
                 if(secondsUntilSpawn==1){
                     secondsUntilSpawn=60;
-                    randomizeRune();
+                    randomizeRune(simple_rand);
                 }else{
                     secondsUntilSpawn--;
                 }
@@ -75,12 +75,11 @@ class ToolBar{
         }
 
         /*случайныйм образом определяем руну, которую будем спавнить и ставим флаг для вызова функции-выбора случайных координат расположения*/
-        void randomizeRune(){
-            int randomedValue;
-            std::minstd_rand simple_rand;
+        void randomizeRune(std::minstd_rand &simple_rand){
+            int value;
 
-            randomedValue=simple_rand();
-            typeRandomedRune=(randomedValue % 4);
+            value=simple_rand();
+            typeRandomedRune=(value % 4);
             randomizeCoordinates=true;
         }
 

@@ -188,6 +188,7 @@ class GameObject{
                             w=47;
                             h=47;
                             frames=10;
+                            current_frame=0;
                             addedDamage=5;
 
                             sprite.setTextureRect(sf::IntRect(0,0,w,h));
@@ -230,12 +231,12 @@ class GameObject{
 
                     };
 
-                    void update_frame(int type){
+                    void update_frame(int &type){
 
-                        int* current_frame=0;
-                        int frames=0;
-                        int rune_w=0;
-                        int rune_h=0;
+                        int* current_frame;
+                        int frames;
+                        int rune_w;
+                        int rune_h;
                         sf::Sprite* rune_sprite;
 
                         if(type==0){
@@ -267,8 +268,8 @@ class GameObject{
                             rune_sprite=&coin.sprite;
 
                         }else{
-                            std::cout<<"Введён некорректный тип руны"<<std::endl;
-                            exit(1);
+                            type=-1;
+                            return;
                         }
                             (*current_frame)++;
 

@@ -39,7 +39,7 @@ TEST(PositiveTest_TakeRune,DeterminatedTypeRune){
     ASSERT_EQ(3,toolbar.typeRandomedRune);
 }
 
-TEST(PositiveTest_TakeRune,DeterminatedRuneInTankArea){
+TEST(PositiveTest_TakeRune,DeterminatedRuneInHeroArea){
 
     GameObject object;
     ToolBar toolbar;

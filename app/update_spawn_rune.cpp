@@ -1,10 +1,10 @@
 #include "update_spawn_rune.h"
 
-void update_spawn_rune(GameObject &object,ToolBar &toolbar,float &runeUPDATEtime,float &time){
+void update_spawn_rune(GameObject &object,ToolBar &toolbar,float &runeUPDATEtime,float &time,std::minstd_rand &simple_rand){
 
     /*если прошло 60 секунд то выбираем случайные координаты для новой случайной руны*/
     if(toolbar.randomizeCoordinates){
-        randomizeRuneCoordinates(object,toolbar);
+        randomizeRuneCoordinates(object,toolbar,simple_rand);
     }else{
         /*иначе продолжаем выводить текущую руну на игровом поле*/
         runeUPDATEtime+=time;

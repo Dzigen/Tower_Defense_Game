@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 
-
+#include "mouse_click_test.h"
+#include "update_spawn_rune_test.h"
 #include "move_hero_test.h"
 #include "pause_menu_test.h"
 #include "randomize_rune_coordinatest_test.h"
