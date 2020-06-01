@@ -1,6 +1,8 @@
 #ifndef TAKE_RUNE_TEST_H
 #define TAKE_RUNE_TEST_H
 #include "gtest/gtest.h"
+#include <gmock/gmock-matchers.h>
+
 #include "take_rune.h"
 
 void take_rune(GameObject &object,ToolBar &toolbar,MenuBar &menubar);
