@@ -1,10 +1,16 @@
 language:
   - cpp
 
+install:
+  - export DISPLAY=':99.0'
+  - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+
 before_install:
   - pip install --user cpp-coveralls
 
 addons:
+  packages:
+      - xvfb
   sonarcloud: 
    organization: "dzigen"
    token:
@@ -13,7 +19,6 @@ addons:
 script:
   - qmake
   - make
-  - export DISPLAY=:0.0
   - LD_LIBRARY_PATH=$LD_LIBRARY_PATH:../Tower_Defense_Game/external/SFML/lib/release/ ./tests/tests
 
 after_success:
