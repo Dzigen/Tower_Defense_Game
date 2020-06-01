@@ -33,7 +33,7 @@ void take_rune(GameObject &object,ToolBar &toolbar,MenuBar &menubar){
     }
 
     /*если ствол танка пересёк прямоугольник , в котором расположена руна,то герой её взял*/
-    if(sf::IntRect(x_y_cord.x,x_y_cord.y,w,h).contains(object.hero.pos_gun_dir_x,object.hero.pos_gin_dir_y)){
+    if(sf::IntRect(x_y_cord.x,x_y_cord.y,w,h).contains(object.hero.pos_gun_dir_x,object.hero.pos_gun_dir_y)){
         effect_of_the_rune(object,toolbar,menubar);
         toolbar.typeRandomedRune=-1;
         toolbar.randomizeCoordinates=false;

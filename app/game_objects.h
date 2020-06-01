@@ -81,7 +81,7 @@ class GameObject{
 
                    int gun_deirection;
                    int pos_gun_dir_x;
-                   int pos_gin_dir_y;
+                   int pos_gun_dir_y;
 
 
              Hero(){
@@ -94,7 +94,11 @@ class GameObject{
                    w=62;
                    sprite.setTextureRect(sf::IntRect(0,0,w,h));
 
-                  health =100;
+                   gun_deirection=2;
+                   pos_gun_dir_x=(sprite.getPosition().x+(w/2));
+                   pos_gun_dir_y=sprite.getPosition().y;
+
+                   health =100;
 
 
              }

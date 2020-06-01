@@ -14,7 +14,7 @@ void move_hero(GameObject &object,float time){
         /*значение 3 - ствол направлен влево*/
         object.hero.gun_deirection=3;
         object.hero.pos_gun_dir_x=object.hero.sprite.getPosition().x;
-        object.hero.pos_gin_dir_y=(object.hero.sprite.getPosition().y+(object.hero.h/2));
+        object.hero.pos_gun_dir_y=(object.hero.sprite.getPosition().y+(object.hero.h/2));
 
         /*проверка на столкновение с левой границой карты*/
         if((object.hero.sprite.getPosition().x-(0.2*time))<0){
@@ -45,7 +45,7 @@ void move_hero(GameObject &object,float time){
         /*значение 1 - ствол направлен вправо*/
         object.hero.gun_deirection=1;
         object.hero.pos_gun_dir_x=(object.hero.sprite.getPosition().x+object.hero.w);
-        object.hero.pos_gin_dir_y=(object.hero.sprite.getPosition().y+(object.hero.h/2));
+        object.hero.pos_gun_dir_y=(object.hero.sprite.getPosition().y+(object.hero.h/2));
 
         /*проверка на столкновение с правой границой карты*/
         if(((object.hero.sprite.getPosition().x+object.hero.w)+(0.2*time))>object.map.w){
@@ -76,7 +76,7 @@ void move_hero(GameObject &object,float time){
         /*значение 0 - ствол направлен вверх*/
         object.hero.gun_deirection=0;
         object.hero.pos_gun_dir_x=(object.hero.sprite.getPosition().x+(object.hero.w/2));
-        object.hero.pos_gin_dir_y=object.hero.sprite.getPosition().y;
+        object.hero.pos_gun_dir_y=object.hero.sprite.getPosition().y;
 
 
         /*проверка на столкновение с верхней границой карты*/
@@ -107,7 +107,7 @@ void move_hero(GameObject &object,float time){
         /*значение 2 - ствол направлен вниз*/
         object.hero.gun_deirection=2;
         object.hero.pos_gun_dir_x=(object.hero.sprite.getPosition().x+(object.hero.w/2));
-        object.hero.pos_gin_dir_y=(object.hero.sprite.getPosition().y+object.hero.h);
+        object.hero.pos_gun_dir_y=(object.hero.sprite.getPosition().y+object.hero.h);
 
 
         /*проверка на столкновение с нижней границой карты*/
