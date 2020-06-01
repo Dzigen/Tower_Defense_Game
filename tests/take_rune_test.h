@@ -14,7 +14,7 @@ TEST(PositiveTest_TakeRune,DeterminatedTypeRune){
     ToolBar toolbar;
     MenuBar menubar;
 
-    /*object.rune.hp_base.sprite.setPosition(object.hero.sprite.getPosition().x+(object.hero.w*2),object.hero.sprite.getPosition().y);
+    object.rune.hp_base.sprite.setPosition(object.hero.sprite.getPosition().x+(object.hero.w*2),object.hero.sprite.getPosition().y);
     toolbar.typeRandomedRune=0;
     take_rune(object,toolbar,menubar);
 
@@ -36,15 +36,15 @@ TEST(PositiveTest_TakeRune,DeterminatedTypeRune){
     toolbar.typeRandomedRune=3;
     take_rune(object,toolbar,menubar);
 
-    ASSERT_EQ(3,toolbar.typeRandomedRune);*/
+    ASSERT_EQ(3,toolbar.typeRandomedRune);
 }
 
-/*TEST(PositiveTest_TakeRune,EffectOfRune){
+TEST(PositiveTest_TakeRune,EffectOfRune){
 
 }
 
 TEST(NegativeTest_TakeRune,UnititilizedTypeRune){
 
-}*/
+}
 
 #endif // TAKE_RUNE_TEST_H
