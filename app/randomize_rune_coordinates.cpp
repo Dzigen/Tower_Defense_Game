@@ -23,8 +23,7 @@ void randomizeRuneCoordinates(GameObject &object,ToolBar &toolbar){
     else if(toolbar.typeRandomedRune==3)
         object.rune.coin.sprite.setPosition(x,y);
     else{
-        std::cout<<"unexcpected type of rune "<<std::endl;
-        exit(1);
+        toolbar.typeRandomedRune=-1;
     }
 
     toolbar.randomizeCoordinates=false;
