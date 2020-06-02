@@ -35,7 +35,7 @@ HEADERS += \
     ../app/tool_bar.h \
     ../app/update_spawn_rune.h \
     move_hero_test.h \
-    randomize_rune_coordinatest_test.h \
+    randomize_rune_coordinates_test.h \
     take_rune_test.h \
     update_spawn_rune_test.h
 
