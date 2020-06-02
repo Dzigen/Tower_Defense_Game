@@ -2,7 +2,7 @@
 
 #include "update_spawn_rune_test.h"
 #include "move_hero_test.h"
-#include "randomize_rune_coordinatest_test.h"
+#include "randomize_rune_coordinates_test.h"
 #include "take_rune_test.h"
 
 int main(int argc, char *argv[])
