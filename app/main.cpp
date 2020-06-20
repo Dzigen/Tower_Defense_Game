@@ -89,7 +89,7 @@ int main(){
 
             /*получаем координаты курсора мыши, для отрисовки в этой позиции кастомного курсора*/
             sf::Vector2i Mouse = sf::Mouse::getPosition(window);
-            normalCrs.cursore.setPosition(Mouse.x,Mouse.y);
+            normalCrs.cursore.setPosition((float)Mouse.x,(float)Mouse.y);
 
             NumMenu=0;
 

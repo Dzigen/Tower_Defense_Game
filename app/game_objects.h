@@ -16,8 +16,8 @@ class GameObject{
 
                 /*параметры карты*/
                 sf::Sprite sprite;
-                int w;
-                int h;
+                float w;
+                float h;
 
             Map(){
 
@@ -47,10 +47,10 @@ class GameObject{
                 bool live;
 
                 /*координаты бокса взаимодействия с базой*/
-                int box_x;
-                int box_y;
-                int w;
-                int h;
+                float box_x;
+                float box_y;
+                float w;
+                float h;
 
             Base(){
 
@@ -95,8 +95,8 @@ class GameObject{
 
                 /*параметры героя*/
                 sf::Sprite sprite;
-                int h;
-                int w;
+                float h;
+                float w;
                 float speed;
                 int health;
                 bool live;
@@ -148,8 +148,8 @@ class GameObject{
 
                         /*параметры руны типа "восстановление здоровья героя"*/
                         sf::Sprite sprite;
-                        int w;
-                        int h;
+                        float w;
+                        float h;
                         int frames;
                         int current_frame;
                         int regenHP;
@@ -184,8 +184,8 @@ class GameObject{
 
                         /*параметры руны типа "восстановление здоровья базы"*/
                         sf::Sprite sprite;
-                        int w;
-                        int h;
+                        float w;
+                        float h;
                         int frames;
                         int current_frame;
                         int regenHP;
@@ -220,8 +220,8 @@ class GameObject{
 
                         /*параметры руны типа "добавочный урон героя"*/
                         sf::Sprite sprite;
-                        int w;
-                        int h;
+                        float w;
+                        float h;
                         int frames;
                         int current_frame;
                         int addedDamage;
@@ -256,8 +256,8 @@ class GameObject{
 
                         /*параметры руны типа "монетка"*/
                         sf::Sprite sprite;
-                        int w;
-                        int h;
+                        float w;
+                        float h;
                         int frames;
                         int current_frame;
                         int value;
@@ -291,8 +291,8 @@ class GameObject{
 
                     int* current_frame;
                     int frames;
-                    int rune_w;
-                    int rune_h;
+                    float rune_w;
+                    float rune_h;
                     sf::Sprite* rune_sprite;
 
                     switch (type) {
@@ -336,8 +336,8 @@ class GameObject{
                 bool draw;
                 float speed;
                 int direction;
-                int w;
-                int h;
+                float w;
+                float h;
 
                 /*парметры взрыва во время выстрела*/
                 sf::Sprite explosion;
@@ -416,8 +416,8 @@ class GameObject{
 
                 /*параметры взрыва*/
                 sf::Sprite sprite;
-                int w;
-                int h;
+                float w;
+                float h;
 
                 int row;
                 int colomn;
@@ -479,8 +479,8 @@ class GameObject{
 
                 /*параметры взрыва*/
                 sf::Sprite sprite;
-                int w;
-                int h;
+                float w;
+                float h;
 
                 int colomn;
 
@@ -540,8 +540,8 @@ class GameObject{
                         int addedDamagePerRoundInPercentage;
                         int addedHealthPerRoundInPercentage;
 
-                        int w;
-                        int h;
+                        float w;
+                        float h;
 
                     EnemyUpdates(){
 
@@ -573,10 +573,10 @@ class GameObject{
                         int row;
                         int colomn;
 
-                        int frame_x;
-                        int frame_y;
-                        int frame_w;
-                        int frame_h;
+                        float frame_x;
+                        float frame_y;
+                        float frame_w;
+                        float frame_h;
 
                         bool framesComplited;
 

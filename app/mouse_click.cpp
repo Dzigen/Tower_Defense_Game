@@ -33,7 +33,7 @@ bool mouse_click(MenuBar &menubar,Cursors &cursor,sf::RenderWindow &window){
 
     /*получаем координаты курсора мыши, для отрисовки в этой позиции кастомного курсора*/
     sf::Vector2i Mouse = sf::Mouse::getPosition(window);
-    cursor.cursore.setPosition(Mouse.x,Mouse.y);
+    cursor.cursore.setPosition((float)Mouse.x,(float)Mouse.y);
 
         return pauseFlag;
 

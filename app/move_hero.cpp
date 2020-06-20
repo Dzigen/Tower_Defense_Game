@@ -56,7 +56,7 @@ void move_hero(GameObject &object,float time,int flag){
         if(((object.hero.sprite.getPosition().x+object.hero.w)+(object.hero.speed*time))>object.map.w){
 
             /*упираемся в правую границу карты*/
-            object.hero.sprite.setPosition((object.map.w-object.hero.w),object.hero.sprite.getPosition().y);
+            object.hero.sprite.setPosition((float)(object.map.w-object.hero.w),object.hero.sprite.getPosition().y);
 
         }else{
 
