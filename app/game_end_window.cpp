@@ -10,7 +10,7 @@ void game_end_window(sf::RenderWindow &window,GameEndWindow &endWindow,MenuBar &
 
         /*получаем координаты курсора мыши, для отрисовки в этой позиции кастомного курсора*/
         sf::Vector2i Mouse = sf::Mouse::getPosition(window);
-        cursor.cursore.setPosition(Mouse.x,Mouse.y);
+        cursor.cursore.setPosition((float)Mouse.x,(float)Mouse.y);
 
         endWindow.check_timer(globalTime);
 

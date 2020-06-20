@@ -13,9 +13,9 @@ void base_hero_explosion(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar
 
         /*получаем координаты курсора мыши, для отрисовки в этой позиции кастомного курсора*/
         sf::Vector2i Mouse = sf::Mouse::getPosition(window);
-        cursor.cursore.setPosition(Mouse.x,Mouse.y);
+        cursor.cursore.setPosition((float)Mouse.x,(float)Mouse.y);
 
-        time=gameTime.getElapsedTime().asMicroseconds();
+        time=(float)gameTime.getElapsedTime().asMicroseconds();
         time=time/800;
         gameTime.restart();
 

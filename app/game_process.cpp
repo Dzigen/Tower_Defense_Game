@@ -26,7 +26,7 @@ void game_process(sf::RenderWindow &window, Cursors &cursor){
 
         /*Получаем время для анимации объектов.*/
         /*Снимаем часть нагрузки с процессора.*/
-        float time = gameTime.getElapsedTime().asMicroseconds();
+        float time = (float)gameTime.getElapsedTime().asMicroseconds();
         gameTime.restart();
         time = time / 800;
 

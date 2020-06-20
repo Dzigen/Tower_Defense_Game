@@ -105,8 +105,8 @@ class GameObject{
                 int gun_direction;
 
                 /*координаты точки спавна пули после выстрела*/
-                int pos_gun_dir_x;
-                int pos_gun_dir_y;
+                float pos_gun_dir_x;
+                float pos_gun_dir_y;
 
             Hero(){
 
@@ -125,8 +125,8 @@ class GameObject{
 
                 sprite.setTextureRect(sf::IntRect(0,0,w,h));
 
-                pos_gun_dir_x=(sprite.getPosition().x+(w/2));
-                pos_gun_dir_y=(sprite.getPosition().y+h);
+                pos_gun_dir_x=(sprite.getPosition().x+(float)(w/2));
+                pos_gun_dir_y=(sprite.getPosition().y+(float)h);
 
             }
 
@@ -350,7 +350,7 @@ class GameObject{
                 w=16;
                 speed=0.5;
 
-                sprite.setOrigin(w/2,h/2);
+                sprite.setOrigin((float)(w/2),(float)(h/2));
 
                 /*формируем спрайт взрыва*/
                 imageExp.loadFromFile("../../Tower_Defense_Game/external/Sprites/explosion.png");
@@ -372,7 +372,7 @@ class GameObject{
                 w=16;
                 speed=0.5;
 
-                sprite.setOrigin(w/2,h/2);
+                sprite.setOrigin((float)(w/2),(float)(h/2));
 
             }
 

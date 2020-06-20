@@ -25,7 +25,7 @@ class GameEndWindow{
 
         shapeGEW.loadFromFile("../../Tower_Defense_Game/external/Sprites/endMenu.png");
         sprite.setTexture(shapeGEW);
-        sprite.setPosition(((1200/2)-(w/2)),((740/2)-(h/2)));
+        sprite.setPosition((float)((1200/2)-(w/2)),(float)((740/2)-(h/2)));
 
         /*загружаем текст шрифта*/
         font.loadFromFile("../../Tower_Defense_Game/external/Text/Roboto-Italic.ttf");
@@ -42,12 +42,12 @@ class GameEndWindow{
         if(flag){
 
             description.setString("The base is destroyed");
-            description.setPosition(sprite.getPosition().x+(w*1/80),sprite.getPosition().y+(h*7/20));
+            description.setPosition(sprite.getPosition().x+(float)(w*1/80),sprite.getPosition().y+(float)(h*7/20));
 
         }else{
 
             description.setString("The hero is dead");
-            description.setPosition(sprite.getPosition().x+(w*6/50),sprite.getPosition().y+(h*7/20));
+            description.setPosition(sprite.getPosition().x+(float)(w*6/50),sprite.getPosition().y+(float)(h*7/20));
 
         }
 
@@ -84,7 +84,7 @@ class GameEndWindow{
 
         snprintf(seconds,lenght,"%d",secondsTillExit);
         timer.setString(seconds);
-        timer.setPosition(sprite.getPosition().x+(w/2)-15,sprite.getPosition().y+((h*3)/4));
+        timer.setPosition(sprite.getPosition().x+(float)(w/2)-15,sprite.getPosition().y+(float)((h*3)/4));
 
     }
 
