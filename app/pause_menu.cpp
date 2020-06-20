@@ -14,7 +14,7 @@ bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerPa
 
         /*получаем координаты курсора мыши, для отрисовки в этой позиции кастомного курсора*/
         sf::Vector2i Mouse = sf::Mouse::getPosition(window);
-        cursor.cursore.setPosition(Mouse.x,Mouse.y);
+        cursor.cursore.setPosition((float)Mouse.x,(float)Mouse.y);
 
         upperParametr.ContinueText.setFillColor(sf::Color::White);
         upperParametr.ExitText.setFillColor(sf::Color::White);

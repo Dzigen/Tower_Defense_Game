@@ -150,8 +150,8 @@ class GameObject{
                         sf::Sprite sprite;
                         float w;
                         float h;
-                        int frames;
-                        int current_frame;
+                        float frames;
+                        float current_frame;
                         int regenHP;
 
                     Hp_hero(){
@@ -186,8 +186,8 @@ class GameObject{
                         sf::Sprite sprite;
                         float w;
                         float h;
-                        int frames;
-                        int current_frame;
+                        float frames;
+                        float current_frame;
                         int regenHP;
 
                     Hp_base(){
@@ -222,8 +222,8 @@ class GameObject{
                         sf::Sprite sprite;
                         float w;
                         float h;
-                        int frames;
-                        int current_frame;
+                        float frames;
+                        float current_frame;
                         int addedDamage;
 
                     Plus_damage(){
@@ -258,8 +258,8 @@ class GameObject{
                         sf::Sprite sprite;
                         float w;
                         float h;
-                        int frames;
-                        int current_frame;
+                        float frames;
+                        float current_frame;
                         int value;
 
                     Coin(){
@@ -289,8 +289,8 @@ class GameObject{
                 /*меняем кадр выводимой руны для анимации*/
                 void update_frame(int &type){
 
-                    int* current_frame;
-                    int frames;
+                    float* current_frame;
+                    float frames;
                     float rune_w;
                     float rune_h;
                     sf::Sprite* rune_sprite;
@@ -419,8 +419,8 @@ class GameObject{
                 float w;
                 float h;
 
-                int row;
-                int colomn;
+                float row;
+                float colomn;
 
             BaseExplosion(){
 
@@ -482,7 +482,7 @@ class GameObject{
                 float w;
                 float h;
 
-                int colomn;
+                float colomn;
 
             HeroExplosion(){
 
@@ -570,8 +570,8 @@ class GameObject{
 
                         int enemyType;
 
-                        int row;
-                        int colomn;
+                        float row;
+                        float colomn;
 
                         float frame_x;
                         float frame_y;
