@@ -5,14 +5,15 @@
 
 
 void randomizeRuneCoordinates(GameObject &object,ToolBar &toolbar,std::minstd_rand &simple_rand){
-    int x,y;
 
-    int w=1200-object.rune.hp_hero.w;
-    int h=630-object.rune.hp_hero.h;
+    float x,y;
+
+    int w=1200-(int)object.rune.hp_hero.w;
+    int h=630-(int)object.rune.hp_hero.h;
 
     /*случайным образом получаем координаты точки на карте игрового процесса*/
-    x=simple_rand()%w;
-    y=((simple_rand()%h)+55);
+    x=(float)(simple_rand()%w);
+    y=(float)((simple_rand()%h)+55);
 
     /*присваеваем их требуемой руне*/
     switch (toolbar.typeRandomedRune) {
