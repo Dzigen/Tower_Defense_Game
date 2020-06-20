@@ -1,7 +1,7 @@
 #include "main.h"
 
-int main()
-{
+int main(){
+
     /*создаём  главное окно*/
     sf::RenderWindow window(sf::VideoMode(1200, 740), "Lonely turret", sf::Style::Close | sf::Style::Titlebar);
     /*включаем вертикальную синхронизацию*/
@@ -20,7 +20,7 @@ int main()
     /*выключаем обычный курсор*/
     window.setMouseCursorVisible(false);
     /*загружаем кастомный курсор*/
-    Cursors normalCrs("normal");
+    Cursors normalCrs;
 
     /*номер нажатой кнопки*/
     int NumMenu;
@@ -41,7 +41,6 @@ int main()
         shapeBGM.loadFromFile("../../Tower_Defense_Game/external/Sprites/BackgroungMainMenu.png");
         BackgroundPictureMenu.setTexture(&shapeBGM);
 
-    //======
         /*загружаем кнопку "Начать игру" для главного меню*/
         sf::Texture shapeNG;
         shapeNG.loadFromFile("../../Tower_Defense_Game/external/Sprites/Button.png");
@@ -55,9 +54,7 @@ int main()
         NewGameText.setFont(font);
         NewGameText.setString("Start game");
         NewGameText.setPosition(115,255);
-    //=====
 
-    //=====
         /*загружаем кнопку "Об авторе" для главного меню*/
         sf::Texture shapeAA;
         shapeAA.loadFromFile("../../Tower_Defense_Game/external/Sprites/Button.png");
@@ -71,9 +68,7 @@ int main()
         AboutAutorText.setFont(font);
         AboutAutorText.setString("About Autor");
         AboutAutorText.setPosition(115,335);
-    //=====
 
-    //=====
         /*загружаем кнопку "Выход" для главного меню*/
         sf::Texture shapeQ;
         shapeQ.loadFromFile("../../Tower_Defense_Game/external/Sprites/Button.png");
@@ -87,10 +82,11 @@ int main()
         QuitText.setFont(font);
         QuitText.setString("Exit");
         QuitText.setPosition(115,425);
-    //=====
 
-        while (true)
-        {
+        bool Exit=false;
+
+        while (!Exit){
+
             /*получаем координаты курсора мыши, для отрисовки в этой позиции кастомного курсора*/
             sf::Vector2i Mouse = sf::Mouse::getPosition(window);
             normalCrs.cursore.setPosition(Mouse.x,Mouse.y);
@@ -104,46 +100,38 @@ int main()
 
             /*Если мышь была наведена на одну из кнопок, то меняем цвет текста соответствующей кнопки на чёрный.*/
             /*Также в переменную NumMenu записываем номер кнопки, на которую навели мышь*/
-            if (sf::IntRect(75, 240, 221,71 ).contains(sf::Mouse::getPosition(window)))
-            {
+            if (sf::IntRect(75, 240, 221,71 ).contains(sf::Mouse::getPosition(window))){
+
                  NewGameText.setFillColor(sf::Color::Black);
                  NumMenu=1;
+
             }
-            if (sf::IntRect(75, 320, 221,71 ).contains(sf::Mouse::getPosition(window)))
-            {
+
+            if (sf::IntRect(75, 320, 221,71 ).contains(sf::Mouse::getPosition(window))){
+
                 AboutAutorText.setFillColor(sf::Color::Black);
                 NumMenu=2;
+
             }
-            if (sf::IntRect(75, 410, 221,71 ).contains(sf::Mouse::getPosition(window)))
-            {
+
+            if (sf::IntRect(75, 410, 221,71 ).contains(sf::Mouse::getPosition(window))){
+
                 QuitText.setFillColor(sf::Color::Black);
                 NumMenu=3;
+
             }
 
             /*Если была нажата левая кнопка мыши,*/
             /*то проверяем:была ли она нажата в области одной из кнопок*/
-            if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
-            {
-                if (NumMenu == 1)
-                {
-                    game_process(window,normalCrs);
-                }
-                if (NumMenu == 2)
-                {
-                    window.draw(about);
-                    window.display();
-                    while (!sf::Keyboard::isKeyPressed(sf::Keyboard::Escape));
-                }
-                if (NumMenu == 3)
-                {
-                    window.close();
-                    break;
+            if (sf::Mouse::isButtonPressed(sf::Mouse::Left)){
+
+                switch (NumMenu) {
+                    case 1:{game_process(window,normalCrs); break;}
+                    case 2:{window.draw(about); window.display(); while(!sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)){;} break;}
+                    case 3:{window.close(); Exit=true;break;}
                 }
 
             }
-
-
-
 
             /*отрисовка главного меню игры*/
             window.clear();
@@ -160,7 +148,9 @@ int main()
             window.draw(normalCrs.cursore);
 
             window.display();
+
         }
 
     return 0;
+
 }

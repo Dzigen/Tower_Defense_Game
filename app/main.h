@@ -5,6 +5,13 @@
 #include "cursors.h"
 #include <iostream>
 
+/**
+ *Главный цикл игрового процесса
+ *
+ * @param window окно игры
+ * @param cursor объект класса Cursors с кастомным курсором
+ * @return none
+ */
 void game_process(sf::RenderWindow &window, Cursors &cursor);
 
 #endif // MAIN_H

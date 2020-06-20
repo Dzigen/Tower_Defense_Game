@@ -21,6 +21,7 @@ class MenuBar{
 
         sf::Sprite PauseMenuButtonExit;
         sf::Text ExitText;
+
         sf::Sprite PauseMenuButtonContinue;
         sf::Text ContinueText;
 
@@ -31,59 +32,79 @@ class MenuBar{
         sf::Sprite iconCounterCoins;
         sf::Text textCounterCoins;
 
-        /*счётчик полобранных рун,увеличивающих урон героя*/
+        /*счётчик подобранных рун,увеличивающих урон героя*/
         /*счётчик показывает количество добавачного урона героя*/
         sf::Sprite iconCounterAddedDamage;
         sf::Text textCounterAddedDamage;
+        int counterAddedDamage;
+        /*базовый урон героя*/
+        sf::Text basis_damage;
 
 
+        /*увеличиваем счётчик подобранных рун типа "coin"*/
         void incr_counter_coins(int value){
+
             const int lenght=5;
             char strCoins[lenght]="";
 
             counterCoins+=value;
             snprintf(strCoins,lenght,"%d",counterCoins);
-
             textCounterCoins.setString(strCoins);
+
         }
 
+        /*увеличиваем счётчик добавоччного урона героя при взятии руны типа "plus damahe"*/
         void incr_counter_added_damage(int value){
+
             const int lenght=6;
             char strAddedDamage[lenght]="";
 
             counterAddedDamage+=value;
             snprintf(strAddedDamage,lenght,"+%d",counterAddedDamage);
-
             textCounterAddedDamage.setString(strAddedDamage);
+
         }
 
-        void check_for_next_round(sf::Clock clock){
+        /*проверка на прошествие 10 минут*/
+        void check_for_next_round(sf::Clock &clock,int addToTimer,int &addedDmgInPerct,int &addedHpInPerct){
+
             int time;
             int minutes;
 
             time=clock.getElapsedTime().asSeconds();
-            minutes=((time / 60)%60);
+            minutes=(((time+addToTimer) / 60)%60);
 
-            if(((minutes%10==0)&&(minutes==bufferTime))||((bufferTime==60)&&(minutes<10))){
-                    change_round();
-                if(bufferTime==60)
+            if(((minutes%10==0)&&(minutes==bufferTime))||((bufferTime==60)&&(minutes==0))){
+
+                change_round();
+                addedDmgInPerct+=5;
+                addedHpInPerct+=5;
+
+                if(bufferTime==60){
                     bufferTime=10;
-                else
+                }else{
                     bufferTime+=10;
+                }
+
             }
 
         }
 
+        /*увеличиваем счётчик раунда после прошествия 10 минут*/
         void change_round(){
+
             const int lenght =10;
             char strRound[lenght]="";
 
             round++;
+
             snprintf(strRound,lenght,"Round %d",round);
             roundText.setString(strRound);
+
         }
 
     MenuBar(){
+
         /*загружаем текст шрифта*/
         font.loadFromFile("../../Tower_Defense_Game/external/Text/Roboto-Italic.ttf");
 
@@ -94,7 +115,6 @@ class MenuBar{
         roundText.setPosition(520,7);
         change_round();
 
-    //=====
         /*загружаем полоску меню бара*/
         shapeMBL.loadFromFile("../../Tower_Defense_Game/external/Sprites/line.png");
         menubarline.setTexture(shapeMBL);
@@ -119,7 +139,7 @@ class MenuBar{
         PauseMenu.setPosition(0,56);
 
         /*загружаем кнопку меню-паузы:Продолжить игру*/
-        PMBC.loadFromFile("../../Tower_Defense_Game/external/Sprites/pauseMenuButton.png");
+        PMBC.loadFromFile("../../Tower_Defense_Game/external/Sprites/menuButton.png");
         PauseMenuButtonContinue.setTexture(PMBC);
         PauseMenuButtonContinue.setPosition(20, 96);
 
@@ -129,7 +149,7 @@ class MenuBar{
         ContinueText.setPosition(50,106);
 
         /*загружаем кнопку меню-паузы:Выход в главное меню*/
-        PMBE.loadFromFile("../../Tower_Defense_Game/external/Sprites/pauseMenuButton.png");
+        PMBE.loadFromFile("../../Tower_Defense_Game/external/Sprites/menuButton.png");
         PauseMenuButtonExit.setTexture(PMBE);
         PauseMenuButtonExit.setPosition(20, 166);
 
@@ -137,39 +157,47 @@ class MenuBar{
         ExitText.setFont(font);
         ExitText.setString("Exit in main menu");
         ExitText.setPosition(35,170);
-    //=====
-
-        counterAddedDamage=0;
-        counterCoins=0;
 
         /*инициализация счётчика добавочного урона*/
         shapeAddedDamage.loadFromFile("../../Tower_Defense_Game/external/Sprites/iconAddedDamage.png");
         iconCounterAddedDamage.setTexture(shapeAddedDamage);
-        iconCounterAddedDamage.setPosition(900,7);
+        iconCounterAddedDamage.setPosition(880,7);
+
+        counterAddedDamage=0;
 
         textCounterAddedDamage.setFont(font);
         textCounterAddedDamage.setFillColor(sf::Color(5,171,5));
         textCounterAddedDamage.setPosition(950,7);
         incr_counter_added_damage(0);
 
+        /*выводим базовый урон героя*/
+        basis_damage.setFont(font);
+        basis_damage.setString("5");
+        basis_damage.setFillColor(sf::Color::Black);
+        basis_damage.setPosition(930,7);
+
         /*инициализация счётчика собранных монет*/
         shapeCoin.loadFromFile("../../Tower_Defense_Game/external/Sprites/iconCoin.png");
         iconCounterCoins.setTexture(shapeCoin);
         iconCounterCoins.setPosition(1050,7);
+
+        counterCoins=0;
 
         textCounterCoins.setFont(font);
         textCounterCoins.setFillColor(sf::Color::Black);
         textCounterCoins.setPosition(1100,7);
         incr_counter_coins(0);
 
+        /*минута для смены раунда*/
         bufferTime=10;
 
     }
 
     private:
+
         int round;
         int counterCoins;
-        int counterAddedDamage;
+
 
         int bufferTime;
 

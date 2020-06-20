@@ -1,29 +1,40 @@
-#include "mouse_click.h"
+#include<SFML/Graphics.hpp>
+#include "menu_bar.h"
+#include "cursors.h"
 
-bool mouse_click(MenuBar &menubar,ToolBar &toolbar,GameObject &object,sf::Clock &globalTime,Cursors &cursor,sf::RenderWindow &window){
+bool mouse_click(MenuBar &menubar,Cursors &cursor,sf::RenderWindow &window){
 
     bool inBtnField;
-    bool runFlag=true;
+    bool pauseFlag=false;
 
     inBtnField = false;
     menubar.pauseButtonText.setColor(sf::Color::White);
 
+    /*если курсор находиться на кнопке "Пауза"*/
     if (sf::IntRect(menubar.pauseButton.getPosition().x, menubar.pauseButton.getPosition().y, menubar.w,menubar.h ).contains(sf::Mouse::getPosition(window))){
+
+        /*меняем цвет кнопки*/
         menubar.pauseButtonText.setColor(sf::Color::Black);
         inBtnField = true;
+
     }
 
     /*Если была нажата левая кнопка мыши,*/
     /*то проверяем:была ли она нажата в области кнопки "Пауза"*/
-    if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    if (sf::Mouse::isButtonPressed(sf::Mouse::Left)){
+
         if (inBtnField){
-            /*получаем знак о нажатой кнопке меню "Пауза"*/
-            runFlag=pause_menu(window,menubar,toolbar,cursor,object,globalTime);
+
+            pauseFlag=true;
+
         }
+
+    }
 
     /*получаем координаты курсора мыши, для отрисовки в этой позиции кастомного курсора*/
     sf::Vector2i Mouse = sf::Mouse::getPosition(window);
     cursor.cursore.setPosition(Mouse.x,Mouse.y);
 
-        return runFlag;
+        return pauseFlag;
+
 }

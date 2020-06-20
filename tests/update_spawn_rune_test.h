@@ -7,7 +7,7 @@
 
 void update_spawn_rune(GameObject &object,ToolBar &toolbar,float &runeUPDATEtime,float &time,std::minstd_rand &simple_rand);
 
-TEST(PositiveTest_UpdateSpawnRune,ChoosingCoordinatesRune){
+TEST(PositiveTest_UpdateSpawnRune,ChoosingRuneCoordinates){
     GameObject object;
     ToolBar toolbar;
 

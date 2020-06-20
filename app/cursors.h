@@ -2,45 +2,32 @@
 #define CURSORS_H
 
 #include <SFML/Graphics.hpp>
-#include <string>
-#include <iostream>
 
-class Cursors
-{
-public:
+class Cursors{
 
-    /*храним кастомный курсор*/
-    sf::Sprite cursore;
+    public:
 
-    /*Конструктор*/
-    /*Получает название курсора,который нужно отображать*/
-    Cursors(std::string typeCrs ){
+        /*храним кастомный курсор*/
+        sf::Sprite cursore;
 
-        /*курсор-прицел*/
-       if(typeCrs=="aim"){
-         pict.loadFromFile("../../Tower_Defense_Game/external/Sprites/aim.png");
+    Cursors(){
 
-         /*обычный кастомный курсор*/
-       }else if(typeCrs=="normal"){
-         pict.loadFromFile("../../Tower_Defense_Game/external/Sprites/cursor.png");
+        /*обычный кастомный курсор*/
+        pict.loadFromFile("../../Tower_Defense_Game/external/Sprites/cursor.png");
 
-         /*если была введена некорректная конструкция,то выводим предупреждающее сообщение*/
-       }else{
-           std::cout<<"Not correct typeCrs in construcor Cursors"<<std::endl;
-           exit(1);
-       }
-       /*ставим прозрачность белых пискселей*/
-       pict.createMaskFromColor(sf::Color(255,255,255));
+        /*ставим прозрачность белых пискселей*/
+        pict.createMaskFromColor(sf::Color(255,255,255));
 
-       /*загружаем в спрайт полученную картинку*/
-       shape.loadFromImage(pict);
-       cursore.setTexture(shape);
-
+        /*загружаем в спрайт полученную картинку*/
+        shape.loadFromImage(pict);
+        cursore.setTexture(shape);
     }
-private:
-    sf::Image pict;
-    sf::Texture shape;
-};
 
+    private:
+
+        sf::Image pict;
+        sf::Texture shape;
+
+};
 
 #endif // CURSORS_H

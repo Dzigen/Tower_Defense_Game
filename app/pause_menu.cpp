@@ -1,7 +1,6 @@
-#include "pause_menu.h"
+#include "pause_end_menu.h"
 
-bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerParametr ,Cursors &cursor, GameObject &object,sf::Clock &globalTime)
-{
+bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerParametr ,Cursors &cursor, GameObject &object,sf::Clock &globalTime,sf::Clock &gameTime){
 
     lowerParametr.add_to_time(globalTime);
 
@@ -22,30 +21,28 @@ bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerPa
 
         /*Если мышь была наведена на одну из кнопок, то меняем цвет текста соответствующей кнопки на чёрный.*/
         /*Также в переменную NumMenu записываем номер кнопки, на которую навели мышь*/
-        if (sf::IntRect(20, 96, 260,60 ).contains(sf::Mouse::getPosition(window)))
-        {
-             upperParametr.ContinueText.setFillColor(sf::Color::Black);
+        if (sf::IntRect(20, 96, 260,60 ).contains(sf::Mouse::getPosition(window))){
+
+            upperParametr.ContinueText.setFillColor(sf::Color::Black);
              numButton=1;
         }
-        if (sf::IntRect(20, 166, 260,60 ).contains(sf::Mouse::getPosition(window)))
-        {
+
+        if (sf::IntRect(20, 166, 260,60 ).contains(sf::Mouse::getPosition(window))){
+
             upperParametr.ExitText.setFillColor(sf::Color::Black);
             numButton=2;
+
         }
 
         /*Если была нажата левая кнопка мыши,*/
         /*то проверяем:была ли она нажата в области одной из кнопок*/
-        if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
-        {
-            if (numButton == 1)
-            {
-                loopflag = false;
+        if (sf::Mouse::isButtonPressed(sf::Mouse::Left)){
+
+            switch (numButton) {
+                case 1:{loopflag = false; break;}
+                case 2:{loopflag = false; runFlag = false; break;}
             }
-            if (numButton == 2)
-            {
-                loopflag = false;
-                runFlag = false;
-            }
+
         }
 
         game_draw(window,upperParametr,lowerParametr,object);
@@ -59,9 +56,12 @@ bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerPa
 
         window.draw(cursor.cursore);
         window.display();
+
     }
 
     lowerParametr.reset_clock(globalTime);
+    gameTime.restart();
 
     return runFlag;
+
 }
