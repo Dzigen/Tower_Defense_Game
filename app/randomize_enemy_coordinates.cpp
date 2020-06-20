@@ -14,7 +14,7 @@ sf::Vector3f randomize_enemy_coordinates(GameObject &object,std::minstd_rand &si
     switch (typePosition){
         case 0:{enemyCoordinates.y=55; enemyCoordinates.x=(float)(simple_rand()%w); break;}
         case 1:{enemyCoordinates.y=(float)((simple_rand()%h)+55); enemyCoordinates.x=(float)w; break;}
-        case 2:{enemyCoordinates.y=h+55; enemyCoordinates.x=(float)(simple_rand()%w); break;}
+        case 2:{enemyCoordinates.y=(float)(h+55); enemyCoordinates.x=(float)(simple_rand()%w); break;}
         case 3:{enemyCoordinates.y=(float)((simple_rand()%h)+55); enemyCoordinates.x=0; break;}
     }
 
