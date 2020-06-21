@@ -15,7 +15,7 @@ void enemy_hit(GameObject &object,ToolBar &toolbar,float time){
             it->StayToDealDamage=true;
 
         /*если противник дошёл до целевой точки*/
-        }else if(!it->vectorToTarget.x && !it->vectorToTarget.y && !it->StayToTakeDamage){
+        }else if(it->vectorToTarget.x==0 && it->vectorToTarget.y==0 && !it->StayToTakeDamage){
 
             it->enemyUPDATEframeTime+=time;
             if(it->enemyUPDATEframeTime>100){

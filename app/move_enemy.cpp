@@ -26,7 +26,6 @@ void move_enemy(GameObject &object, float time,std::minstd_rand &simple_rand){
             case 5:{object.enemy.push_back(GameObject::Enemys::EnemyTemlate(typeEnemy,randomedEnemyCoordinates.x,randomedEnemyCoordinates.y,randomedTargetEnemyCoordinates.x,randomedTargetEnemyCoordinates.y,randomedEnemyCoordinates.z,object.enemyUpdates.addedDamagePerRoundInPercentage,object.enemyUpdates.addedHealthPerRoundInPercentage));break;}
         }
 
-        std::cout<<typeEnemy<<" "<<randomedEnemyCoordinates.x<<" "<<randomedEnemyCoordinates.y<<std::endl;
     }
 
 

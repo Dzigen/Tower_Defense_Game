@@ -12,6 +12,6 @@
  * @param simple_rand рандомайзер для получения случайных велечин
  * @return none
  */
-void randomizeRuneCoordinates(GameObject &object,ToolBar &toolbar,std::minstd_rand &simple_rand);
+void randomize_rune_coordinates(GameObject &object,ToolBar &toolbar,std::minstd_rand &simple_rand);
 
 #endif // UPDATE_SPAWN_RUNE_H

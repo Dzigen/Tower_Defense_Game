@@ -4,7 +4,7 @@
 
 
 
-void randomizeRuneCoordinates(GameObject &object,ToolBar &toolbar,std::minstd_rand &simple_rand){
+void randomize_rune_coordinates(GameObject &object,ToolBar &toolbar,std::minstd_rand &simple_rand){
 
     float x,y;
 

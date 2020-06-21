@@ -4,8 +4,8 @@ void take_rune(GameObject &object,ToolBar &toolbar,MenuBar &menubar){
 
     /*координаты прямоугольника,в котором расположена руна*/
     sf::Vector2f x_y_cord;
-    int h=0;
-    int w=0;
+    float h=0;
+    float w=0;
 
     /*определяем тип заспавненной руны и записываем её параметры*/
     switch (toolbar.typeRandomedRune) {

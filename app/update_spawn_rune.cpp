@@ -5,7 +5,7 @@ void update_spawn_rune(GameObject &object,ToolBar &toolbar,float &runeUPDATEtime
     /*если прошло 60 секунд то выбираем случайные координаты для новой случайной руны*/
     if(toolbar.randomizeCoordinates){
 
-        randomizeRuneCoordinates(object,toolbar,simple_rand);
+        randomize_rune_coordinates(object,toolbar,simple_rand);
 
     }else{
 

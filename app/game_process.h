@@ -116,7 +116,7 @@ bool end_game(GameObject &object,GameEndWindow &endWindow);
 void game_end_window(sf::RenderWindow &window,GameEndWindow &endWindow,MenuBar &upperParametr,ToolBar &lowerParametr ,Cursors &cursor, GameObject &object,sf::Clock &globalTime);
 
 /**
- *Анимация руны и её вывод на карте игрового процесса
+ *Анимация руны и её вывод на карту игрового процесса
  *
  * @param object класса GameObjects с игровыми объектами
  * @param toolbar объект класса Toolbar с параметрами нижней полоски(тулбара) на экране игрового процесса
