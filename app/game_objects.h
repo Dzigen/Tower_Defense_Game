@@ -364,7 +364,11 @@ class GameObject{
 
             Bullet(int dir,float x, float y){
 
-                sprite.setPosition(x,y);
+
+                if(dir==1||dir==3)
+                    sprite.setPosition(x,y-5);
+                else
+                    sprite.setPosition(x,y);
 
                 direction=dir;
                 damage=5;
@@ -625,12 +629,12 @@ class GameObject{
                         void loadEnemyParametrs(int enemyIndex,int &addedDmgInPerct,int &addedHpInPerct){
 
                             switch (enemyIndex) {
-                                case 0:{EHP=30;damage=1;speed=0.05;break;}
-                                case 1:{EHP=30;damage=1;speed=0.05;break;}
-                                case 2:{EHP=30;damage=1;speed=0.05;break;}
-                                case 3:{EHP=30;damage=1;speed=0.05;enemyHOLD_RUNtime=0;flagTOhold=false;break;}
-                                case 4:{EHP=100;damage=1;speed=0.05;enemyINVIS_RUNtime=0;invisibility=false;break;}
-                                case 5:{EHP=30;damage=1;speed=0.05;enemyRESIST_RUNtime=0;damageResist=false;cutDamageValue=80;break;}
+                                case 0:{EHP=40;damage=10;speed=0.05;break;}
+                                case 1:{EHP=20;damage=5;speed=0.08;break;}
+                                case 2:{EHP=80;damage=10;speed=0.02;break;}
+                                case 3:{EHP=80;damage=15;speed=0.02;enemyHOLD_RUNtime=0;flagTOhold=false;break;}
+                                case 4:{EHP=20;damage=5;speed=0.05;enemyINVIS_RUNtime=0;invisibility=false;break;}
+                                case 5:{EHP=40;damage=10;speed=0.02;enemyRESIST_RUNtime=0;damageResist=false;cutDamageValue=80;break;}
                             }
 
                             EHP+=((addedHpInPerct*EHP)/100);

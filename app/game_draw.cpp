@@ -20,6 +20,14 @@ void game_draw(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerPar
          case 3 : {window.draw(object.rune.coin.sprite); break;}
      }
 
+     for(std::vector<GameObject::Bullet>::iterator it=object.bullets.begin();it!=object.bullets.end();it++){
+
+         it->load_sprite();
+
+         window.draw(it->sprite);
+
+     }
+
     /*если был выстрел,то нужно отобразить взрыв*/
     if(object.bullet.shot<5 && object.bullet.shot!=-1){
 
@@ -46,14 +54,6 @@ void game_draw(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerPar
         }
 
         it->loadSprite(it->enemyType,it->frame_x,it->frame_y,it->frame_w,it->frame_h);
-
-        window.draw(it->sprite);
-
-    }
-
-    for(std::vector<GameObject::Bullet>::iterator it=object.bullets.begin();it!=object.bullets.end();it++){
-
-        it->load_sprite();
 
         window.draw(it->sprite);
 

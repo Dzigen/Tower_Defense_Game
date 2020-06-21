@@ -30,8 +30,6 @@ void game_process(sf::RenderWindow &window, Cursors &cursor){
         gameTime.restart();
         time = time / 800;
 
-        std::cout<<time<<std::endl;
-
         /*обновляем игровой таймер*/
         lowerParametr.get_time(globalTime,simple_rand);
 
