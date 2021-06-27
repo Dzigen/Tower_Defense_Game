@@ -1,0 +1,162 @@
+\hypertarget{group__heroBaseHandler}{}\section{Обработчики главного героя и базы}
+\label{group__heroBaseHandler}\index{Обработчики главного героя и базы@{Обработчики главного героя и базы}}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__heroBaseHandler_ga3eed5602a3e229026dfc84af49007688}{move\+\_\+hero} (\hyperlink{classGameObject}{Game\+Object} \&object, float time, int flag)
+\begin{DoxyCompactList}\small\item\em Передвижение главного героя в окне игрового процесса \end{DoxyCompactList}\item 
+void \hyperlink{group__heroBaseHandler_gab2905c57e79ad2fcc3e51dd7fd5916dc}{hero\+\_\+shot} (\hyperlink{classGameObject}{Game\+Object} \&object, \hyperlink{classMenuBar}{Menu\+Bar} \&menubar, \hyperlink{classToolBar}{Tool\+Bar} \&toolbar, float time, sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Обработка выстрелов главного героя и последующее отслеживание взаимодействий пули с объектами \end{DoxyCompactList}\item 
+void \hyperlink{group__heroBaseHandler_ga4b8f8d1c761e24c0a8480a7489d349d1}{base\+\_\+hero\+\_\+explosion} (sf\+::\+Render\+Window \&window, \hyperlink{classMenuBar}{Menu\+Bar} \&upper\+Parametr, \hyperlink{classToolBar}{Tool\+Bar} \&lower\+Parametr, \hyperlink{classCursors}{Cursors} \&cursor, \hyperlink{classGameObject}{Game\+Object} \&object, sf\+::\+Clock \&game\+Time)
+\begin{DoxyCompactList}\small\item\em Отрисовка и анимация взрыва базы \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+\subsection{Функции}
+\index{Обработчики главного героя и базы@{Обработчики главного героя и базы}!base\+\_\+hero\+\_\+explosion@{base\+\_\+hero\+\_\+explosion}}
+\index{base\+\_\+hero\+\_\+explosion@{base\+\_\+hero\+\_\+explosion}!Обработчики главного героя и базы@{Обработчики главного героя и базы}}
+\subsubsection[{\texorpdfstring{base\+\_\+hero\+\_\+explosion(sf\+::\+Render\+Window \&window, Menu\+Bar \&upper\+Parametr, Tool\+Bar \&lower\+Parametr, Cursors \&cursor, Game\+Object \&object, sf\+::\+Clock \&game\+Time)}{base_hero_explosion(sf::RenderWindow &window, MenuBar &upperParametr, ToolBar &lowerParametr, Cursors &cursor, GameObject &object, sf::Clock &gameTime)}}]{\setlength{\rightskip}{0pt plus 5cm}void base\+\_\+hero\+\_\+explosion (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Render\+Window \&}]{window, }
+\item[{{\bf Menu\+Bar} \&}]{upper\+Parametr, }
+\item[{{\bf Tool\+Bar} \&}]{lower\+Parametr, }
+\item[{{\bf Cursors} \&}]{cursor, }
+\item[{{\bf Game\+Object} \&}]{object, }
+\item[{sf\+::\+Clock \&}]{game\+Time}
+\end{DoxyParamCaption}
+)}\hypertarget{group__heroBaseHandler_ga4b8f8d1c761e24c0a8480a7489d349d1}{}\label{group__heroBaseHandler_ga4b8f8d1c761e24c0a8480a7489d349d1}
+
+
+Отрисовка и анимация взрыва базы 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em window} & окно игры \\
+\hline
+{\em upper\+Parametr} & объект класса \hyperlink{classMenuBar}{Menu\+Bar} с параметрами верхней полоски полоски(меню бара) на экране игрового процесса \\
+\hline
+{\em lower\+Parametr} & объект класса Toolbar с параметрами нижней полоски(тулбара) на экране игрового процесса \\
+\hline
+{\em cursor} & объект класса \hyperlink{classCursors}{Cursors} для отображения кастомного курсора в ркне игры \\
+\hline
+{\em object} & класса Game\+Objects с игровыми объектами \\
+\hline
+{\em gamel\+Time} & таймер для привязки к передвижениям игровых объектов с целью снижения нагрузки на прцессор \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+none 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{group__heroBaseHandler_ga4b8f8d1c761e24c0a8480a7489d349d1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__heroBaseHandler_ga4b8f8d1c761e24c0a8480a7489d349d1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Обработчики главного героя и базы@{Обработчики главного героя и базы}!hero\+\_\+shot@{hero\+\_\+shot}}
+\index{hero\+\_\+shot@{hero\+\_\+shot}!Обработчики главного героя и базы@{Обработчики главного героя и базы}}
+\subsubsection[{\texorpdfstring{hero\+\_\+shot(\+Game\+Object \&object, Menu\+Bar \&menubar, Tool\+Bar \&toolbar, float time, sf\+::\+Render\+Window \&window)}{hero_shot(GameObject &object, MenuBar &menubar, ToolBar &toolbar, float time, sf::RenderWindow &window)}}]{\setlength{\rightskip}{0pt plus 5cm}void hero\+\_\+shot (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Object} \&}]{object, }
+\item[{{\bf Menu\+Bar} \&}]{menubar, }
+\item[{{\bf Tool\+Bar} \&}]{toolbar, }
+\item[{float}]{time, }
+\item[{sf\+::\+Render\+Window \&}]{window}
+\end{DoxyParamCaption}
+)}\hypertarget{group__heroBaseHandler_gab2905c57e79ad2fcc3e51dd7fd5916dc}{}\label{group__heroBaseHandler_gab2905c57e79ad2fcc3e51dd7fd5916dc}
+
+
+Обработка выстрелов главного героя и последующее отслеживание взаимодействий пули с объектами 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em object} & класса Game\+Objects с игровыми объектами \\
+\hline
+{\em menubar} & объект класса \hyperlink{classMenuBar}{Menu\+Bar} с параметрами верхней полоски полоски(меню бара) на экране игрового процесса \\
+\hline
+{\em toolbar} & объект класса Toolbar с параметрами нижней полоски(тулбара) на экране игрового процесса \\
+\hline
+{\em time} & врямя работы предыдущего цикла игры \\
+\hline
+{\em window} & окно игры \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+none 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{group__heroBaseHandler_gab2905c57e79ad2fcc3e51dd7fd5916dc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{group__heroBaseHandler_gab2905c57e79ad2fcc3e51dd7fd5916dc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Обработчики главного героя и базы@{Обработчики главного героя и базы}!move\+\_\+hero@{move\+\_\+hero}}
+\index{move\+\_\+hero@{move\+\_\+hero}!Обработчики главного героя и базы@{Обработчики главного героя и базы}}
+\subsubsection[{\texorpdfstring{move\+\_\+hero(\+Game\+Object \&object, float time, int flag)}{move_hero(GameObject &object, float time, int flag)}}]{\setlength{\rightskip}{0pt plus 5cm}void move\+\_\+hero (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Object} \&}]{object, }
+\item[{float}]{time, }
+\item[{int}]{flag}
+\end{DoxyParamCaption}
+)}\hypertarget{group__heroBaseHandler_ga3eed5602a3e229026dfc84af49007688}{}\label{group__heroBaseHandler_ga3eed5602a3e229026dfc84af49007688}
+
+
+Передвижение главного героя в окне игрового процесса 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em object} & класса Game\+Objects с игровыми объектами \\
+\hline
+{\em time} & врямя работы предыдущего цикла игры \\
+\hline
+{\em flag} & флаг для тестирования функции \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+none 
+\end{DoxyReturn}
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{group__heroBaseHandler_ga3eed5602a3e229026dfc84af49007688_icgraph}
+\end{center}
+\end{figure}
+
+

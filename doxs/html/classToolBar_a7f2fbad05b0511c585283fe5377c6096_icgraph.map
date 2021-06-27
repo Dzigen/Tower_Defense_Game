@@ -1,0 +1,8 @@
+<map id="ToolBar::change_hero_base_hp" name="ToolBar::change_hero_base_hp">
+<area shape="rect" id="node2" href="$group__runeHandler.html#ga0078b36ac662e224e1913996193c1c98" title="Обрабатывается эффект применения руны в соответствии с её типом " alt="" coords="203,5,333,32"/>
+<area shape="rect" id="node6" href="$group__enemyHandler.html#ga6965d0b7bc93883e1089dd9a326a584a" title="Обработка атаки врагов на карте игрового процесса " alt="" coords="381,56,464,83"/>
+<area shape="rect" id="node7" href="$group__heroBaseHandler.html#gab2905c57e79ad2fcc3e51dd7fd5916dc" title="Обработка выстрелов главного героя и последующее отслеживание взаимодействий пули с объектами ..." alt="" coords="229,107,307,133"/>
+<area shape="rect" id="node3" href="$group__runeHandler.html#gaf2bb7b78f028e61a0c6674cd9b976a8c" title="Обработка взаимодействия главного героя с заспавненной руной на карте игрового процесса ..." alt="" coords="383,5,462,32"/>
+<area shape="rect" id="node4" href="$group__mainLoop.html#ga9c3324e8c5f0e0ddcd96bbe89e0f7f16" title="Главный цикл игрового процесса " alt="" coords="512,56,619,83"/>
+<area shape="rect" id="node5" href="$group__menu.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title="Отрисовка главного меню " alt="" coords="667,56,717,83"/>
+</map>

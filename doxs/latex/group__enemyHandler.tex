@@ -1,0 +1,215 @@
+\hypertarget{group__enemyHandler}{}\section{Обработчики противников}
+\label{group__enemyHandler}\index{Обработчики противников@{Обработчики противников}}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__enemyHandler_ga95a06e0efaa583439b679f0b28419ba9}{move\+\_\+enemy} (\hyperlink{classGameObject}{Game\+Object} \&object, float time, std\+::minstd\+\_\+rand \&simple\+\_\+rand)
+\begin{DoxyCompactList}\small\item\em Обработка движений противников по карте игрового процесса \end{DoxyCompactList}\item 
+void \hyperlink{group__enemyHandler_ga6965d0b7bc93883e1089dd9a326a584a}{enemy\+\_\+hit} (\hyperlink{classGameObject}{Game\+Object} \&object, \hyperlink{classToolBar}{Tool\+Bar} \&toolbar, float time)
+\begin{DoxyCompactList}\small\item\em Обработка атаки врагов на карте игрового процесса \end{DoxyCompactList}\item 
+sf\+::\+Vector3f \hyperlink{group__enemyHandler_gacc579aee4d796c717e760e72c1c75ec3}{randomize\+\_\+enemy\+\_\+coordinates} (\hyperlink{classGameObject}{Game\+Object} \&object, std\+::minstd\+\_\+rand \&simple\+\_\+rand)
+\begin{DoxyCompactList}\small\item\em Случайным образом получаем координаты точки,на которой будет заспавнен противник \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \hyperlink{group__enemyHandler_ga778c7ea2e26eb1d80652bf61d1661fb1}{randomize\+\_\+enemy\+\_\+target\+\_\+coordinates} (\hyperlink{classGameObject}{Game\+Object} \&object, float type\+Position, std\+::minstd\+\_\+rand \&simple\+\_\+rand)
+\begin{DoxyCompactList}\small\item\em Случайным образом получаем кооординаты точки,до которой противник должен дойти \end{DoxyCompactList}\item 
+int \hyperlink{group__enemyHandler_ga21c57a411b6aa06a0f36c9eefab38b5b}{randomize\+\_\+enemy\+\_\+type} (std\+::minstd\+\_\+rand \&simple\+\_\+rand)
+\begin{DoxyCompactList}\small\item\em Случайным образом получаем тип противника,который будет заспавнен на карте игрового процесса \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+\subsection{Функции}
+\index{Обработчики противников@{Обработчики противников}!enemy\+\_\+hit@{enemy\+\_\+hit}}
+\index{enemy\+\_\+hit@{enemy\+\_\+hit}!Обработчики противников@{Обработчики противников}}
+\subsubsection[{\texorpdfstring{enemy\+\_\+hit(\+Game\+Object \&object, Tool\+Bar \&toolbar, float time)}{enemy_hit(GameObject &object, ToolBar &toolbar, float time)}}]{\setlength{\rightskip}{0pt plus 5cm}void enemy\+\_\+hit (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Object} \&}]{object, }
+\item[{{\bf Tool\+Bar} \&}]{toolbar, }
+\item[{float}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{group__enemyHandler_ga6965d0b7bc93883e1089dd9a326a584a}{}\label{group__enemyHandler_ga6965d0b7bc93883e1089dd9a326a584a}
+
+
+Обработка атаки врагов на карте игрового процесса 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em object} & класса Game\+Objects с игровыми объектами \\
+\hline
+{\em toolbar} & объект класса Toolbar с параметрами нижней полоски(тулбара) на экране игрового процесса \\
+\hline
+{\em time} & врямя работы предыдущего цикла игры \\
+\hline
+\end{DoxyParams}
+
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{group__enemyHandler_ga6965d0b7bc93883e1089dd9a326a584a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{group__enemyHandler_ga6965d0b7bc93883e1089dd9a326a584a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Обработчики противников@{Обработчики противников}!move\+\_\+enemy@{move\+\_\+enemy}}
+\index{move\+\_\+enemy@{move\+\_\+enemy}!Обработчики противников@{Обработчики противников}}
+\subsubsection[{\texorpdfstring{move\+\_\+enemy(\+Game\+Object \&object, float time, std\+::minstd\+\_\+rand \&simple\+\_\+rand)}{move_enemy(GameObject &object, float time, std::minstd_rand &simple_rand)}}]{\setlength{\rightskip}{0pt plus 5cm}void move\+\_\+enemy (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Object} \&}]{object, }
+\item[{float}]{time, }
+\item[{std\+::minstd\+\_\+rand \&}]{simple\+\_\+rand}
+\end{DoxyParamCaption}
+)}\hypertarget{group__enemyHandler_ga95a06e0efaa583439b679f0b28419ba9}{}\label{group__enemyHandler_ga95a06e0efaa583439b679f0b28419ba9}
+
+
+Обработка движений противников по карте игрового процесса 
+
+\begin{DoxyRefDesc}{Необходимо сделать}
+\item[\hyperlink{todo__todo000002}{Необходимо сделать}]Требуется улучшить обработчик взаимодействия с объектами на карте\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}{Аргументы}
+{\em object} & класса Game\+Objects с игровыми объектами \\
+\hline
+{\em time} & врямя работы предыдущего цикла игры \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+none 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{group__enemyHandler_ga95a06e0efaa583439b679f0b28419ba9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{group__enemyHandler_ga95a06e0efaa583439b679f0b28419ba9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Обработчики противников@{Обработчики противников}!randomize\+\_\+enemy\+\_\+coordinates@{randomize\+\_\+enemy\+\_\+coordinates}}
+\index{randomize\+\_\+enemy\+\_\+coordinates@{randomize\+\_\+enemy\+\_\+coordinates}!Обработчики противников@{Обработчики противников}}
+\subsubsection[{\texorpdfstring{randomize\+\_\+enemy\+\_\+coordinates(\+Game\+Object \&object, std\+::minstd\+\_\+rand \&simple\+\_\+rand)}{randomize_enemy_coordinates(GameObject &object, std::minstd_rand &simple_rand)}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector3f randomize\+\_\+enemy\+\_\+coordinates (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Object} \&}]{object, }
+\item[{std\+::minstd\+\_\+rand \&}]{simple\+\_\+rand}
+\end{DoxyParamCaption}
+)}\hypertarget{group__enemyHandler_gacc579aee4d796c717e760e72c1c75ec3}{}\label{group__enemyHandler_gacc579aee4d796c717e760e72c1c75ec3}
+
+
+Случайным образом получаем координаты точки,на которой будет заспавнен противник 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em object} & класса Game\+Objects с игровыми объектамим \\
+\hline
+{\em simple\+\_\+rand} & рандомайзер для получения случайных велечин \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__enemyHandler_gacc579aee4d796c717e760e72c1c75ec3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Обработчики противников@{Обработчики противников}!randomize\+\_\+enemy\+\_\+target\+\_\+coordinates@{randomize\+\_\+enemy\+\_\+target\+\_\+coordinates}}
+\index{randomize\+\_\+enemy\+\_\+target\+\_\+coordinates@{randomize\+\_\+enemy\+\_\+target\+\_\+coordinates}!Обработчики противников@{Обработчики противников}}
+\subsubsection[{\texorpdfstring{randomize\+\_\+enemy\+\_\+target\+\_\+coordinates(\+Game\+Object \&object, float type\+Position, std\+::minstd\+\_\+rand \&simple\+\_\+rand)}{randomize_enemy_target_coordinates(GameObject &object, float typePosition, std::minstd_rand &simple_rand)}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f randomize\+\_\+enemy\+\_\+target\+\_\+coordinates (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Object} \&}]{object, }
+\item[{float}]{type\+Position, }
+\item[{std\+::minstd\+\_\+rand \&}]{simple\+\_\+rand}
+\end{DoxyParamCaption}
+)}\hypertarget{group__enemyHandler_ga778c7ea2e26eb1d80652bf61d1661fb1}{}\label{group__enemyHandler_ga778c7ea2e26eb1d80652bf61d1661fb1}
+
+
+Случайным образом получаем кооординаты точки,до которой противник должен дойти 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em object} & класса Game\+Objects с игровыми объектамим \\
+\hline
+{\em type\+Position} & область спавна противника\+: 0-\/сверху от базы, 1-\/справа от базы, 2-\/снизу от базы, 3-\/слева от базы\\
+\hline
+{\em simple\+\_\+rand} & рандомайзер для получения случайных велечин \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__enemyHandler_ga778c7ea2e26eb1d80652bf61d1661fb1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Обработчики противников@{Обработчики противников}!randomize\+\_\+enemy\+\_\+type@{randomize\+\_\+enemy\+\_\+type}}
+\index{randomize\+\_\+enemy\+\_\+type@{randomize\+\_\+enemy\+\_\+type}!Обработчики противников@{Обработчики противников}}
+\subsubsection[{\texorpdfstring{randomize\+\_\+enemy\+\_\+type(std\+::minstd\+\_\+rand \&simple\+\_\+rand)}{randomize_enemy_type(std::minstd_rand &simple_rand)}}]{\setlength{\rightskip}{0pt plus 5cm}int randomize\+\_\+enemy\+\_\+type (
+\begin{DoxyParamCaption}
+\item[{std\+::minstd\+\_\+rand \&}]{simple\+\_\+rand}
+\end{DoxyParamCaption}
+)}\hypertarget{group__enemyHandler_ga21c57a411b6aa06a0f36c9eefab38b5b}{}\label{group__enemyHandler_ga21c57a411b6aa06a0f36c9eefab38b5b}
+
+
+Случайным образом получаем тип противника,который будет заспавнен на карте игрового процесса 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em object} & класса Game\+Objects с игровыми объектамим \\
+\hline
+{\em simple\+\_\+rand} & рандомайзер для получения случайных велечин \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__enemyHandler_ga21c57a411b6aa06a0f36c9eefab38b5b_icgraph}
+\end{center}
+\end{figure}
+
+

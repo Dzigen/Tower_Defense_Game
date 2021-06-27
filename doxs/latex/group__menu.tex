@@ -1,0 +1,243 @@
+\hypertarget{group__menu}{}\section{Отрисовка окон меню игры}
+\label{group__menu}\index{Отрисовка окон меню игры@{Отрисовка окон меню игры}}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{group__menu_ga41b04beddc9426c2999858fabc479ac0}{pause\+\_\+menu} (sf\+::\+Render\+Window \&window, \hyperlink{classMenuBar}{Menu\+Bar} \&upper\+Parametr, \hyperlink{classToolBar}{Tool\+Bar} \&lower\+Parametr, \hyperlink{classCursors}{Cursors} \&cursor, \hyperlink{classGameObject}{Game\+Object} \&object, sf\+::\+Clock \&global\+Time, sf\+::\+Clock \&game\+Time)
+\begin{DoxyCompactList}\small\item\em Остановка игры и вывод меню-\/паузы \end{DoxyCompactList}\item 
+bool \hyperlink{group__menu_ga11dd1886453909da6eff52362bac59b8}{mouse\+\_\+click} (\hyperlink{classMenuBar}{Menu\+Bar} \&menubar, \hyperlink{classCursors}{Cursors} \&cursor, sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Обработка нажатий кнопок мыши \end{DoxyCompactList}\item 
+bool \hyperlink{group__menu_ga3259e0d309cf137b40488db0226f91f6}{end\+\_\+game} (\hyperlink{classGameObject}{Game\+Object} \&object, \hyperlink{classGameEndWindow}{Game\+End\+Window} \&end\+Window)
+\begin{DoxyCompactList}\small\item\em Обработка завершения игрового цроцесса \end{DoxyCompactList}\item 
+void \hyperlink{group__menu_gaac2382a6b5fa5b0687116caf16837b35}{game\+\_\+end\+\_\+window} (sf\+::\+Render\+Window \&window, \hyperlink{classGameEndWindow}{Game\+End\+Window} \&end\+Window, \hyperlink{classMenuBar}{Menu\+Bar} \&upper\+Parametr, \hyperlink{classToolBar}{Tool\+Bar} \&lower\+Parametr, \hyperlink{classCursors}{Cursors} \&cursor, \hyperlink{classGameObject}{Game\+Object} \&object, sf\+::\+Clock \&global\+Time)
+\begin{DoxyCompactList}\small\item\em Вывод диалогового окна \char`\"{}конец игры\char`\"{}. \end{DoxyCompactList}\item 
+int \hyperlink{group__menu_gae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em Отрисовка главного меню \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+\subsection{Функции}
+\index{Отрисовка окон меню игры@{Отрисовка окон меню игры}!end\+\_\+game@{end\+\_\+game}}
+\index{end\+\_\+game@{end\+\_\+game}!Отрисовка окон меню игры@{Отрисовка окон меню игры}}
+\subsubsection[{\texorpdfstring{end\+\_\+game(\+Game\+Object \&object, Game\+End\+Window \&end\+Window)}{end_game(GameObject &object, GameEndWindow &endWindow)}}]{\setlength{\rightskip}{0pt plus 5cm}bool end\+\_\+game (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Object} \&}]{object, }
+\item[{{\bf Game\+End\+Window} \&}]{end\+Window}
+\end{DoxyParamCaption}
+)}\hypertarget{group__menu_ga3259e0d309cf137b40488db0226f91f6}{}\label{group__menu_ga3259e0d309cf137b40488db0226f91f6}
+
+
+Обработка завершения игрового цроцесса 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em object} & класса Game\+Objects с игровыми объектами \\
+\hline
+{\em end\+Window} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+флаг о заверщении игры\+: true-\/игра завершина, false-\/игра продолжается 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{group__menu_ga3259e0d309cf137b40488db0226f91f6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{group__menu_ga3259e0d309cf137b40488db0226f91f6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Отрисовка окон меню игры@{Отрисовка окон меню игры}!game\+\_\+end\+\_\+window@{game\+\_\+end\+\_\+window}}
+\index{game\+\_\+end\+\_\+window@{game\+\_\+end\+\_\+window}!Отрисовка окон меню игры@{Отрисовка окон меню игры}}
+\subsubsection[{\texorpdfstring{game\+\_\+end\+\_\+window(sf\+::\+Render\+Window \&window, Game\+End\+Window \&end\+Window, Menu\+Bar \&upper\+Parametr, Tool\+Bar \&lower\+Parametr, Cursors \&cursor, Game\+Object \&object, sf\+::\+Clock \&global\+Time)}{game_end_window(sf::RenderWindow &window, GameEndWindow &endWindow, MenuBar &upperParametr, ToolBar &lowerParametr, Cursors &cursor, GameObject &object, sf::Clock &globalTime)}}]{\setlength{\rightskip}{0pt plus 5cm}void game\+\_\+end\+\_\+window (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Render\+Window \&}]{window, }
+\item[{{\bf Game\+End\+Window} \&}]{end\+Window, }
+\item[{{\bf Menu\+Bar} \&}]{upper\+Parametr, }
+\item[{{\bf Tool\+Bar} \&}]{lower\+Parametr, }
+\item[{{\bf Cursors} \&}]{cursor, }
+\item[{{\bf Game\+Object} \&}]{object, }
+\item[{sf\+::\+Clock \&}]{global\+Time}
+\end{DoxyParamCaption}
+)}\hypertarget{group__menu_gaac2382a6b5fa5b0687116caf16837b35}{}\label{group__menu_gaac2382a6b5fa5b0687116caf16837b35}
+
+
+Вывод диалогового окна \char`\"{}конец игры\char`\"{}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em window} & окно игры \\
+\hline
+{\em end\+Window} & объект класса \hyperlink{classGameEndWindow}{Game\+End\+Window} c параметрами диалогового окна, выводимого при завершении игры \\
+\hline
+{\em upper\+Parametr} & объект класса \hyperlink{classMenuBar}{Menu\+Bar} с параметрами верхней полоски полоски(меню бара) на экране игрового процесса \\
+\hline
+{\em lower\+Parametr} & объект класса Toolbar с параметрами нижней полоски(тулбара) на экране игрового процесса \\
+\hline
+{\em cursor} & объект класса \hyperlink{classCursors}{Cursors} для отображения кастомного курсора в ркне игры \\
+\hline
+{\em object} & класса Game\+Objects с игровыми объектамим \\
+\hline
+{\em global\+Time} & таймер игры \\
+\hline
+{\em game\+Time} & таймер для привязки к передвижениям игровых объектов с целью снижения нагрузки на прцессор \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+none 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__menu_gaac2382a6b5fa5b0687116caf16837b35_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__menu_gaac2382a6b5fa5b0687116caf16837b35_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Отрисовка окон меню игры@{Отрисовка окон меню игры}!main@{main}}
+\index{main@{main}!Отрисовка окон меню игры@{Отрисовка окон меню игры}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group__menu_gae66f6b31b5ad750f1fe042a706a4e3d4}{}\label{group__menu_gae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Отрисовка главного меню 
+
+
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__menu_gae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Отрисовка окон меню игры@{Отрисовка окон меню игры}!mouse\+\_\+click@{mouse\+\_\+click}}
+\index{mouse\+\_\+click@{mouse\+\_\+click}!Отрисовка окон меню игры@{Отрисовка окон меню игры}}
+\subsubsection[{\texorpdfstring{mouse\+\_\+click(\+Menu\+Bar \&menubar, Cursors \&cursor, sf\+::\+Render\+Window \&window)}{mouse_click(MenuBar &menubar, Cursors &cursor, sf::RenderWindow &window)}}]{\setlength{\rightskip}{0pt plus 5cm}bool mouse\+\_\+click (
+\begin{DoxyParamCaption}
+\item[{{\bf Menu\+Bar} \&}]{menubar, }
+\item[{{\bf Cursors} \&}]{cursor, }
+\item[{sf\+::\+Render\+Window \&}]{window}
+\end{DoxyParamCaption}
+)}\hypertarget{group__menu_ga11dd1886453909da6eff52362bac59b8}{}\label{group__menu_ga11dd1886453909da6eff52362bac59b8}
+
+
+Обработка нажатий кнопок мыши 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em menubar} & объект класса \hyperlink{classMenuBar}{Menu\+Bar} с параметрами верхней полоски полоски(меню бара) на экране игрового процесса \\
+\hline
+{\em cursor} & объект класса \hyperlink{classCursors}{Cursors} для отображения кастомного курсора в ркне игры \\
+\hline
+{\em window} & окно игры \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+флаг о нажатии кнопки паузы\+: true-\/кнопка нажата, false-\/кнопка не нажата 
+\end{DoxyReturn}
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{group__menu_ga11dd1886453909da6eff52362bac59b8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Отрисовка окон меню игры@{Отрисовка окон меню игры}!pause\+\_\+menu@{pause\+\_\+menu}}
+\index{pause\+\_\+menu@{pause\+\_\+menu}!Отрисовка окон меню игры@{Отрисовка окон меню игры}}
+\subsubsection[{\texorpdfstring{pause\+\_\+menu(sf\+::\+Render\+Window \&window, Menu\+Bar \&upper\+Parametr, Tool\+Bar \&lower\+Parametr, Cursors \&cursor, Game\+Object \&object, sf\+::\+Clock \&global\+Time, sf\+::\+Clock \&game\+Time)}{pause_menu(sf::RenderWindow &window, MenuBar &upperParametr, ToolBar &lowerParametr, Cursors &cursor, GameObject &object, sf::Clock &globalTime, sf::Clock &gameTime)}}]{\setlength{\rightskip}{0pt plus 5cm}bool pause\+\_\+menu (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Render\+Window \&}]{window, }
+\item[{{\bf Menu\+Bar} \&}]{upper\+Parametr, }
+\item[{{\bf Tool\+Bar} \&}]{lower\+Parametr, }
+\item[{{\bf Cursors} \&}]{cursor, }
+\item[{{\bf Game\+Object} \&}]{object, }
+\item[{sf\+::\+Clock \&}]{global\+Time, }
+\item[{sf\+::\+Clock \&}]{game\+Time}
+\end{DoxyParamCaption}
+)}\hypertarget{group__menu_ga41b04beddc9426c2999858fabc479ac0}{}\label{group__menu_ga41b04beddc9426c2999858fabc479ac0}
+
+
+Остановка игры и вывод меню-\/паузы 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em window} & окно игры \\
+\hline
+{\em upper\+Parametr} & объект класса \hyperlink{classMenuBar}{Menu\+Bar} с параметрами верхней полоски полоски(меню бара) на экране игрового процесса \\
+\hline
+{\em lower\+Parametr} & объект класса Toolbar с параметрами нижней полоски(тулбара) на экране игрового процесса \\
+\hline
+{\em cursor} & объект класса \hyperlink{classCursors}{Cursors} для отображения кастомного курсора в ркне игры \\
+\hline
+{\em object} & класса Game\+Objects с игровыми объектами \\
+\hline
+{\em global\+Time} & таймер игры \\
+\hline
+{\em game\+Time} & таймер для привязки к передвижениям игровых объектов с целью снижения нагрузки на прцессор \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+флаг о нажатой кнопке в меню \char`\"{}Пауза\char`\"{}\+: true-\/была нажата кнопка \char`\"{}выход в главное меню\char`\"{}, false-\/была нажата кнопка \char`\"{}продолжить игру\char`\"{} 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{group__menu_ga41b04beddc9426c2999858fabc479ac0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{group__menu_ga41b04beddc9426c2999858fabc479ac0_icgraph}
+\end{center}
+\end{figure}
+
+

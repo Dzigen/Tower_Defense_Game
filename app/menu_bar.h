@@ -3,6 +3,11 @@
 #include <SFML/Graphics.hpp>
 #include <string>
 #include <iostream>
+
+/**
+ * @ingroup objectClasses
+ * @brief Паметры счётчиков,выводимых в верхней полоске игрового окна
+ */
 class MenuBar{
 
     public:
@@ -106,7 +111,7 @@ class MenuBar{
     MenuBar(){
 
         /*загружаем текст шрифта*/
-        font.loadFromFile("../../Tower_Defense_Game/external/Text/Roboto-Italic.ttf");
+        font.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Text/Roboto-Italic.ttf");
 
         /*инициализируем иекси "первый раунд"*/
         round = 0;
@@ -116,30 +121,30 @@ class MenuBar{
         change_round();
 
         /*загружаем полоску меню бара*/
-        shapeMBL.loadFromFile("../../Tower_Defense_Game/external/Sprites/line.png");
+        shapeMBL.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/line.png");
         menubarline.setTexture(shapeMBL);
 
         /*загружаем кнопку меню бара*/
-        shapePB.loadFromFile("../../Tower_Defense_Game/external/Sprites/pauseButton.png");
+        shapePB.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/pauseButton.png");
         pauseButton.setTexture(shapePB);
         pauseButton.setPosition(7,7);
         w=40;
         h=40;
 
         /*загружаем содержимое кнопки*/
-        pausePict.loadFromFile("../../Tower_Defense_Game/external/Sprites/pauseButtonText.png");
+        pausePict.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/pauseButtonText.png");
         pausePict.createMaskFromColor(sf::Color(0,0,0));
         shapePBT.loadFromImage(pausePict);
         pauseButtonText.setTexture(shapePBT);
         pauseButtonText.setPosition(7,7);
 
         /*загржаем фон меню-паузы*/
-        PM.loadFromFile("../../Tower_Defense_Game/external/Sprites/pauseMenu.png");
+        PM.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/pauseMenu.png");
         PauseMenu.setTexture(PM);
         PauseMenu.setPosition(0,56);
 
         /*загружаем кнопку меню-паузы:Продолжить игру*/
-        PMBC.loadFromFile("../../Tower_Defense_Game/external/Sprites/menuButton.png");
+        PMBC.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/menuButton.png");
         PauseMenuButtonContinue.setTexture(PMBC);
         PauseMenuButtonContinue.setPosition(20, 96);
 
@@ -149,7 +154,7 @@ class MenuBar{
         ContinueText.setPosition(50,106);
 
         /*загружаем кнопку меню-паузы:Выход в главное меню*/
-        PMBE.loadFromFile("../../Tower_Defense_Game/external/Sprites/menuButton.png");
+        PMBE.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/menuButton.png");
         PauseMenuButtonExit.setTexture(PMBE);
         PauseMenuButtonExit.setPosition(20, 166);
 
@@ -159,7 +164,7 @@ class MenuBar{
         ExitText.setPosition(35,170);
 
         /*инициализация счётчика добавочного урона*/
-        shapeAddedDamage.loadFromFile("../../Tower_Defense_Game/external/Sprites/iconAddedDamage.png");
+        shapeAddedDamage.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/iconAddedDamage.png");
         iconCounterAddedDamage.setTexture(shapeAddedDamage);
         iconCounterAddedDamage.setPosition(880,7);
 
@@ -177,7 +182,7 @@ class MenuBar{
         basis_damage.setPosition(930,7);
 
         /*инициализация счётчика собранных монет*/
-        shapeCoin.loadFromFile("../../Tower_Defense_Game/external/Sprites/iconCoin.png");
+        shapeCoin.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/iconCoin.png");
         iconCounterCoins.setTexture(shapeCoin);
         iconCounterCoins.setPosition(1050,7);
 

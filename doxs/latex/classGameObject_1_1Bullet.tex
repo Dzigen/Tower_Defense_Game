@@ -1,0 +1,114 @@
+\hypertarget{classGameObject_1_1Bullet}{}\section{Класс Game\+Object\+:\+:Bullet}
+\label{classGameObject_1_1Bullet}\index{Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}}
+
+
+The \hyperlink{classGameObject_1_1Bullet}{Bullet} class.  
+
+
+
+
+{\ttfamily \#include $<$game\+\_\+objects.\+h$>$}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGameObject_1_1Bullet_a38fedbbbe892177fee4b34c2dd9955ec}{Bullet} ()
+\item 
+\hyperlink{classGameObject_1_1Bullet_a5e93be5fdfe2361c85f08b53cbc14002}{Bullet} (int dir, float x, float y)
+\item 
+void \hyperlink{classGameObject_1_1Bullet_a68ee8b2d12e43e847b70ace7a95cf833}{update\+\_\+explosion\+\_\+coord} (float x, float y, int gun\+\_\+dir)
+\item 
+void \hyperlink{classGameObject_1_1Bullet_afd9561c0d310ff22205dc5c63f9cda56}{load\+\_\+sprite} ()
+\end{DoxyCompactItemize}
+\subsection*{Поля данных}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Sprite \hyperlink{classGameObject_1_1Bullet_a5e219ab143176814c91e1064c495551b}{sprite}
+\item 
+int \hyperlink{classGameObject_1_1Bullet_a859aff17279d7d762ff8fd6a89372ae4}{damage}
+\item 
+bool \hyperlink{classGameObject_1_1Bullet_acfafc84be2b90c0bd0a5a0161c7e55ee}{draw}
+\item 
+float \hyperlink{classGameObject_1_1Bullet_af4b107bb1ed2e8c5d98b3322be75e6dc}{speed}
+\item 
+int \hyperlink{classGameObject_1_1Bullet_ab957f45f5450884b8aaca05104305b4a}{direction}
+\item 
+float \hyperlink{classGameObject_1_1Bullet_a1f1402d7e00dcb529b443be5250cde13}{w}
+\item 
+float \hyperlink{classGameObject_1_1Bullet_adb6e34303c0f92ee177e1855bc2a3ea7}{h}
+\item 
+sf\+::\+Sprite \hyperlink{classGameObject_1_1Bullet_a77557b33ad1f1879683a0ff89b9bdd76}{explosion}
+\item 
+int \hyperlink{classGameObject_1_1Bullet_a447b3ab4306b065be824f9ecc1ddf5bf}{shot}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+The \hyperlink{classGameObject_1_1Bullet}{Bullet} class. 
+
+\subsection{Конструктор(ы)}
+\index{Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}}
+\subsubsection[{\texorpdfstring{Bullet()}{Bullet()}}]{\setlength{\rightskip}{0pt plus 5cm}Game\+Object\+::\+Bullet\+::\+Bullet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGameObject_1_1Bullet_a38fedbbbe892177fee4b34c2dd9955ec}{}\label{classGameObject_1_1Bullet_a38fedbbbe892177fee4b34c2dd9955ec}
+\index{Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}}
+\subsubsection[{\texorpdfstring{Bullet(int dir, float x, float y)}{Bullet(int dir, float x, float y)}}]{\setlength{\rightskip}{0pt plus 5cm}Game\+Object\+::\+Bullet\+::\+Bullet (
+\begin{DoxyParamCaption}
+\item[{int}]{dir, }
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGameObject_1_1Bullet_a5e93be5fdfe2361c85f08b53cbc14002}{}\label{classGameObject_1_1Bullet_a5e93be5fdfe2361c85f08b53cbc14002}
+
+
+\subsection{Методы}
+\index{Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}!load\+\_\+sprite@{load\+\_\+sprite}}
+\index{load\+\_\+sprite@{load\+\_\+sprite}!Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}}
+\subsubsection[{\texorpdfstring{load\+\_\+sprite()}{load_sprite()}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Object\+::\+Bullet\+::load\+\_\+sprite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGameObject_1_1Bullet_afd9561c0d310ff22205dc5c63f9cda56}{}\label{classGameObject_1_1Bullet_afd9561c0d310ff22205dc5c63f9cda56}
+\index{Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}!update\+\_\+explosion\+\_\+coord@{update\+\_\+explosion\+\_\+coord}}
+\index{update\+\_\+explosion\+\_\+coord@{update\+\_\+explosion\+\_\+coord}!Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}}
+\subsubsection[{\texorpdfstring{update\+\_\+explosion\+\_\+coord(float x, float y, int gun\+\_\+dir)}{update_explosion_coord(float x, float y, int gun_dir)}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Object\+::\+Bullet\+::update\+\_\+explosion\+\_\+coord (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{int}]{gun\+\_\+dir}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGameObject_1_1Bullet_a68ee8b2d12e43e847b70ace7a95cf833}{}\label{classGameObject_1_1Bullet_a68ee8b2d12e43e847b70ace7a95cf833}
+
+
+\subsection{Поля}
+\index{Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}!damage@{damage}}
+\index{damage@{damage}!Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}}
+\subsubsection[{\texorpdfstring{damage}{damage}}]{\setlength{\rightskip}{0pt plus 5cm}int Game\+Object\+::\+Bullet\+::damage}\hypertarget{classGameObject_1_1Bullet_a859aff17279d7d762ff8fd6a89372ae4}{}\label{classGameObject_1_1Bullet_a859aff17279d7d762ff8fd6a89372ae4}
+\index{Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}!direction@{direction}}
+\index{direction@{direction}!Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}}
+\subsubsection[{\texorpdfstring{direction}{direction}}]{\setlength{\rightskip}{0pt plus 5cm}int Game\+Object\+::\+Bullet\+::direction}\hypertarget{classGameObject_1_1Bullet_ab957f45f5450884b8aaca05104305b4a}{}\label{classGameObject_1_1Bullet_ab957f45f5450884b8aaca05104305b4a}
+\index{Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}!draw@{draw}}
+\index{draw@{draw}!Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}}
+\subsubsection[{\texorpdfstring{draw}{draw}}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+Object\+::\+Bullet\+::draw}\hypertarget{classGameObject_1_1Bullet_acfafc84be2b90c0bd0a5a0161c7e55ee}{}\label{classGameObject_1_1Bullet_acfafc84be2b90c0bd0a5a0161c7e55ee}
+\index{Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}!explosion@{explosion}}
+\index{explosion@{explosion}!Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}}
+\subsubsection[{\texorpdfstring{explosion}{explosion}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Game\+Object\+::\+Bullet\+::explosion}\hypertarget{classGameObject_1_1Bullet_a77557b33ad1f1879683a0ff89b9bdd76}{}\label{classGameObject_1_1Bullet_a77557b33ad1f1879683a0ff89b9bdd76}
+\index{Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}!h@{h}}
+\index{h@{h}!Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}}
+\subsubsection[{\texorpdfstring{h}{h}}]{\setlength{\rightskip}{0pt plus 5cm}float Game\+Object\+::\+Bullet\+::h}\hypertarget{classGameObject_1_1Bullet_adb6e34303c0f92ee177e1855bc2a3ea7}{}\label{classGameObject_1_1Bullet_adb6e34303c0f92ee177e1855bc2a3ea7}
+\index{Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}!shot@{shot}}
+\index{shot@{shot}!Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}}
+\subsubsection[{\texorpdfstring{shot}{shot}}]{\setlength{\rightskip}{0pt plus 5cm}int Game\+Object\+::\+Bullet\+::shot}\hypertarget{classGameObject_1_1Bullet_a447b3ab4306b065be824f9ecc1ddf5bf}{}\label{classGameObject_1_1Bullet_a447b3ab4306b065be824f9ecc1ddf5bf}
+\index{Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}!speed@{speed}}
+\index{speed@{speed}!Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}}
+\subsubsection[{\texorpdfstring{speed}{speed}}]{\setlength{\rightskip}{0pt plus 5cm}float Game\+Object\+::\+Bullet\+::speed}\hypertarget{classGameObject_1_1Bullet_af4b107bb1ed2e8c5d98b3322be75e6dc}{}\label{classGameObject_1_1Bullet_af4b107bb1ed2e8c5d98b3322be75e6dc}
+\index{Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}!sprite@{sprite}}
+\index{sprite@{sprite}!Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}}
+\subsubsection[{\texorpdfstring{sprite}{sprite}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Game\+Object\+::\+Bullet\+::sprite}\hypertarget{classGameObject_1_1Bullet_a5e219ab143176814c91e1064c495551b}{}\label{classGameObject_1_1Bullet_a5e219ab143176814c91e1064c495551b}
+\index{Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}!w@{w}}
+\index{w@{w}!Game\+Object\+::\+Bullet@{Game\+Object\+::\+Bullet}}
+\subsubsection[{\texorpdfstring{w}{w}}]{\setlength{\rightskip}{0pt plus 5cm}float Game\+Object\+::\+Bullet\+::w}\hypertarget{classGameObject_1_1Bullet_a1f1402d7e00dcb529b443be5250cde13}{}\label{classGameObject_1_1Bullet_a1f1402d7e00dcb529b443be5250cde13}

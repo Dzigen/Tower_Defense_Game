@@ -1,0 +1,5 @@
+<map id="effect_of_the_rune" name="effect_of_the_rune">
+<area shape="rect" id="node2" href="$take__rune_8cpp.html#af2bb7b78f028e61a0c6674cd9b976a8c" title="Обработка взаимодействия главного героя с заспавненной руной на карте игрового процесса ..." alt="" coords="184,5,263,32"/>
+<area shape="rect" id="node3" href="$group__mainLoop.html#ga9c3324e8c5f0e0ddcd96bbe89e0f7f16" title="Главный цикл игрового процесса " alt="" coords="311,5,417,32"/>
+<area shape="rect" id="node4" href="$group__menu.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title="Отрисовка главного меню " alt="" coords="465,5,516,32"/>
+</map>

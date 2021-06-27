@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Игра &quot;Одинокая Турелька&quot;: Отрисовка окон меню игры</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="tower_defense.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Игра &quot;Одинокая Турелька&quot;
+   </div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('group__menu.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Отрисовка окон меню игры</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga41b04beddc9426c2999858fabc479ac0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga41b04beddc9426c2999858fabc479ac0">pause_menu</a> (sf::RenderWindow &amp;window, <a class="el" href="classMenuBar.html">MenuBar</a> &amp;upperParametr, <a class="el" href="classToolBar.html">ToolBar</a> &amp;lowerParametr, <a class="el" href="classCursors.html">Cursors</a> &amp;cursor, <a class="el" href="classGameObject.html">GameObject</a> &amp;object, sf::Clock &amp;globalTime, sf::Clock &amp;gameTime)</td></tr>
+<tr class="memdesc:ga41b04beddc9426c2999858fabc479ac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Остановка игры и вывод меню-паузы  <a href="#ga41b04beddc9426c2999858fabc479ac0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga41b04beddc9426c2999858fabc479ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11dd1886453909da6eff52362bac59b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga11dd1886453909da6eff52362bac59b8">mouse_click</a> (<a class="el" href="classMenuBar.html">MenuBar</a> &amp;menubar, <a class="el" href="classCursors.html">Cursors</a> &amp;cursor, sf::RenderWindow &amp;window)</td></tr>
+<tr class="memdesc:ga11dd1886453909da6eff52362bac59b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработка нажатий кнопок мыши  <a href="#ga11dd1886453909da6eff52362bac59b8">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga11dd1886453909da6eff52362bac59b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3259e0d309cf137b40488db0226f91f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#ga3259e0d309cf137b40488db0226f91f6">end_game</a> (<a class="el" href="classGameObject.html">GameObject</a> &amp;object, <a class="el" href="classGameEndWindow.html">GameEndWindow</a> &amp;endWindow)</td></tr>
+<tr class="memdesc:ga3259e0d309cf137b40488db0226f91f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработка завершения игрового цроцесса  <a href="#ga3259e0d309cf137b40488db0226f91f6">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga3259e0d309cf137b40488db0226f91f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac2382a6b5fa5b0687116caf16837b35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gaac2382a6b5fa5b0687116caf16837b35">game_end_window</a> (sf::RenderWindow &amp;window, <a class="el" href="classGameEndWindow.html">GameEndWindow</a> &amp;endWindow, <a class="el" href="classMenuBar.html">MenuBar</a> &amp;upperParametr, <a class="el" href="classToolBar.html">ToolBar</a> &amp;lowerParametr, <a class="el" href="classCursors.html">Cursors</a> &amp;cursor, <a class="el" href="classGameObject.html">GameObject</a> &amp;object, sf::Clock &amp;globalTime)</td></tr>
+<tr class="memdesc:gaac2382a6b5fa5b0687116caf16837b35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод диалогового окна "конец игры".  <a href="#gaac2382a6b5fa5b0687116caf16837b35">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaac2382a6b5fa5b0687116caf16837b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menu.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:gae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отрисовка главного меню  <a href="#gae66f6b31b5ad750f1fe042a706a4e3d4">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<h2 class="groupheader">Функции</h2>
+<a class="anchor" id="ga3259e0d309cf137b40488db0226f91f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool end_game </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGameObject.html">GameObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classGameEndWindow.html">GameEndWindow</a> &amp;&#160;</td>
+          <td class="paramname"><em>endWindow</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обработка завершения игрового цроцесса </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>класса GameObjects с игровыми объектами </td></tr>
+    <tr><td class="paramname">endWindow</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>флаг о заверщении игры: true-игра завершина, false-игра продолжается </dd></dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__menu_ga3259e0d309cf137b40488db0226f91f6_cgraph.png" border="0" usemap="#group__menu_ga3259e0d309cf137b40488db0226f91f6_cgraph" alt=""/></div>
+<map name="group__menu_ga3259e0d309cf137b40488db0226f91f6_cgraph" id="group__menu_ga3259e0d309cf137b40488db0226f91f6_cgraph">
+<area shape="rect" id="node2" href="classGameEndWindow.html#a2f5dcaf5df932f64323d14f58b5649e6" title="GameEndWindow::setDescription" alt="" coords="136,5,355,32"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__menu_ga3259e0d309cf137b40488db0226f91f6_icgraph.png" border="0" usemap="#group__menu_ga3259e0d309cf137b40488db0226f91f6_icgraph" alt=""/></div>
+<map name="group__menu_ga3259e0d309cf137b40488db0226f91f6_icgraph" id="group__menu_ga3259e0d309cf137b40488db0226f91f6_icgraph">
+<area shape="rect" id="node2" href="group__mainLoop.html#ga9c3324e8c5f0e0ddcd96bbe89e0f7f16" title="Главный цикл игрового процесса " alt="" coords="136,5,243,32"/>
+<area shape="rect" id="node3" href="group__menu.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title="Отрисовка главного меню " alt="" coords="291,5,341,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="gaac2382a6b5fa5b0687116caf16837b35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void game_end_window </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classGameEndWindow.html">GameEndWindow</a> &amp;&#160;</td>
+          <td class="paramname"><em>endWindow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classMenuBar.html">MenuBar</a> &amp;&#160;</td>
+          <td class="paramname"><em>upperParametr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classToolBar.html">ToolBar</a> &amp;&#160;</td>
+          <td class="paramname"><em>lowerParametr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCursors.html">Cursors</a> &amp;&#160;</td>
+          <td class="paramname"><em>cursor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classGameObject.html">GameObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Clock &amp;&#160;</td>
+          <td class="paramname"><em>globalTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вывод диалогового окна "конец игры". </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>окно игры </td></tr>
+    <tr><td class="paramname">endWindow</td><td>объект класса <a class="el" href="classGameEndWindow.html" title="Праметры выводимого диалогового окна &quot;конец игры&quot;. ">GameEndWindow</a> c параметрами диалогового окна, выводимого при завершении игры </td></tr>
+    <tr><td class="paramname">upperParametr</td><td>объект класса <a class="el" href="classMenuBar.html" title="Паметры счётчиков,выводимых в верхней полоске игрового окна ">MenuBar</a> с параметрами верхней полоски полоски(меню бара) на экране игрового процесса </td></tr>
+    <tr><td class="paramname">lowerParametr</td><td>объект класса Toolbar с параметрами нижней полоски(тулбара) на экране игрового процесса </td></tr>
+    <tr><td class="paramname">cursor</td><td>объект класса <a class="el" href="classCursors.html" title="Хранимые параметры кастомного курсора в игре ">Cursors</a> для отображения кастомного курсора в ркне игры </td></tr>
+    <tr><td class="paramname">object</td><td>класса GameObjects с игровыми объектамим </td></tr>
+    <tr><td class="paramname">globalTime</td><td>таймер игры </td></tr>
+    <tr><td class="paramname">gameTime</td><td>таймер для привязки к передвижениям игровых объектов с целью снижения нагрузки на прцессор </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>none </dd></dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__menu_gaac2382a6b5fa5b0687116caf16837b35_cgraph.png" border="0" usemap="#group__menu_gaac2382a6b5fa5b0687116caf16837b35_cgraph" alt=""/></div>
+<map name="group__menu_gaac2382a6b5fa5b0687116caf16837b35_cgraph" id="group__menu_gaac2382a6b5fa5b0687116caf16837b35_cgraph">
+<area shape="rect" id="node2" href="classGameEndWindow.html#a91d7d99ae0dac923a1bf764f7b5d996f" title="GameEndWindow::update\l_timer" alt="" coords="405,5,580,47"/>
+<area shape="rect" id="node3" href="classGameEndWindow.html#a00ec6d032219c692a678b7ddac55a3b3" title="GameEndWindow::check\l_timer" alt="" coords="187,35,357,76"/>
+<area shape="rect" id="node4" href="group__mainLoop.html#gaf2266f0127d085329a1b7e092832e8a3" title="Вывод игрового процесса в игровом окне " alt="" coords="227,101,317,127"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__menu_gaac2382a6b5fa5b0687116caf16837b35_icgraph.png" border="0" usemap="#group__menu_gaac2382a6b5fa5b0687116caf16837b35_icgraph" alt=""/></div>
+<map name="group__menu_gaac2382a6b5fa5b0687116caf16837b35_icgraph" id="group__menu_gaac2382a6b5fa5b0687116caf16837b35_icgraph">
+<area shape="rect" id="node2" href="group__mainLoop.html#ga9c3324e8c5f0e0ddcd96bbe89e0f7f16" title="Главный цикл игрового процесса " alt="" coords="187,5,293,32"/>
+<area shape="rect" id="node3" href="group__menu.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title="Отрисовка главного меню " alt="" coords="341,5,392,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="gae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отрисовка главного меню </p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__menu_gae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" border="0" usemap="#group__menu_gae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" alt=""/></div>
+<map name="group__menu_gae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" id="group__menu_gae66f6b31b5ad750f1fe042a706a4e3d4_cgraph">
+<area shape="rect" id="node2" href="group__mainLoop.html#ga9c3324e8c5f0e0ddcd96bbe89e0f7f16" title="Главный цикл игрового процесса " alt="" coords="104,464,211,491"/>
+<area shape="rect" id="node3" href="classToolBar.html#acb6ec6dffc23783cd110667e3a012c2a" title="ToolBar::get_time" alt="" coords="268,56,393,83"/>
+<area shape="rect" id="node6" href="classMenuBar.html#ab23d3bd560cb6a83deddad9ca2880c5b" title="MenuBar::check_for\l_next_round" alt="" coords="261,129,400,170"/>
+<area shape="rect" id="node8" href="group__heroBaseHandler.html#gab2905c57e79ad2fcc3e51dd7fd5916dc" title="Обработка выстрелов главного героя и последующее отслеживание взаимодействий пули с объектами ..." alt="" coords="291,216,370,243"/>
+<area shape="rect" id="node11" href="group__heroBaseHandler.html#ga3eed5602a3e229026dfc84af49007688" title="Передвижение главного героя в окне игрового процесса " alt="" coords="287,388,374,415"/>
+<area shape="rect" id="node12" href="group__enemyHandler.html#ga6965d0b7bc93883e1089dd9a326a584a" title="Обработка атаки врагов на карте игрового процесса " alt="" coords="289,280,372,307"/>
+<area shape="rect" id="node13" href="group__enemyHandler.html#ga95a06e0efaa583439b679f0b28419ba9" title="Обработка движений противников по карте игрового процесса " alt="" coords="281,439,381,465"/>
+<area shape="rect" id="node17" href="group__menu.html#ga11dd1886453909da6eff52362bac59b8" title="Обработка нажатий кнопок мыши " alt="" coords="283,489,378,516"/>
+<area shape="rect" id="node18" href="group__menu.html#ga41b04beddc9426c2999858fabc479ac0" title="Остановка игры и вывод меню&#45;паузы " alt="" coords="283,544,379,571"/>
+<area shape="rect" id="node20" href="group__mainLoop.html#gaf2266f0127d085329a1b7e092832e8a3" title="Вывод игрового процесса в игровом окне " alt="" coords="515,645,605,672"/>
+<area shape="rect" id="node22" href="group__runeHandler.html#gaf2bb7b78f028e61a0c6674cd9b976a8c" title="Обработка взаимодействия главного героя с заспавненной руной на карте игрового процесса ..." alt="" coords="291,333,370,360"/>
+<area shape="rect" id="node26" href="group__runeHandler.html#ga813bbb2330c07f4bf303406c4efab35d" title="Анимация руны и её вывод на карту игрового процесса " alt="" coords="261,763,400,789"/>
+<area shape="rect" id="node28" href="group__menu.html#ga3259e0d309cf137b40488db0226f91f6" title="Обработка завершения игрового цроцесса " alt="" coords="289,847,372,873"/>
+<area shape="rect" id="node30" href="group__heroBaseHandler.html#ga4b8f8d1c761e24c0a8480a7489d349d1" title="Отрисовка и анимация взрыва базы " alt="" coords="259,645,403,672"/>
+<area shape="rect" id="node31" href="group__menu.html#gaac2382a6b5fa5b0687116caf16837b35" title="Вывод диалогового окна &quot;конец игры&quot;. " alt="" coords="264,696,397,723"/>
+<area shape="rect" id="node4" href="classToolBar.html#a704da8346e935b2724aba9d80bbdd66b" title="ToolBar::randomizeRune" alt="" coords="477,5,643,32"/>
+<area shape="rect" id="node5" href="classToolBar.html#a6b8c6075b58347e259cabf177adfd687" title="ToolBar::update_spawnTimer" alt="" coords="464,56,656,83"/>
+<area shape="rect" id="node7" href="classMenuBar.html#a803dd882281e407e0494d2e5c45962bc" title="MenuBar::change_round" alt="" coords="479,107,641,133"/>
+<area shape="rect" id="node9" href="classToolBar.html#a7f2fbad05b0511c585283fe5377c6096" title="ToolBar::change_hero\l_base_hp" alt="" coords="730,253,879,294"/>
+<area shape="rect" id="node10" href="classToolBar.html#a4cc86d8767581aaa437f851d5782c61e" title="ToolBar::change_enemy\l_hp_line" alt="" coords="479,209,641,250"/>
+<area shape="rect" id="node14" href="group__enemyHandler.html#gacc579aee4d796c717e760e72c1c75ec3" title="Случайным образом получаем координаты точки,на которой будет заспавнен противник " alt="" coords="459,376,661,403"/>
+<area shape="rect" id="node15" href="group__enemyHandler.html#ga778c7ea2e26eb1d80652bf61d1661fb1" title="Случайным образом получаем кооординаты точки,до которой противник должен дойти " alt="" coords="476,427,644,469"/>
+<area shape="rect" id="node16" href="group__enemyHandler.html#ga21c57a411b6aa06a0f36c9eefab38b5b" title="Случайным образом получаем тип противника,который будет заспавнен на карте игрового процесса ..." alt="" coords="480,493,640,520"/>
+<area shape="rect" id="node19" href="classToolBar.html#ae8d52640262d6e25d07e65ad5cfe8a54" title="ToolBar::add_to_time" alt="" coords="487,544,633,571"/>
+<area shape="rect" id="node21" href="classToolBar.html#a6c030d2393dd9ad33fb51e59b9ae9d6b" title="ToolBar::reset_clock" alt="" coords="489,595,631,621"/>
+<area shape="rect" id="node23" href="group__runeHandler.html#ga0078b36ac662e224e1913996193c1c98" title="Обрабатывается эффект применения руны в соответствии с её типом " alt="" coords="495,325,625,352"/>
+<area shape="rect" id="node24" href="classMenuBar.html#a7a4dec33f791733c1babad22ac06d6e3" title="MenuBar::incr_counter\l_added_damage" alt="" coords="728,318,881,359"/>
+<area shape="rect" id="node25" href="classMenuBar.html#a8517c956a4d36cdacdcb42989b5dccf3" title="MenuBar::incr_counter\l_coins" alt="" coords="728,383,881,425"/>
+<area shape="rect" id="node27" href="group__runeHandler.html#gad3bb6254181bfa4913a3ec9a0f206f69" title="Выбираются случайным образом координаты руны для отображения на карте " alt="" coords="466,813,654,840"/>
+<area shape="rect" id="node29" href="classGameEndWindow.html#a2f5dcaf5df932f64323d14f58b5649e6" title="GameEndWindow::setDescription" alt="" coords="451,864,669,891"/>
+<area shape="rect" id="node32" href="classGameEndWindow.html#a91d7d99ae0dac923a1bf764f7b5d996f" title="GameEndWindow::update\l_timer" alt="" coords="717,718,892,759"/>
+<area shape="rect" id="node33" href="classGameEndWindow.html#a00ec6d032219c692a678b7ddac55a3b3" title="GameEndWindow::check\l_timer" alt="" coords="475,747,645,789"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ga11dd1886453909da6eff52362bac59b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mouse_click </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuBar.html">MenuBar</a> &amp;&#160;</td>
+          <td class="paramname"><em>menubar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCursors.html">Cursors</a> &amp;&#160;</td>
+          <td class="paramname"><em>cursor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обработка нажатий кнопок мыши </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">menubar</td><td>объект класса <a class="el" href="classMenuBar.html" title="Паметры счётчиков,выводимых в верхней полоске игрового окна ">MenuBar</a> с параметрами верхней полоски полоски(меню бара) на экране игрового процесса </td></tr>
+    <tr><td class="paramname">cursor</td><td>объект класса <a class="el" href="classCursors.html" title="Хранимые параметры кастомного курсора в игре ">Cursors</a> для отображения кастомного курсора в ркне игры </td></tr>
+    <tr><td class="paramname">window</td><td>окно игры </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>флаг о нажатии кнопки паузы: true-кнопка нажата, false-кнопка не нажата </dd></dl>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__menu_ga11dd1886453909da6eff52362bac59b8_icgraph.png" border="0" usemap="#group__menu_ga11dd1886453909da6eff52362bac59b8_icgraph" alt=""/></div>
+<map name="group__menu_ga11dd1886453909da6eff52362bac59b8_icgraph" id="group__menu_ga11dd1886453909da6eff52362bac59b8_icgraph">
+<area shape="rect" id="node2" href="group__mainLoop.html#ga9c3324e8c5f0e0ddcd96bbe89e0f7f16" title="Главный цикл игрового процесса " alt="" coords="148,5,255,32"/>
+<area shape="rect" id="node3" href="group__menu.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title="Отрисовка главного меню " alt="" coords="303,5,353,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ga41b04beddc9426c2999858fabc479ac0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pause_menu </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classMenuBar.html">MenuBar</a> &amp;&#160;</td>
+          <td class="paramname"><em>upperParametr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classToolBar.html">ToolBar</a> &amp;&#160;</td>
+          <td class="paramname"><em>lowerParametr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCursors.html">Cursors</a> &amp;&#160;</td>
+          <td class="paramname"><em>cursor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classGameObject.html">GameObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Clock &amp;&#160;</td>
+          <td class="paramname"><em>globalTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Clock &amp;&#160;</td>
+          <td class="paramname"><em>gameTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Остановка игры и вывод меню-паузы </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>окно игры </td></tr>
+    <tr><td class="paramname">upperParametr</td><td>объект класса <a class="el" href="classMenuBar.html" title="Паметры счётчиков,выводимых в верхней полоске игрового окна ">MenuBar</a> с параметрами верхней полоски полоски(меню бара) на экране игрового процесса </td></tr>
+    <tr><td class="paramname">lowerParametr</td><td>объект класса Toolbar с параметрами нижней полоски(тулбара) на экране игрового процесса </td></tr>
+    <tr><td class="paramname">cursor</td><td>объект класса <a class="el" href="classCursors.html" title="Хранимые параметры кастомного курсора в игре ">Cursors</a> для отображения кастомного курсора в ркне игры </td></tr>
+    <tr><td class="paramname">object</td><td>класса GameObjects с игровыми объектами </td></tr>
+    <tr><td class="paramname">globalTime</td><td>таймер игры </td></tr>
+    <tr><td class="paramname">gameTime</td><td>таймер для привязки к передвижениям игровых объектов с целью снижения нагрузки на прцессор </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>флаг о нажатой кнопке в меню "Пауза": true-была нажата кнопка "выход в главное меню", false-была нажата кнопка "продолжить игру" </dd></dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__menu_ga41b04beddc9426c2999858fabc479ac0_cgraph.png" border="0" usemap="#group__menu_ga41b04beddc9426c2999858fabc479ac0_cgraph" alt=""/></div>
+<map name="group__menu_ga41b04beddc9426c2999858fabc479ac0_cgraph" id="group__menu_ga41b04beddc9426c2999858fabc479ac0_cgraph">
+<area shape="rect" id="node2" href="classToolBar.html#ae8d52640262d6e25d07e65ad5cfe8a54" title="ToolBar::add_to_time" alt="" coords="149,5,296,32"/>
+<area shape="rect" id="node3" href="group__mainLoop.html#gaf2266f0127d085329a1b7e092832e8a3" title="Вывод игрового процесса в игровом окне " alt="" coords="178,56,267,83"/>
+<area shape="rect" id="node4" href="classToolBar.html#a6c030d2393dd9ad33fb51e59b9ae9d6b" title="ToolBar::reset_clock" alt="" coords="151,107,294,133"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__menu_ga41b04beddc9426c2999858fabc479ac0_icgraph.png" border="0" usemap="#group__menu_ga41b04beddc9426c2999858fabc479ac0_icgraph" alt=""/></div>
+<map name="group__menu_ga41b04beddc9426c2999858fabc479ac0_icgraph" id="group__menu_ga41b04beddc9426c2999858fabc479ac0_icgraph">
+<area shape="rect" id="node2" href="group__mainLoop.html#ga9c3324e8c5f0e0ddcd96bbe89e0f7f16" title="Главный цикл игрового процесса " alt="" coords="149,5,256,32"/>
+<area shape="rect" id="node3" href="group__menu.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title="Отрисовка главного меню " alt="" coords="304,5,355,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

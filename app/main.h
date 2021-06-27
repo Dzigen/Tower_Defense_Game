@@ -6,7 +6,8 @@
 #include <iostream>
 
 /**
- *Главный цикл игрового процесса
+ * @ingroup mainLoop
+ * @brief Главный цикл игрового процесса
  *
  * @param window окно игры
  * @param cursor объект класса Cursors с кастомным курсором

@@ -1,0 +1,5 @@
+<map id="ToolBar::randomizeRune" name="ToolBar::randomizeRune">
+<area shape="rect" id="node2" href="$classToolBar.html#acb6ec6dffc23783cd110667e3a012c2a" title="ToolBar::get_time" alt="" coords="220,5,345,32"/>
+<area shape="rect" id="node3" href="$group__mainLoop.html#ga9c3324e8c5f0e0ddcd96bbe89e0f7f16" title="Главный цикл игрового процесса " alt="" coords="393,5,500,32"/>
+<area shape="rect" id="node4" href="$group__menu.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title="Отрисовка главного меню " alt="" coords="548,5,599,32"/>
+</map>

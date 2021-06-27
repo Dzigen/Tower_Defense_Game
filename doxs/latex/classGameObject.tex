@@ -1,0 +1,103 @@
+\hypertarget{classGameObject}{}\section{Класс Game\+Object}
+\label{classGameObject}\index{Game\+Object@{Game\+Object}}
+
+
+Параметры игровых объектов  
+
+
+
+
+{\ttfamily \#include $<$game\+\_\+objects.\+h$>$}
+
+
+
+Граф связей класса Game\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGameObject__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Структуры данных}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classGameObject_1_1Base}{Base}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classGameObject_1_1Base}{Base} class. \end{DoxyCompactList}\item 
+class \hyperlink{classGameObject_1_1BaseExplosion}{Base\+Explosion}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classGameObject_1_1BaseExplosion}{Base\+Explosion} class. \end{DoxyCompactList}\item 
+class \hyperlink{classGameObject_1_1Bullet}{Bullet}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classGameObject_1_1Bullet}{Bullet} class. \end{DoxyCompactList}\item 
+class \hyperlink{classGameObject_1_1Enemys}{Enemys}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classGameObject_1_1Enemys}{Enemys} class. \end{DoxyCompactList}\item 
+class \hyperlink{classGameObject_1_1Hero}{Hero}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classGameObject_1_1Hero}{Hero} class. \end{DoxyCompactList}\item 
+class \hyperlink{classGameObject_1_1HeroExplosion}{Hero\+Explosion}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classGameObject_1_1HeroExplosion}{Hero\+Explosion} class. \end{DoxyCompactList}\item 
+class \hyperlink{classGameObject_1_1Map}{Map}
+\item 
+class \hyperlink{classGameObject_1_1Runes}{Runes}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classGameObject_1_1Runes}{Runes} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Поля данных}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGameObject_1_1Map}{Map} \hyperlink{classGameObject_a49b8b56419192fd29243f4ae9ad8c7f3}{map}
+\item 
+\hyperlink{classGameObject_1_1Base}{Base} \hyperlink{classGameObject_a0d441ea1c04535a1bcfcf0dacd3e46b6}{base}
+\item 
+\hyperlink{classGameObject_1_1BaseExplosion}{Base\+Explosion} \hyperlink{classGameObject_a03d9b8baaf2b58f0074fe183f4843379}{base\+Explosion}
+\item 
+\hyperlink{classGameObject_1_1Hero}{Hero} \hyperlink{classGameObject_a492285ce87e02288a1d532f5c83ff773}{hero}
+\item 
+\hyperlink{classGameObject_1_1HeroExplosion}{Hero\+Explosion} \hyperlink{classGameObject_a3dd518a4cbc7316edf2a4d43efa3dd52}{hero\+Explosion}
+\item 
+\hyperlink{classGameObject_1_1Runes}{Runes} \hyperlink{classGameObject_aef75ff75d6d246e532f47f54b6fac398}{rune}
+\item 
+\hyperlink{classGameObject_1_1Bullet}{Bullet} \hyperlink{classGameObject_abfec990ef1d0b3124c838ee9b6357948}{bullet}
+\item 
+std\+::vector$<$ \hyperlink{classGameObject_1_1Bullet}{Bullet} $>$ \hyperlink{classGameObject_a6c4f71551f2ab511cca56814f3678a11}{bullets}
+\item 
+\hyperlink{classGameObject_1_1Enemys_1_1EnemyUpdates}{Enemys\+::\+Enemy\+Updates} \hyperlink{classGameObject_a1be22120f03e9c3332dbd74ecb57d8f5}{enemy\+Updates}
+\item 
+std\+::vector$<$ \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate}{Enemys\+::\+Enemy\+Temlate} $>$ \hyperlink{classGameObject_a9ef32e6a46460a1db1d6005eb8a12cdd}{enemy}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Параметры игровых объектов 
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{classGameObject_1_1Hero}{Hero}, \hyperlink{classGameObject_1_1Runes}{Runes}, \hyperlink{classGameObject_1_1Enemys}{Enemys}, \hyperlink{classGameObject_1_1Base}{Base} 
+\end{DoxySeeAlso}
+
+
+\subsection{Поля}
+\index{Game\+Object@{Game\+Object}!base@{base}}
+\index{base@{base}!Game\+Object@{Game\+Object}}
+\subsubsection[{\texorpdfstring{base}{base}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base} Game\+Object\+::base}\hypertarget{classGameObject_a0d441ea1c04535a1bcfcf0dacd3e46b6}{}\label{classGameObject_a0d441ea1c04535a1bcfcf0dacd3e46b6}
+\index{Game\+Object@{Game\+Object}!base\+Explosion@{base\+Explosion}}
+\index{base\+Explosion@{base\+Explosion}!Game\+Object@{Game\+Object}}
+\subsubsection[{\texorpdfstring{base\+Explosion}{baseExplosion}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\+Explosion} Game\+Object\+::base\+Explosion}\hypertarget{classGameObject_a03d9b8baaf2b58f0074fe183f4843379}{}\label{classGameObject_a03d9b8baaf2b58f0074fe183f4843379}
+\index{Game\+Object@{Game\+Object}!bullet@{bullet}}
+\index{bullet@{bullet}!Game\+Object@{Game\+Object}}
+\subsubsection[{\texorpdfstring{bullet}{bullet}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bullet} Game\+Object\+::bullet}\hypertarget{classGameObject_abfec990ef1d0b3124c838ee9b6357948}{}\label{classGameObject_abfec990ef1d0b3124c838ee9b6357948}
+\index{Game\+Object@{Game\+Object}!bullets@{bullets}}
+\index{bullets@{bullets}!Game\+Object@{Game\+Object}}
+\subsubsection[{\texorpdfstring{bullets}{bullets}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Bullet}$>$ Game\+Object\+::bullets}\hypertarget{classGameObject_a6c4f71551f2ab511cca56814f3678a11}{}\label{classGameObject_a6c4f71551f2ab511cca56814f3678a11}
+\index{Game\+Object@{Game\+Object}!enemy@{enemy}}
+\index{enemy@{enemy}!Game\+Object@{Game\+Object}}
+\subsubsection[{\texorpdfstring{enemy}{enemy}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Enemys\+::\+Enemy\+Temlate}$>$ Game\+Object\+::enemy}\hypertarget{classGameObject_a9ef32e6a46460a1db1d6005eb8a12cdd}{}\label{classGameObject_a9ef32e6a46460a1db1d6005eb8a12cdd}
+\index{Game\+Object@{Game\+Object}!enemy\+Updates@{enemy\+Updates}}
+\index{enemy\+Updates@{enemy\+Updates}!Game\+Object@{Game\+Object}}
+\subsubsection[{\texorpdfstring{enemy\+Updates}{enemyUpdates}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Enemys\+::\+Enemy\+Updates} Game\+Object\+::enemy\+Updates}\hypertarget{classGameObject_a1be22120f03e9c3332dbd74ecb57d8f5}{}\label{classGameObject_a1be22120f03e9c3332dbd74ecb57d8f5}
+\index{Game\+Object@{Game\+Object}!hero@{hero}}
+\index{hero@{hero}!Game\+Object@{Game\+Object}}
+\subsubsection[{\texorpdfstring{hero}{hero}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Hero} Game\+Object\+::hero}\hypertarget{classGameObject_a492285ce87e02288a1d532f5c83ff773}{}\label{classGameObject_a492285ce87e02288a1d532f5c83ff773}
+\index{Game\+Object@{Game\+Object}!hero\+Explosion@{hero\+Explosion}}
+\index{hero\+Explosion@{hero\+Explosion}!Game\+Object@{Game\+Object}}
+\subsubsection[{\texorpdfstring{hero\+Explosion}{heroExplosion}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Hero\+Explosion} Game\+Object\+::hero\+Explosion}\hypertarget{classGameObject_a3dd518a4cbc7316edf2a4d43efa3dd52}{}\label{classGameObject_a3dd518a4cbc7316edf2a4d43efa3dd52}
+\index{Game\+Object@{Game\+Object}!map@{map}}
+\index{map@{map}!Game\+Object@{Game\+Object}}
+\subsubsection[{\texorpdfstring{map}{map}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Map} Game\+Object\+::map}\hypertarget{classGameObject_a49b8b56419192fd29243f4ae9ad8c7f3}{}\label{classGameObject_a49b8b56419192fd29243f4ae9ad8c7f3}
+\index{Game\+Object@{Game\+Object}!rune@{rune}}
+\index{rune@{rune}!Game\+Object@{Game\+Object}}
+\subsubsection[{\texorpdfstring{rune}{rune}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Runes} Game\+Object\+::rune}\hypertarget{classGameObject_aef75ff75d6d246e532f47f54b6fac398}{}\label{classGameObject_aef75ff75d6d246e532f47f54b6fac398}

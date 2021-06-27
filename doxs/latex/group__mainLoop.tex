@@ -1,0 +1,87 @@
+\hypertarget{group__mainLoop}{}\section{Главные функции игрового цикла}
+\label{group__mainLoop}\index{Главные функции игрового цикла@{Главные функции игрового цикла}}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__mainLoop_gaf2266f0127d085329a1b7e092832e8a3}{game\+\_\+draw} (sf\+::\+Render\+Window \&window, \hyperlink{classMenuBar}{Menu\+Bar} \&upper\+Parametr, \hyperlink{classToolBar}{Tool\+Bar} \&lower\+Parametr, \hyperlink{classGameObject}{Game\+Object} \&object)
+\begin{DoxyCompactList}\small\item\em Вывод игрового процесса в игровом окне \end{DoxyCompactList}\item 
+void \hyperlink{group__mainLoop_ga9c3324e8c5f0e0ddcd96bbe89e0f7f16}{game\+\_\+process} (sf\+::\+Render\+Window \&window, \hyperlink{classCursors}{Cursors} \&cursor)
+\begin{DoxyCompactList}\small\item\em Главный цикл игрового процесса \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+\subsection{Функции}
+\index{Главные функции игрового цикла@{Главные функции игрового цикла}!game\+\_\+draw@{game\+\_\+draw}}
+\index{game\+\_\+draw@{game\+\_\+draw}!Главные функции игрового цикла@{Главные функции игрового цикла}}
+\subsubsection[{\texorpdfstring{game\+\_\+draw(sf\+::\+Render\+Window \&window, Menu\+Bar \&upper\+Parametr, Tool\+Bar \&lower\+Parametr, Game\+Object \&object)}{game_draw(sf::RenderWindow &window, MenuBar &upperParametr, ToolBar &lowerParametr, GameObject &object)}}]{\setlength{\rightskip}{0pt plus 5cm}void game\+\_\+draw (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Render\+Window \&}]{window, }
+\item[{{\bf Menu\+Bar} \&}]{upper\+Parametr, }
+\item[{{\bf Tool\+Bar} \&}]{lower\+Parametr, }
+\item[{{\bf Game\+Object} \&}]{object}
+\end{DoxyParamCaption}
+)}\hypertarget{group__mainLoop_gaf2266f0127d085329a1b7e092832e8a3}{}\label{group__mainLoop_gaf2266f0127d085329a1b7e092832e8a3}
+
+
+Вывод игрового процесса в игровом окне 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em window} & окно игры \\
+\hline
+{\em upper\+Parametr} & объект класса \hyperlink{classMenuBar}{Menu\+Bar} с параметрами верхней полоски полоски(меню бара) на экране игрового процесса \\
+\hline
+{\em lower\+Parametr} & объект класса Toolbar с параметрами нижней полоски(тулбара) на экране игрового процесса \\
+\hline
+{\em object} & класса Game\+Objects с игровыми объектами \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+none 
+\end{DoxyReturn}
+\index{Главные функции игрового цикла@{Главные функции игрового цикла}!game\+\_\+process@{game\+\_\+process}}
+\index{game\+\_\+process@{game\+\_\+process}!Главные функции игрового цикла@{Главные функции игрового цикла}}
+\subsubsection[{\texorpdfstring{game\+\_\+process(sf\+::\+Render\+Window \&window, Cursors \&cursor)}{game_process(sf::RenderWindow &window, Cursors &cursor)}}]{\setlength{\rightskip}{0pt plus 5cm}void game\+\_\+process (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Render\+Window \&}]{window, }
+\item[{{\bf Cursors} \&}]{cursor}
+\end{DoxyParamCaption}
+)}\hypertarget{group__mainLoop_ga9c3324e8c5f0e0ddcd96bbe89e0f7f16}{}\label{group__mainLoop_ga9c3324e8c5f0e0ddcd96bbe89e0f7f16}
+
+
+Главный цикл игрового процесса 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em window} & окно игры \\
+\hline
+{\em cursor} & объект класса \hyperlink{classCursors}{Cursors} с кастомным курсором \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+none 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__mainLoop_ga9c3324e8c5f0e0ddcd96bbe89e0f7f16_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{group__mainLoop_ga9c3324e8c5f0e0ddcd96bbe89e0f7f16_icgraph}
+\end{center}
+\end{figure}
+
+

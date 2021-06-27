@@ -1,0 +1,5 @@
+<map id="randomize_rune_coordinates" name="randomize_rune_coordinates">
+<area shape="rect" id="node2" href="$group__runeHandler.html#ga813bbb2330c07f4bf303406c4efab35d" title="Анимация руны и её вывод на карту игрового процесса " alt="" coords="241,5,380,32"/>
+<area shape="rect" id="node3" href="$group__mainLoop.html#ga9c3324e8c5f0e0ddcd96bbe89e0f7f16" title="Главный цикл игрового процесса " alt="" coords="428,5,535,32"/>
+<area shape="rect" id="node4" href="$group__menu.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title="Отрисовка главного меню " alt="" coords="583,5,633,32"/>
+</map>

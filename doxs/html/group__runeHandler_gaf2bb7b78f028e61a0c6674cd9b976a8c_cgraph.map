@@ -1,0 +1,6 @@
+<map id="take_rune" name="take_rune">
+<area shape="rect" id="node2" href="$group__runeHandler.html#ga0078b36ac662e224e1913996193c1c98" title="Обрабатывается эффект применения руны в соответствии с её типом " alt="" coords="132,78,263,105"/>
+<area shape="rect" id="node3" href="$classToolBar.html#a7f2fbad05b0511c585283fe5377c6096" title="ToolBar::change_hero\l_base_hp" alt="" coords="313,5,462,47"/>
+<area shape="rect" id="node4" href="$classMenuBar.html#a7a4dec33f791733c1babad22ac06d6e3" title="MenuBar::incr_counter\l_added_damage" alt="" coords="311,71,464,112"/>
+<area shape="rect" id="node5" href="$classMenuBar.html#a8517c956a4d36cdacdcb42989b5dccf3" title="MenuBar::incr_counter\l_coins" alt="" coords="311,136,464,177"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="move_hero" name="move_hero">
+<area shape="rect" id="node2" href="$group__mainLoop.html#ga9c3324e8c5f0e0ddcd96bbe89e0f7f16" title="Главный цикл игрового процесса " alt="" coords="140,5,247,32"/>
+<area shape="rect" id="node3" href="$group__menu.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title="Отрисовка главного меню " alt="" coords="295,5,345,32"/>
+</map>

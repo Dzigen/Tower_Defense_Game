@@ -1,0 +1,5 @@
+<map id="ToolBar::add_to_time" name="ToolBar::add_to_time">
+<area shape="rect" id="node2" href="$group__menu.html#ga41b04beddc9426c2999858fabc479ac0" title="Остановка игры и вывод меню&#45;паузы " alt="" coords="200,5,296,32"/>
+<area shape="rect" id="node3" href="$group__mainLoop.html#ga9c3324e8c5f0e0ddcd96bbe89e0f7f16" title="Главный цикл игрового процесса " alt="" coords="344,5,451,32"/>
+<area shape="rect" id="node4" href="$group__menu.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title="Отрисовка главного меню " alt="" coords="499,5,549,32"/>
+</map>

@@ -3,7 +3,8 @@
 #include "game_objects.h"
 
 /**
- *Случайным образом получаем координаты точки,на которой будет заспавнен противник
+ * @ingroup enemyHandler
+ * @brief Случайным образом получаем координаты точки,на которой будет заспавнен противник
  *
  * @param object класса GameObjects с игровыми объектамим
  * @param simple_rand рандомайзер для получения случайных велечин
@@ -12,7 +13,8 @@
 sf::Vector3f randomize_enemy_coordinates(GameObject &object,std::minstd_rand &simple_rand);
 
 /**
- *Случайным образом получаем кооординаты точки,до которой противник должен дойти
+ * @ingroup enemyHandler
+ * @brief Случайным образом получаем кооординаты точки,до которой противник должен дойти
  *
  * @param object класса GameObjects с игровыми объектамим
  * @param typePosition область спавна противника:
@@ -27,7 +29,8 @@ sf::Vector3f randomize_enemy_coordinates(GameObject &object,std::minstd_rand &si
 sf::Vector2f randomize_enemy_target_coordinates(GameObject &object,float typePosition,std::minstd_rand &simple_rand);
 
 /**
- *Случайным образом получаем тип противника,который будет заспавнен на карте игрового процесса
+ * @ingroup enemyHandler
+ * @brief Случайным образом получаем тип противника,который будет заспавнен на карте игрового процесса
  *
  * @param object класса GameObjects с игровыми объектамим
  * @param simple_rand рандомайзер для получения случайных велечин

@@ -1,0 +1,5 @@
+<map id="randomize_enemy_target_coordinates" name="randomize_enemy_target_coordinates">
+<area shape="rect" id="node2" href="$move__enemy_8cpp.html#a95a06e0efaa583439b679f0b28419ba9" title="Обработка движений противников по карте игрового процесса " alt="" coords="221,13,321,39"/>
+<area shape="rect" id="node3" href="$group__mainLoop.html#ga9c3324e8c5f0e0ddcd96bbe89e0f7f16" title="Главный цикл игрового процесса " alt="" coords="369,13,476,39"/>
+<area shape="rect" id="node4" href="$group__menu.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title="Отрисовка главного меню " alt="" coords="524,13,575,39"/>
+</map>

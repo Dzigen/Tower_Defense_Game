@@ -1,0 +1,50 @@
+\hypertarget{game__process_8h}{}\section{Файл /home/dzigen/inf1/\+C\+S/task12/\+Tower\+\_\+\+Defense\+\_\+\+Game/app/game\+\_\+process.h}
+\label{game__process_8h}\index{/home/dzigen/inf1/\+C\+S/task12/\+Tower\+\_\+\+Defense\+\_\+\+Game/app/game\+\_\+process.\+h@{/home/dzigen/inf1/\+C\+S/task12/\+Tower\+\_\+\+Defense\+\_\+\+Game/app/game\+\_\+process.\+h}}
+{\ttfamily \#include $<$S\+F\+M\+L/\+Graphics.\+hpp$>$}\\*
+{\ttfamily \#include $<$random$>$}\\*
+{\ttfamily \#include \char`\"{}cursors.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}menu\+\_\+bar.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}tool\+\_\+bar.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}game\+\_\+objects.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}game\+\_\+end\+\_\+window.\+h\char`\"{}}\\*
+Граф включаемых заголовочных файлов для game\+\_\+process.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game__process_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{game__process_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__mainLoop_gaf2266f0127d085329a1b7e092832e8a3}{game\+\_\+draw} (sf\+::\+Render\+Window \&window, \hyperlink{classMenuBar}{Menu\+Bar} \&upper\+Parametr, \hyperlink{classToolBar}{Tool\+Bar} \&lower\+Parametr, \hyperlink{classGameObject}{Game\+Object} \&object)
+\begin{DoxyCompactList}\small\item\em Вывод игрового процесса в игровом окне \end{DoxyCompactList}\item 
+void \hyperlink{group__heroBaseHandler_ga3eed5602a3e229026dfc84af49007688}{move\+\_\+hero} (\hyperlink{classGameObject}{Game\+Object} \&object, float time, int flag)
+\begin{DoxyCompactList}\small\item\em Передвижение главного героя в окне игрового процесса \end{DoxyCompactList}\item 
+void \hyperlink{group__enemyHandler_ga95a06e0efaa583439b679f0b28419ba9}{move\+\_\+enemy} (\hyperlink{classGameObject}{Game\+Object} \&object, float time, std\+::minstd\+\_\+rand \&simple\+\_\+rand)
+\begin{DoxyCompactList}\small\item\em Обработка движений противников по карте игрового процесса \end{DoxyCompactList}\item 
+void \hyperlink{group__heroBaseHandler_gab2905c57e79ad2fcc3e51dd7fd5916dc}{hero\+\_\+shot} (\hyperlink{classGameObject}{Game\+Object} \&object, \hyperlink{classMenuBar}{Menu\+Bar} \&menubar, \hyperlink{classToolBar}{Tool\+Bar} \&toolbar, float time, sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Обработка выстрелов главного героя и последующее отслеживание взаимодействий пули с объектами \end{DoxyCompactList}\item 
+void \hyperlink{group__enemyHandler_ga6965d0b7bc93883e1089dd9a326a584a}{enemy\+\_\+hit} (\hyperlink{classGameObject}{Game\+Object} \&object, \hyperlink{classToolBar}{Tool\+Bar} \&toolbar, float time)
+\begin{DoxyCompactList}\small\item\em Обработка атаки врагов на карте игрового процесса \end{DoxyCompactList}\item 
+bool \hyperlink{group__menu_ga41b04beddc9426c2999858fabc479ac0}{pause\+\_\+menu} (sf\+::\+Render\+Window \&window, \hyperlink{classMenuBar}{Menu\+Bar} \&upper\+Parametr, \hyperlink{classToolBar}{Tool\+Bar} \&lower\+Parametr, \hyperlink{classCursors}{Cursors} \&cursor, \hyperlink{classGameObject}{Game\+Object} \&object, sf\+::\+Clock \&global\+Time, sf\+::\+Clock \&game\+Time)
+\begin{DoxyCompactList}\small\item\em Остановка игры и вывод меню-\/паузы \end{DoxyCompactList}\item 
+bool \hyperlink{group__menu_ga11dd1886453909da6eff52362bac59b8}{mouse\+\_\+click} (\hyperlink{classMenuBar}{Menu\+Bar} \&menubar, \hyperlink{classCursors}{Cursors} \&cursor, sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Обработка нажатий кнопок мыши \end{DoxyCompactList}\item 
+bool \hyperlink{group__menu_ga3259e0d309cf137b40488db0226f91f6}{end\+\_\+game} (\hyperlink{classGameObject}{Game\+Object} \&object, \hyperlink{classGameEndWindow}{Game\+End\+Window} \&end\+Window)
+\begin{DoxyCompactList}\small\item\em Обработка завершения игрового цроцесса \end{DoxyCompactList}\item 
+void \hyperlink{group__menu_gaac2382a6b5fa5b0687116caf16837b35}{game\+\_\+end\+\_\+window} (sf\+::\+Render\+Window \&window, \hyperlink{classGameEndWindow}{Game\+End\+Window} \&end\+Window, \hyperlink{classMenuBar}{Menu\+Bar} \&upper\+Parametr, \hyperlink{classToolBar}{Tool\+Bar} \&lower\+Parametr, \hyperlink{classCursors}{Cursors} \&cursor, \hyperlink{classGameObject}{Game\+Object} \&object, sf\+::\+Clock \&global\+Time)
+\begin{DoxyCompactList}\small\item\em Вывод диалогового окна \char`\"{}конец игры\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{group__runeHandler_ga813bbb2330c07f4bf303406c4efab35d}{update\+\_\+spawn\+\_\+rune} (\hyperlink{classGameObject}{Game\+Object} \&object, \hyperlink{classToolBar}{Tool\+Bar} \&toolbar, float \&rune\+U\+P\+D\+A\+T\+Etime, float \&time, std\+::minstd\+\_\+rand \&simple\+\_\+rand)
+\begin{DoxyCompactList}\small\item\em Анимация руны и её вывод на карту игрового процесса \end{DoxyCompactList}\item 
+void \hyperlink{group__heroBaseHandler_ga4b8f8d1c761e24c0a8480a7489d349d1}{base\+\_\+hero\+\_\+explosion} (sf\+::\+Render\+Window \&window, \hyperlink{classMenuBar}{Menu\+Bar} \&upper\+Parametr, \hyperlink{classToolBar}{Tool\+Bar} \&lower\+Parametr, \hyperlink{classCursors}{Cursors} \&cursor, \hyperlink{classGameObject}{Game\+Object} \&object, sf\+::\+Clock \&game\+Time)
+\begin{DoxyCompactList}\small\item\em Отрисовка и анимация взрыва базы \end{DoxyCompactList}\item 
+void \hyperlink{group__runeHandler_gaf2bb7b78f028e61a0c6674cd9b976a8c}{take\+\_\+rune} (\hyperlink{classGameObject}{Game\+Object} \&object, \hyperlink{classToolBar}{Tool\+Bar} \&toolbar, \hyperlink{classMenuBar}{Menu\+Bar} \&menubar)
+\begin{DoxyCompactList}\small\item\em Обработка взаимодействия главного героя с заспавненной руной на карте игрового процесса \end{DoxyCompactList}\end{DoxyCompactItemize}

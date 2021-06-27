@@ -1,0 +1,5 @@
+<map id="game_end_window" name="game_end_window">
+<area shape="rect" id="node2" href="$classGameEndWindow.html#a91d7d99ae0dac923a1bf764f7b5d996f" title="GameEndWindow::update\l_timer" alt="" coords="405,5,580,47"/>
+<area shape="rect" id="node3" href="$classGameEndWindow.html#a00ec6d032219c692a678b7ddac55a3b3" title="GameEndWindow::check\l_timer" alt="" coords="187,35,357,76"/>
+<area shape="rect" id="node4" href="$group__mainLoop.html#gaf2266f0127d085329a1b7e092832e8a3" title="Вывод игрового процесса в игровом окне " alt="" coords="227,101,317,127"/>
+</map>

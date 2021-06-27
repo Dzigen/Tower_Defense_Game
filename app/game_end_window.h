@@ -3,6 +3,10 @@
 
 #include <SFML/Graphics.hpp>
 
+/**
+ * @ingroup objectClasses
+ * @brief Праметры выводимого диалогового окна "конец игры"
+ */
 class GameEndWindow{
 
     public:
@@ -23,12 +27,12 @@ class GameEndWindow{
         secondsTillExit=10;
         bufferSeconds=0;
 
-        shapeGEW.loadFromFile("../../Tower_Defense_Game/external/Sprites/endMenu.png");
+        shapeGEW.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/endMenu.png");
         sprite.setTexture(shapeGEW);
         sprite.setPosition((float)((1200/2)-(w/2)),(float)((740/2)-(h/2)));
 
         /*загружаем текст шрифта*/
-        font.loadFromFile("../../Tower_Defense_Game/external/Text/Roboto-Italic.ttf");
+        font.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Text/Roboto-Italic.ttf");
         timer.setFont(font);
         timer.setFillColor(sf::Color::Black);
 

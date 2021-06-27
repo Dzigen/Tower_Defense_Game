@@ -1,0 +1,5 @@
+<map id="move_enemy" name="move_enemy">
+<area shape="rect" id="node2" href="$group__enemyHandler.html#gacc579aee4d796c717e760e72c1c75ec3" title="Случайным образом получаем координаты точки,на которой будет заспавнен противник " alt="" coords="153,5,356,32"/>
+<area shape="rect" id="node3" href="$group__enemyHandler.html#ga778c7ea2e26eb1d80652bf61d1661fb1" title="Случайным образом получаем кооординаты точки,до которой противник должен дойти " alt="" coords="171,57,339,98"/>
+<area shape="rect" id="node4" href="$group__enemyHandler.html#ga21c57a411b6aa06a0f36c9eefab38b5b" title="Случайным образом получаем тип противника,который будет заспавнен на карте игрового процесса ..." alt="" coords="175,123,335,149"/>
+</map>

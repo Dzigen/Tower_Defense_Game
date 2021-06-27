@@ -1,0 +1,346 @@
+\hypertarget{classToolBar}{}\section{Класс Tool\+Bar}
+\label{classToolBar}\index{Tool\+Bar@{Tool\+Bar}}
+
+
+Праметры счётчиков,выводимых в нижней полоске игровогоокна  
+
+
+
+
+{\ttfamily \#include $<$tool\+\_\+bar.\+h$>$}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classToolBar_acb6ec6dffc23783cd110667e3a012c2a}{get\+\_\+time} (sf\+::\+Clock \&clock, std\+::minstd\+\_\+rand \&simple\+\_\+rand)
+\item 
+void \hyperlink{classToolBar_a704da8346e935b2724aba9d80bbdd66b}{randomize\+Rune} (std\+::minstd\+\_\+rand \&simple\+\_\+rand)
+\item 
+void \hyperlink{classToolBar_ae8d52640262d6e25d07e65ad5cfe8a54}{add\+\_\+to\+\_\+time} (sf\+::\+Clock \&clock)
+\item 
+void \hyperlink{classToolBar_a6c030d2393dd9ad33fb51e59b9ae9d6b}{reset\+\_\+clock} (sf\+::\+Clock \&clock)
+\item 
+bool \hyperlink{classToolBar_a7f2fbad05b0511c585283fe5377c6096}{change\+\_\+hero\+\_\+base\+\_\+hp} (std\+::string object, std\+::string str, int value, int \&objecthealth)
+\item 
+void \hyperlink{classToolBar_a4cc86d8767581aaa437f851d5782c61e}{change\+\_\+enemy\+\_\+hp\+\_\+line} (int health, int Max\+Health, int enemy\+Type)
+\item 
+void \hyperlink{classToolBar_a6b8c6075b58347e259cabf177adfd687}{update\+\_\+spawn\+Timer} ()
+\item 
+\hyperlink{classToolBar_a998467428b7984217db78653412f2c68}{Tool\+Bar} ()
+\end{DoxyCompactItemize}
+\subsection*{Поля данных}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Sprite \hyperlink{classToolBar_a32ef55bee6542ce2f9856b1252a5bc00}{toolbarline}
+\item 
+sf\+::\+Text \hyperlink{classToolBar_a5e34d6e961f9f8d200f11d5c90d10121}{timer}
+\item 
+sf\+::\+Sprite \hyperlink{classToolBar_a282b572766a7fb833266997f6776aa76}{icon\+Clock}
+\item 
+int \hyperlink{classToolBar_aa4978a990d85761cb5ab6d60ab5b081c}{add\+To\+Timer}
+\item 
+sf\+::\+Sprite \hyperlink{classToolBar_a188e889517db774fa50f3babdcc61054}{hp\+\_\+hero\+\_\+red}
+\item 
+sf\+::\+Sprite \hyperlink{classToolBar_a65b3cfcbb54e656f98639620717bc701}{hp\+\_\+hero\+\_\+green}
+\item 
+sf\+::\+Text \hyperlink{classToolBar_abb14f5c369cee727893e9eae44594e26}{text\+H\+HP}
+\item 
+sf\+::\+Sprite \hyperlink{classToolBar_a3a23db17ec632acd38594ba68d5d0584}{icon\+H\+Phero}
+\item 
+sf\+::\+Text \hyperlink{classToolBar_a30d2ccc2f04f7143b8df59947578b97d}{value\+H\+H\+Pof}
+\item 
+sf\+::\+Sprite \hyperlink{classToolBar_afb75ac14df5e61b9c50c93beda809415}{hp\+\_\+base\+\_\+red\+\_\+orange}
+\item 
+sf\+::\+Sprite \hyperlink{classToolBar_a72b41dd993c27b3cb5de4e8d3e7b1c54}{hp\+\_\+base\+\_\+green}
+\item 
+sf\+::\+Text \hyperlink{classToolBar_a471626dfedf4ed4efda3773701d55364}{text\+B\+HP}
+\item 
+sf\+::\+Sprite \hyperlink{classToolBar_a29febf7bc604146e8d0df1b041dc13c8}{icon\+H\+Pbase}
+\item 
+sf\+::\+Text \hyperlink{classToolBar_ae97f03f2157daabe56dd60b56b698e15}{value\+B\+H\+Pof}
+\item 
+sf\+::\+Sprite \hyperlink{classToolBar_adf6487dd1c7f42354e93702f45eefba6}{hp\+\_\+enemy\+\_\+red}
+\item 
+sf\+::\+Sprite \hyperlink{classToolBar_a63b820836b22bac6096fc2d947dc0227}{hp\+\_\+enemy\+\_\+green}
+\item 
+sf\+::\+Text \hyperlink{classToolBar_a9510aea21130fa29c71233c9acc0fcae}{text\+E\+HP}
+\item 
+sf\+::\+Sprite \hyperlink{classToolBar_a66d3f57460533b9a96c46a21144bc275}{icon\+H\+Penemy}
+\item 
+sf\+::\+Sprite \hyperlink{classToolBar_ab5eb6994e23b6cf2013ed4914ee3f36e}{icon\+Enemy}
+\item 
+sf\+::\+Text \hyperlink{classToolBar_ad3512dba4d37c5c08645b3ded0331f98}{value\+E\+H\+Pof}
+\item 
+sf\+::\+Sprite \hyperlink{classToolBar_a2c12e5622569daf38c009fa2906a045c}{icon\+Dead\+Enemy}
+\item 
+bool \hyperlink{classToolBar_a833dab17c0f9a6a82fa6e97b59e6c2e7}{draw\+Icon\+Dead\+Enemy}
+\item 
+sf\+::\+Sprite \hyperlink{classToolBar_afc2823f5c1dd0927a04867d034f80f62}{icon\+Timer}
+\item 
+sf\+::\+Text \hyperlink{classToolBar_a255b295736a1540e3f21a1436c2925c8}{spawn\+Timer}
+\item 
+int \hyperlink{classToolBar_a6254f8067b6a4487cbb1eedaf8fc5db7}{seconds\+Until\+Spawn}
+\item 
+int \hyperlink{classToolBar_a02a8dc52a45537dabcd5b2322271a745}{buffer\+Seconds}
+\item 
+int \hyperlink{classToolBar_adb3e79f3152cda0389c9077e716859f0}{type\+Randomed\+Rune}
+\item 
+bool \hyperlink{classToolBar_a759e611d4eb9396a75b8825236eeff6c}{randomize\+Coordinates}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Праметры счётчиков,выводимых в нижней полоске игровогоокна 
+
+\subsection{Конструктор(ы)}
+\index{Tool\+Bar@{Tool\+Bar}!Tool\+Bar@{Tool\+Bar}}
+\index{Tool\+Bar@{Tool\+Bar}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{Tool\+Bar()}{ToolBar()}}]{\setlength{\rightskip}{0pt plus 5cm}Tool\+Bar\+::\+Tool\+Bar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classToolBar_a998467428b7984217db78653412f2c68}{}\label{classToolBar_a998467428b7984217db78653412f2c68}
+
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classToolBar_a998467428b7984217db78653412f2c68_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Методы}
+\index{Tool\+Bar@{Tool\+Bar}!add\+\_\+to\+\_\+time@{add\+\_\+to\+\_\+time}}
+\index{add\+\_\+to\+\_\+time@{add\+\_\+to\+\_\+time}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{add\+\_\+to\+\_\+time(sf\+::\+Clock \&clock)}{add_to_time(sf::Clock &clock)}}]{\setlength{\rightskip}{0pt plus 5cm}void Tool\+Bar\+::add\+\_\+to\+\_\+time (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Clock \&}]{clock}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classToolBar_ae8d52640262d6e25d07e65ad5cfe8a54}{}\label{classToolBar_ae8d52640262d6e25d07e65ad5cfe8a54}
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classToolBar_ae8d52640262d6e25d07e65ad5cfe8a54_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Tool\+Bar@{Tool\+Bar}!change\+\_\+enemy\+\_\+hp\+\_\+line@{change\+\_\+enemy\+\_\+hp\+\_\+line}}
+\index{change\+\_\+enemy\+\_\+hp\+\_\+line@{change\+\_\+enemy\+\_\+hp\+\_\+line}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{change\+\_\+enemy\+\_\+hp\+\_\+line(int health, int Max\+Health, int enemy\+Type)}{change_enemy_hp_line(int health, int MaxHealth, int enemyType)}}]{\setlength{\rightskip}{0pt plus 5cm}void Tool\+Bar\+::change\+\_\+enemy\+\_\+hp\+\_\+line (
+\begin{DoxyParamCaption}
+\item[{int}]{health, }
+\item[{int}]{Max\+Health, }
+\item[{int}]{enemy\+Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classToolBar_a4cc86d8767581aaa437f851d5782c61e}{}\label{classToolBar_a4cc86d8767581aaa437f851d5782c61e}
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classToolBar_a4cc86d8767581aaa437f851d5782c61e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Tool\+Bar@{Tool\+Bar}!change\+\_\+hero\+\_\+base\+\_\+hp@{change\+\_\+hero\+\_\+base\+\_\+hp}}
+\index{change\+\_\+hero\+\_\+base\+\_\+hp@{change\+\_\+hero\+\_\+base\+\_\+hp}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{change\+\_\+hero\+\_\+base\+\_\+hp(std\+::string object, std\+::string str, int value, int \&objecthealth)}{change_hero_base_hp(std::string object, std::string str, int value, int &objecthealth)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Tool\+Bar\+::change\+\_\+hero\+\_\+base\+\_\+hp (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{object, }
+\item[{std\+::string}]{str, }
+\item[{int}]{value, }
+\item[{int \&}]{objecthealth}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classToolBar_a7f2fbad05b0511c585283fe5377c6096}{}\label{classToolBar_a7f2fbad05b0511c585283fe5377c6096}
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classToolBar_a7f2fbad05b0511c585283fe5377c6096_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Tool\+Bar@{Tool\+Bar}!get\+\_\+time@{get\+\_\+time}}
+\index{get\+\_\+time@{get\+\_\+time}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{get\+\_\+time(sf\+::\+Clock \&clock, std\+::minstd\+\_\+rand \&simple\+\_\+rand)}{get_time(sf::Clock &clock, std::minstd_rand &simple_rand)}}]{\setlength{\rightskip}{0pt plus 5cm}void Tool\+Bar\+::get\+\_\+time (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Clock \&}]{clock, }
+\item[{std\+::minstd\+\_\+rand \&}]{simple\+\_\+rand}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classToolBar_acb6ec6dffc23783cd110667e3a012c2a}{}\label{classToolBar_acb6ec6dffc23783cd110667e3a012c2a}
+
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classToolBar_acb6ec6dffc23783cd110667e3a012c2a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classToolBar_acb6ec6dffc23783cd110667e3a012c2a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Tool\+Bar@{Tool\+Bar}!randomize\+Rune@{randomize\+Rune}}
+\index{randomize\+Rune@{randomize\+Rune}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{randomize\+Rune(std\+::minstd\+\_\+rand \&simple\+\_\+rand)}{randomizeRune(std::minstd_rand &simple_rand)}}]{\setlength{\rightskip}{0pt plus 5cm}void Tool\+Bar\+::randomize\+Rune (
+\begin{DoxyParamCaption}
+\item[{std\+::minstd\+\_\+rand \&}]{simple\+\_\+rand}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classToolBar_a704da8346e935b2724aba9d80bbdd66b}{}\label{classToolBar_a704da8346e935b2724aba9d80bbdd66b}
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classToolBar_a704da8346e935b2724aba9d80bbdd66b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Tool\+Bar@{Tool\+Bar}!reset\+\_\+clock@{reset\+\_\+clock}}
+\index{reset\+\_\+clock@{reset\+\_\+clock}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{reset\+\_\+clock(sf\+::\+Clock \&clock)}{reset_clock(sf::Clock &clock)}}]{\setlength{\rightskip}{0pt plus 5cm}void Tool\+Bar\+::reset\+\_\+clock (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Clock \&}]{clock}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classToolBar_a6c030d2393dd9ad33fb51e59b9ae9d6b}{}\label{classToolBar_a6c030d2393dd9ad33fb51e59b9ae9d6b}
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classToolBar_a6c030d2393dd9ad33fb51e59b9ae9d6b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Tool\+Bar@{Tool\+Bar}!update\+\_\+spawn\+Timer@{update\+\_\+spawn\+Timer}}
+\index{update\+\_\+spawn\+Timer@{update\+\_\+spawn\+Timer}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{update\+\_\+spawn\+Timer()}{update_spawnTimer()}}]{\setlength{\rightskip}{0pt plus 5cm}void Tool\+Bar\+::update\+\_\+spawn\+Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classToolBar_a6b8c6075b58347e259cabf177adfd687}{}\label{classToolBar_a6b8c6075b58347e259cabf177adfd687}
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classToolBar_a6b8c6075b58347e259cabf177adfd687_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Поля}
+\index{Tool\+Bar@{Tool\+Bar}!add\+To\+Timer@{add\+To\+Timer}}
+\index{add\+To\+Timer@{add\+To\+Timer}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{add\+To\+Timer}{addToTimer}}]{\setlength{\rightskip}{0pt plus 5cm}int Tool\+Bar\+::add\+To\+Timer}\hypertarget{classToolBar_aa4978a990d85761cb5ab6d60ab5b081c}{}\label{classToolBar_aa4978a990d85761cb5ab6d60ab5b081c}
+\index{Tool\+Bar@{Tool\+Bar}!buffer\+Seconds@{buffer\+Seconds}}
+\index{buffer\+Seconds@{buffer\+Seconds}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{buffer\+Seconds}{bufferSeconds}}]{\setlength{\rightskip}{0pt plus 5cm}int Tool\+Bar\+::buffer\+Seconds}\hypertarget{classToolBar_a02a8dc52a45537dabcd5b2322271a745}{}\label{classToolBar_a02a8dc52a45537dabcd5b2322271a745}
+\index{Tool\+Bar@{Tool\+Bar}!draw\+Icon\+Dead\+Enemy@{draw\+Icon\+Dead\+Enemy}}
+\index{draw\+Icon\+Dead\+Enemy@{draw\+Icon\+Dead\+Enemy}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{draw\+Icon\+Dead\+Enemy}{drawIconDeadEnemy}}]{\setlength{\rightskip}{0pt plus 5cm}bool Tool\+Bar\+::draw\+Icon\+Dead\+Enemy}\hypertarget{classToolBar_a833dab17c0f9a6a82fa6e97b59e6c2e7}{}\label{classToolBar_a833dab17c0f9a6a82fa6e97b59e6c2e7}
+\index{Tool\+Bar@{Tool\+Bar}!hp\+\_\+base\+\_\+green@{hp\+\_\+base\+\_\+green}}
+\index{hp\+\_\+base\+\_\+green@{hp\+\_\+base\+\_\+green}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{hp\+\_\+base\+\_\+green}{hp_base_green}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Tool\+Bar\+::hp\+\_\+base\+\_\+green}\hypertarget{classToolBar_a72b41dd993c27b3cb5de4e8d3e7b1c54}{}\label{classToolBar_a72b41dd993c27b3cb5de4e8d3e7b1c54}
+\index{Tool\+Bar@{Tool\+Bar}!hp\+\_\+base\+\_\+red\+\_\+orange@{hp\+\_\+base\+\_\+red\+\_\+orange}}
+\index{hp\+\_\+base\+\_\+red\+\_\+orange@{hp\+\_\+base\+\_\+red\+\_\+orange}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{hp\+\_\+base\+\_\+red\+\_\+orange}{hp_base_red_orange}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Tool\+Bar\+::hp\+\_\+base\+\_\+red\+\_\+orange}\hypertarget{classToolBar_afb75ac14df5e61b9c50c93beda809415}{}\label{classToolBar_afb75ac14df5e61b9c50c93beda809415}
+\index{Tool\+Bar@{Tool\+Bar}!hp\+\_\+enemy\+\_\+green@{hp\+\_\+enemy\+\_\+green}}
+\index{hp\+\_\+enemy\+\_\+green@{hp\+\_\+enemy\+\_\+green}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{hp\+\_\+enemy\+\_\+green}{hp_enemy_green}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Tool\+Bar\+::hp\+\_\+enemy\+\_\+green}\hypertarget{classToolBar_a63b820836b22bac6096fc2d947dc0227}{}\label{classToolBar_a63b820836b22bac6096fc2d947dc0227}
+\index{Tool\+Bar@{Tool\+Bar}!hp\+\_\+enemy\+\_\+red@{hp\+\_\+enemy\+\_\+red}}
+\index{hp\+\_\+enemy\+\_\+red@{hp\+\_\+enemy\+\_\+red}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{hp\+\_\+enemy\+\_\+red}{hp_enemy_red}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Tool\+Bar\+::hp\+\_\+enemy\+\_\+red}\hypertarget{classToolBar_adf6487dd1c7f42354e93702f45eefba6}{}\label{classToolBar_adf6487dd1c7f42354e93702f45eefba6}
+\index{Tool\+Bar@{Tool\+Bar}!hp\+\_\+hero\+\_\+green@{hp\+\_\+hero\+\_\+green}}
+\index{hp\+\_\+hero\+\_\+green@{hp\+\_\+hero\+\_\+green}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{hp\+\_\+hero\+\_\+green}{hp_hero_green}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Tool\+Bar\+::hp\+\_\+hero\+\_\+green}\hypertarget{classToolBar_a65b3cfcbb54e656f98639620717bc701}{}\label{classToolBar_a65b3cfcbb54e656f98639620717bc701}
+\index{Tool\+Bar@{Tool\+Bar}!hp\+\_\+hero\+\_\+red@{hp\+\_\+hero\+\_\+red}}
+\index{hp\+\_\+hero\+\_\+red@{hp\+\_\+hero\+\_\+red}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{hp\+\_\+hero\+\_\+red}{hp_hero_red}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Tool\+Bar\+::hp\+\_\+hero\+\_\+red}\hypertarget{classToolBar_a188e889517db774fa50f3babdcc61054}{}\label{classToolBar_a188e889517db774fa50f3babdcc61054}
+\index{Tool\+Bar@{Tool\+Bar}!icon\+Clock@{icon\+Clock}}
+\index{icon\+Clock@{icon\+Clock}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{icon\+Clock}{iconClock}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Tool\+Bar\+::icon\+Clock}\hypertarget{classToolBar_a282b572766a7fb833266997f6776aa76}{}\label{classToolBar_a282b572766a7fb833266997f6776aa76}
+\index{Tool\+Bar@{Tool\+Bar}!icon\+Dead\+Enemy@{icon\+Dead\+Enemy}}
+\index{icon\+Dead\+Enemy@{icon\+Dead\+Enemy}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{icon\+Dead\+Enemy}{iconDeadEnemy}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Tool\+Bar\+::icon\+Dead\+Enemy}\hypertarget{classToolBar_a2c12e5622569daf38c009fa2906a045c}{}\label{classToolBar_a2c12e5622569daf38c009fa2906a045c}
+\index{Tool\+Bar@{Tool\+Bar}!icon\+Enemy@{icon\+Enemy}}
+\index{icon\+Enemy@{icon\+Enemy}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{icon\+Enemy}{iconEnemy}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Tool\+Bar\+::icon\+Enemy}\hypertarget{classToolBar_ab5eb6994e23b6cf2013ed4914ee3f36e}{}\label{classToolBar_ab5eb6994e23b6cf2013ed4914ee3f36e}
+\index{Tool\+Bar@{Tool\+Bar}!icon\+H\+Pbase@{icon\+H\+Pbase}}
+\index{icon\+H\+Pbase@{icon\+H\+Pbase}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{icon\+H\+Pbase}{iconHPbase}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Tool\+Bar\+::icon\+H\+Pbase}\hypertarget{classToolBar_a29febf7bc604146e8d0df1b041dc13c8}{}\label{classToolBar_a29febf7bc604146e8d0df1b041dc13c8}
+\index{Tool\+Bar@{Tool\+Bar}!icon\+H\+Penemy@{icon\+H\+Penemy}}
+\index{icon\+H\+Penemy@{icon\+H\+Penemy}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{icon\+H\+Penemy}{iconHPenemy}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Tool\+Bar\+::icon\+H\+Penemy}\hypertarget{classToolBar_a66d3f57460533b9a96c46a21144bc275}{}\label{classToolBar_a66d3f57460533b9a96c46a21144bc275}
+\index{Tool\+Bar@{Tool\+Bar}!icon\+H\+Phero@{icon\+H\+Phero}}
+\index{icon\+H\+Phero@{icon\+H\+Phero}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{icon\+H\+Phero}{iconHPhero}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Tool\+Bar\+::icon\+H\+Phero}\hypertarget{classToolBar_a3a23db17ec632acd38594ba68d5d0584}{}\label{classToolBar_a3a23db17ec632acd38594ba68d5d0584}
+\index{Tool\+Bar@{Tool\+Bar}!icon\+Timer@{icon\+Timer}}
+\index{icon\+Timer@{icon\+Timer}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{icon\+Timer}{iconTimer}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Tool\+Bar\+::icon\+Timer}\hypertarget{classToolBar_afc2823f5c1dd0927a04867d034f80f62}{}\label{classToolBar_afc2823f5c1dd0927a04867d034f80f62}
+\index{Tool\+Bar@{Tool\+Bar}!randomize\+Coordinates@{randomize\+Coordinates}}
+\index{randomize\+Coordinates@{randomize\+Coordinates}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{randomize\+Coordinates}{randomizeCoordinates}}]{\setlength{\rightskip}{0pt plus 5cm}bool Tool\+Bar\+::randomize\+Coordinates}\hypertarget{classToolBar_a759e611d4eb9396a75b8825236eeff6c}{}\label{classToolBar_a759e611d4eb9396a75b8825236eeff6c}
+\index{Tool\+Bar@{Tool\+Bar}!seconds\+Until\+Spawn@{seconds\+Until\+Spawn}}
+\index{seconds\+Until\+Spawn@{seconds\+Until\+Spawn}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{seconds\+Until\+Spawn}{secondsUntilSpawn}}]{\setlength{\rightskip}{0pt plus 5cm}int Tool\+Bar\+::seconds\+Until\+Spawn}\hypertarget{classToolBar_a6254f8067b6a4487cbb1eedaf8fc5db7}{}\label{classToolBar_a6254f8067b6a4487cbb1eedaf8fc5db7}
+\index{Tool\+Bar@{Tool\+Bar}!spawn\+Timer@{spawn\+Timer}}
+\index{spawn\+Timer@{spawn\+Timer}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{spawn\+Timer}{spawnTimer}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Text Tool\+Bar\+::spawn\+Timer}\hypertarget{classToolBar_a255b295736a1540e3f21a1436c2925c8}{}\label{classToolBar_a255b295736a1540e3f21a1436c2925c8}
+\index{Tool\+Bar@{Tool\+Bar}!text\+B\+HP@{text\+B\+HP}}
+\index{text\+B\+HP@{text\+B\+HP}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{text\+B\+HP}{textBHP}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Text Tool\+Bar\+::text\+B\+HP}\hypertarget{classToolBar_a471626dfedf4ed4efda3773701d55364}{}\label{classToolBar_a471626dfedf4ed4efda3773701d55364}
+\index{Tool\+Bar@{Tool\+Bar}!text\+E\+HP@{text\+E\+HP}}
+\index{text\+E\+HP@{text\+E\+HP}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{text\+E\+HP}{textEHP}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Text Tool\+Bar\+::text\+E\+HP}\hypertarget{classToolBar_a9510aea21130fa29c71233c9acc0fcae}{}\label{classToolBar_a9510aea21130fa29c71233c9acc0fcae}
+\index{Tool\+Bar@{Tool\+Bar}!text\+H\+HP@{text\+H\+HP}}
+\index{text\+H\+HP@{text\+H\+HP}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{text\+H\+HP}{textHHP}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Text Tool\+Bar\+::text\+H\+HP}\hypertarget{classToolBar_abb14f5c369cee727893e9eae44594e26}{}\label{classToolBar_abb14f5c369cee727893e9eae44594e26}
+\index{Tool\+Bar@{Tool\+Bar}!timer@{timer}}
+\index{timer@{timer}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{timer}{timer}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Text Tool\+Bar\+::timer}\hypertarget{classToolBar_a5e34d6e961f9f8d200f11d5c90d10121}{}\label{classToolBar_a5e34d6e961f9f8d200f11d5c90d10121}
+\index{Tool\+Bar@{Tool\+Bar}!toolbarline@{toolbarline}}
+\index{toolbarline@{toolbarline}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{toolbarline}{toolbarline}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Tool\+Bar\+::toolbarline}\hypertarget{classToolBar_a32ef55bee6542ce2f9856b1252a5bc00}{}\label{classToolBar_a32ef55bee6542ce2f9856b1252a5bc00}
+\index{Tool\+Bar@{Tool\+Bar}!type\+Randomed\+Rune@{type\+Randomed\+Rune}}
+\index{type\+Randomed\+Rune@{type\+Randomed\+Rune}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{type\+Randomed\+Rune}{typeRandomedRune}}]{\setlength{\rightskip}{0pt plus 5cm}int Tool\+Bar\+::type\+Randomed\+Rune}\hypertarget{classToolBar_adb3e79f3152cda0389c9077e716859f0}{}\label{classToolBar_adb3e79f3152cda0389c9077e716859f0}
+\index{Tool\+Bar@{Tool\+Bar}!value\+B\+H\+Pof@{value\+B\+H\+Pof}}
+\index{value\+B\+H\+Pof@{value\+B\+H\+Pof}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{value\+B\+H\+Pof}{valueBHPof}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Text Tool\+Bar\+::value\+B\+H\+Pof}\hypertarget{classToolBar_ae97f03f2157daabe56dd60b56b698e15}{}\label{classToolBar_ae97f03f2157daabe56dd60b56b698e15}
+\index{Tool\+Bar@{Tool\+Bar}!value\+E\+H\+Pof@{value\+E\+H\+Pof}}
+\index{value\+E\+H\+Pof@{value\+E\+H\+Pof}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{value\+E\+H\+Pof}{valueEHPof}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Text Tool\+Bar\+::value\+E\+H\+Pof}\hypertarget{classToolBar_ad3512dba4d37c5c08645b3ded0331f98}{}\label{classToolBar_ad3512dba4d37c5c08645b3ded0331f98}
+\index{Tool\+Bar@{Tool\+Bar}!value\+H\+H\+Pof@{value\+H\+H\+Pof}}
+\index{value\+H\+H\+Pof@{value\+H\+H\+Pof}!Tool\+Bar@{Tool\+Bar}}
+\subsubsection[{\texorpdfstring{value\+H\+H\+Pof}{valueHHPof}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Text Tool\+Bar\+::value\+H\+H\+Pof}\hypertarget{classToolBar_a30d2ccc2f04f7143b8df59947578b97d}{}\label{classToolBar_a30d2ccc2f04f7143b8df59947578b97d}

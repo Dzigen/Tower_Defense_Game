@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Игра &quot;Одинокая Турелька&quot;: Обработчики рун</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="tower_defense.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Игра &quot;Одинокая Турелька&quot;
+   </div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('group__runeHandler.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Обработчики рун</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga813bbb2330c07f4bf303406c4efab35d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__runeHandler.html#ga813bbb2330c07f4bf303406c4efab35d">update_spawn_rune</a> (<a class="el" href="classGameObject.html">GameObject</a> &amp;object, <a class="el" href="classToolBar.html">ToolBar</a> &amp;toolbar, float &amp;runeUPDATEtime, float &amp;time, std::minstd_rand &amp;simple_rand)</td></tr>
+<tr class="memdesc:ga813bbb2330c07f4bf303406c4efab35d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Анимация руны и её вывод на карту игрового процесса  <a href="#ga813bbb2330c07f4bf303406c4efab35d">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga813bbb2330c07f4bf303406c4efab35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2bb7b78f028e61a0c6674cd9b976a8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__runeHandler.html#gaf2bb7b78f028e61a0c6674cd9b976a8c">take_rune</a> (<a class="el" href="classGameObject.html">GameObject</a> &amp;object, <a class="el" href="classToolBar.html">ToolBar</a> &amp;toolbar, <a class="el" href="classMenuBar.html">MenuBar</a> &amp;menubar)</td></tr>
+<tr class="memdesc:gaf2bb7b78f028e61a0c6674cd9b976a8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработка взаимодействия главного героя с заспавненной руной на карте игрового процесса  <a href="#gaf2bb7b78f028e61a0c6674cd9b976a8c">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaf2bb7b78f028e61a0c6674cd9b976a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0078b36ac662e224e1913996193c1c98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__runeHandler.html#ga0078b36ac662e224e1913996193c1c98">effect_of_the_rune</a> (<a class="el" href="classGameObject.html">GameObject</a> &amp;object, <a class="el" href="classToolBar.html">ToolBar</a> &amp;toolbar, <a class="el" href="classMenuBar.html">MenuBar</a> &amp;menubar)</td></tr>
+<tr class="memdesc:ga0078b36ac662e224e1913996193c1c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрабатывается эффект применения руны в соответствии с её типом  <a href="#ga0078b36ac662e224e1913996193c1c98">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga0078b36ac662e224e1913996193c1c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3bb6254181bfa4913a3ec9a0f206f69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__runeHandler.html#gad3bb6254181bfa4913a3ec9a0f206f69">randomize_rune_coordinates</a> (<a class="el" href="classGameObject.html">GameObject</a> &amp;object, <a class="el" href="classToolBar.html">ToolBar</a> &amp;toolbar, std::minstd_rand &amp;simple_rand)</td></tr>
+<tr class="memdesc:gad3bb6254181bfa4913a3ec9a0f206f69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выбираются случайным образом координаты руны для отображения на карте  <a href="#gad3bb6254181bfa4913a3ec9a0f206f69">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad3bb6254181bfa4913a3ec9a0f206f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<h2 class="groupheader">Функции</h2>
+<a class="anchor" id="ga0078b36ac662e224e1913996193c1c98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void effect_of_the_rune </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGameObject.html">GameObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classToolBar.html">ToolBar</a> &amp;&#160;</td>
+          <td class="paramname"><em>toolbar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classMenuBar.html">MenuBar</a> &amp;&#160;</td>
+          <td class="paramname"><em>menubar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обрабатывается эффект применения руны в соответствии с её типом </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">объект</td><td>класса GameObjects с игровыми объектами </td></tr>
+    <tr><td class="paramname">toolbar</td><td>объект класса Toolbar с параметрами нижней полоски(тулбара) на экране игрового процесса </td></tr>
+    <tr><td class="paramname">menubar</td><td>объект класса <a class="el" href="classMenuBar.html" title="Паметры счётчиков,выводимых в верхней полоске игрового окна ">MenuBar</a> с параметрами верхней полоски полоски(меню бара) на экране игрового процесса </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>none </dd></dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__runeHandler_ga0078b36ac662e224e1913996193c1c98_cgraph.png" border="0" usemap="#group__runeHandler_ga0078b36ac662e224e1913996193c1c98_cgraph" alt=""/></div>
+<map name="group__runeHandler_ga0078b36ac662e224e1913996193c1c98_cgraph" id="group__runeHandler_ga0078b36ac662e224e1913996193c1c98_cgraph">
+<area shape="rect" id="node2" href="classToolBar.html#a7f2fbad05b0511c585283fe5377c6096" title="ToolBar::change_hero\l_base_hp" alt="" coords="186,5,335,47"/>
+<area shape="rect" id="node3" href="classMenuBar.html#a7a4dec33f791733c1babad22ac06d6e3" title="MenuBar::incr_counter\l_added_damage" alt="" coords="184,71,337,112"/>
+<area shape="rect" id="node4" href="classMenuBar.html#a8517c956a4d36cdacdcb42989b5dccf3" title="MenuBar::incr_counter\l_coins" alt="" coords="184,136,337,177"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__runeHandler_ga0078b36ac662e224e1913996193c1c98_icgraph.png" border="0" usemap="#group__runeHandler_ga0078b36ac662e224e1913996193c1c98_icgraph" alt=""/></div>
+<map name="group__runeHandler_ga0078b36ac662e224e1913996193c1c98_icgraph" id="group__runeHandler_ga0078b36ac662e224e1913996193c1c98_icgraph">
+<area shape="rect" id="node2" href="group__runeHandler.html#gaf2bb7b78f028e61a0c6674cd9b976a8c" title="Обработка взаимодействия главного героя с заспавненной руной на карте игрового процесса ..." alt="" coords="184,5,263,32"/>
+<area shape="rect" id="node3" href="group__mainLoop.html#ga9c3324e8c5f0e0ddcd96bbe89e0f7f16" title="Главный цикл игрового процесса " alt="" coords="311,5,417,32"/>
+<area shape="rect" id="node4" href="group__menu.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title="Отрисовка главного меню " alt="" coords="465,5,516,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="gad3bb6254181bfa4913a3ec9a0f206f69"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void randomize_rune_coordinates </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGameObject.html">GameObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classToolBar.html">ToolBar</a> &amp;&#160;</td>
+          <td class="paramname"><em>toolbar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::minstd_rand &amp;&#160;</td>
+          <td class="paramname"><em>simple_rand</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выбираются случайным образом координаты руны для отображения на карте </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>объект класса GameObjects с игровыми объектами </td></tr>
+    <tr><td class="paramname">toolbar</td><td>объект класса <a class="el" href="classToolBar.html" title="Праметры счётчиков,выводимых в нижней полоске игровогоокна ">ToolBar</a> с параметрами нижней полоски(тулбара) на экране игрового процесса </td></tr>
+    <tr><td class="paramname">simple_rand</td><td>рандомайзер для получения случайных велечин </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>none </dd></dl>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__runeHandler_gad3bb6254181bfa4913a3ec9a0f206f69_icgraph.png" border="0" usemap="#group__runeHandler_gad3bb6254181bfa4913a3ec9a0f206f69_icgraph" alt=""/></div>
+<map name="group__runeHandler_gad3bb6254181bfa4913a3ec9a0f206f69_icgraph" id="group__runeHandler_gad3bb6254181bfa4913a3ec9a0f206f69_icgraph">
+<area shape="rect" id="node2" href="group__runeHandler.html#ga813bbb2330c07f4bf303406c4efab35d" title="Анимация руны и её вывод на карту игрового процесса " alt="" coords="241,5,380,32"/>
+<area shape="rect" id="node3" href="group__mainLoop.html#ga9c3324e8c5f0e0ddcd96bbe89e0f7f16" title="Главный цикл игрового процесса " alt="" coords="428,5,535,32"/>
+<area shape="rect" id="node4" href="group__menu.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title="Отрисовка главного меню " alt="" coords="583,5,633,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf2bb7b78f028e61a0c6674cd9b976a8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void take_rune </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGameObject.html">GameObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classToolBar.html">ToolBar</a> &amp;&#160;</td>
+          <td class="paramname"><em>toolbar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classMenuBar.html">MenuBar</a> &amp;&#160;</td>
+          <td class="paramname"><em>menubar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обработка взаимодействия главного героя с заспавненной руной на карте игрового процесса </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>класса GameObjects с игровыми объектами </td></tr>
+    <tr><td class="paramname">toolbar</td><td>объект класса Toolbar с параметрами нижней полоски(тулбара) на экране игрового процесса </td></tr>
+    <tr><td class="paramname">menubar</td><td>объект класса <a class="el" href="classMenuBar.html" title="Паметры счётчиков,выводимых в верхней полоске игрового окна ">MenuBar</a> с параметрами верхней полоски полоски(меню бара) на экране игрового процесса </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>none </dd></dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__runeHandler_gaf2bb7b78f028e61a0c6674cd9b976a8c_cgraph.png" border="0" usemap="#group__runeHandler_gaf2bb7b78f028e61a0c6674cd9b976a8c_cgraph" alt=""/></div>
+<map name="group__runeHandler_gaf2bb7b78f028e61a0c6674cd9b976a8c_cgraph" id="group__runeHandler_gaf2bb7b78f028e61a0c6674cd9b976a8c_cgraph">
+<area shape="rect" id="node2" href="group__runeHandler.html#ga0078b36ac662e224e1913996193c1c98" title="Обрабатывается эффект применения руны в соответствии с её типом " alt="" coords="132,78,263,105"/>
+<area shape="rect" id="node3" href="classToolBar.html#a7f2fbad05b0511c585283fe5377c6096" title="ToolBar::change_hero\l_base_hp" alt="" coords="313,5,462,47"/>
+<area shape="rect" id="node4" href="classMenuBar.html#a7a4dec33f791733c1babad22ac06d6e3" title="MenuBar::incr_counter\l_added_damage" alt="" coords="311,71,464,112"/>
+<area shape="rect" id="node5" href="classMenuBar.html#a8517c956a4d36cdacdcb42989b5dccf3" title="MenuBar::incr_counter\l_coins" alt="" coords="311,136,464,177"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__runeHandler_gaf2bb7b78f028e61a0c6674cd9b976a8c_icgraph.png" border="0" usemap="#group__runeHandler_gaf2bb7b78f028e61a0c6674cd9b976a8c_icgraph" alt=""/></div>
+<map name="group__runeHandler_gaf2bb7b78f028e61a0c6674cd9b976a8c_icgraph" id="group__runeHandler_gaf2bb7b78f028e61a0c6674cd9b976a8c_icgraph">
+<area shape="rect" id="node2" href="group__mainLoop.html#ga9c3324e8c5f0e0ddcd96bbe89e0f7f16" title="Главный цикл игрового процесса " alt="" coords="132,5,239,32"/>
+<area shape="rect" id="node3" href="group__menu.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title="Отрисовка главного меню " alt="" coords="287,5,337,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ga813bbb2330c07f4bf303406c4efab35d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void update_spawn_rune </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGameObject.html">GameObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classToolBar.html">ToolBar</a> &amp;&#160;</td>
+          <td class="paramname"><em>toolbar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>runeUPDATEtime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::minstd_rand &amp;&#160;</td>
+          <td class="paramname"><em>simple_rand</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Анимация руны и её вывод на карту игрового процесса </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>класса GameObjects с игровыми объектами </td></tr>
+    <tr><td class="paramname">toolbar</td><td>объект класса Toolbar с параметрами нижней полоски(тулбара) на экране игрового процесса </td></tr>
+    <tr><td class="paramname">runeUPDATEtime</td><td>время с прошлого спавна руны </td></tr>
+    <tr><td class="paramname">time</td><td>врямя работы предыдущего цикла игры </td></tr>
+    <tr><td class="paramname">simple_rand</td><td>рандомайзер для получения случайных велечин </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>none </dd></dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__runeHandler_ga813bbb2330c07f4bf303406c4efab35d_cgraph.png" border="0" usemap="#group__runeHandler_ga813bbb2330c07f4bf303406c4efab35d_cgraph" alt=""/></div>
+<map name="group__runeHandler_ga813bbb2330c07f4bf303406c4efab35d_cgraph" id="group__runeHandler_ga813bbb2330c07f4bf303406c4efab35d_cgraph">
+<area shape="rect" id="node2" href="group__runeHandler.html#gad3bb6254181bfa4913a3ec9a0f206f69" title="Выбираются случайным образом координаты руны для отображения на карте " alt="" coords="192,5,380,32"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__runeHandler_ga813bbb2330c07f4bf303406c4efab35d_icgraph.png" border="0" usemap="#group__runeHandler_ga813bbb2330c07f4bf303406c4efab35d_icgraph" alt=""/></div>
+<map name="group__runeHandler_ga813bbb2330c07f4bf303406c4efab35d_icgraph" id="group__runeHandler_ga813bbb2330c07f4bf303406c4efab35d_icgraph">
+<area shape="rect" id="node2" href="group__mainLoop.html#ga9c3324e8c5f0e0ddcd96bbe89e0f7f16" title="Главный цикл игрового процесса " alt="" coords="192,5,299,32"/>
+<area shape="rect" id="node3" href="group__menu.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title="Отрисовка главного меню " alt="" coords="347,5,397,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<map id="move_enemy" name="move_enemy">
+<area shape="rect" id="node2" href="$move__enemy_8h.html#acc579aee4d796c717e760e72c1c75ec3" title="randomize_enemy_coordinates" alt="" coords="153,5,356,32"/>
+<area shape="rect" id="node3" href="$move__enemy_8h.html#a778c7ea2e26eb1d80652bf61d1661fb1" title="randomize_enemy_target\l_coordinates" alt="" coords="171,57,339,98"/>
+<area shape="rect" id="node4" href="$move__enemy_8h.html#a21c57a411b6aa06a0f36c9eefab38b5b" title="randomize_enemy_type" alt="" coords="175,123,335,149"/>
+</map>

@@ -1,0 +1,245 @@
+\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate}{}\section{Класс Game\+Object\+:\+:Enemys\+:\+:Enemy\+Temlate}
+\label{classGameObject_1_1Enemys_1_1EnemyTemlate}\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+
+
+{\ttfamily \#include $<$game\+\_\+objects.\+h$>$}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_ae65af0b44209fea4e92e5f13d2a09f6f}{load\+Sprite} (int enemy\+Index, int frme\+\_\+x, int frme\+\_\+y, int frme\+\_\+w, int frme\+\_\+h)
+\item 
+void \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a5f9b71a23bb65baf0af246a2fd6f7439}{load\+Enemy\+Parametrs} (int enemy\+Index, int \&added\+Dmg\+In\+Perct, int \&added\+Hp\+In\+Perct)
+\item 
+void \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_afbc5887043ffe63e87a396365902cf23}{update\+M\+O\+V\+Eframe} ()
+\item 
+bool \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_ad214c3fa0f38bdb49ac63d87fa61f812}{update\+I\+D\+L\+Eframe} ()
+\item 
+bool \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a63fc3c91c32d4094ba613331a3be9fb7}{update\+A\+T\+T\+A\+C\+Kframe} ()
+\item 
+bool \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a95af63af76be29f49e8b5f13202c3078}{update\+D\+E\+A\+T\+Hframe} ()
+\item 
+bool \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a0d5ab41f2654eef85f7019e22e363cb5}{update\+H\+U\+R\+Tframe} ()
+\item 
+void \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a781585615f490f3033e6be408f437ebf}{load\+Frame\+Parametrs} ()
+\item 
+\hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_accd430f7aa9e273cdb31bc0f3ae29d64}{Enemy\+Temlate} (int enemy\+Index, float enemy\+\_\+x, float enemy\+\_\+y, float target\+\_\+x, float target\+\_\+y, float index, int \&added\+Dmg\+In\+Perct, int \&added\+Hp\+In\+Perct)
+\end{DoxyCompactItemize}
+\subsection*{Поля данных}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Sprite \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a496de410039d81c0d23a48baac8b358f}{sprite}
+\item 
+int \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a500bead42bbb856a6ac92351917a4045}{health}
+\item 
+int \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a250d0b4ec3f0d897a564866fc07d88ba}{E\+HP}
+\item 
+int \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a0ebc979de5e65a6f8ad1d3177a11dbb4}{damage}
+\item 
+float \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_aa69529ceced0b3815dcd558250cdbb87}{speed}
+\item 
+int \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a1fc3161000f20c3f67c148dade9d7cc3}{enemy\+Type}
+\item 
+float \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_affccc0ff4550536288e4c916980b2080}{row}
+\item 
+float \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_af2d7a8e83f70bb6c3bdf8a5760ab5f92}{colomn}
+\item 
+float \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a4b48fcaa524fb492767f4de6ff10df91}{frame\+\_\+x}
+\item 
+float \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a675a141480e64ba5ba85ad8d5c61fd3c}{frame\+\_\+y}
+\item 
+float \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_af58fe662ebf3cfd487d9863660c85956}{frame\+\_\+w}
+\item 
+float \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a0d99581516d74d630535f1e4aff35938}{frame\+\_\+h}
+\item 
+bool \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a3badead3c542bc494f789967e985f878}{frames\+Complited}
+\item 
+float \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_aa0fd588c672bd7f0b6531645f59712f3}{enemy\+U\+P\+D\+A\+T\+Eframe\+Time}
+\item 
+sf\+::\+Vector2f \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_af50eeadd76fdc2654945568205f7aef4}{vector\+To\+Target}
+\item 
+sf\+::\+Vector2f \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_af55e75dec7fbff129ad75ee582718045}{target\+Position}
+\item 
+int \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a865ae14d9ee1f89d89b6add772db0256}{type\+Side}
+\item 
+bool \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_aa4aadf0cffb76a80a1156ae3a9a478d1}{Stay\+To\+Deal\+Damage}
+\item 
+bool \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a1eea8a7e90380a00980e220f20ed6dd0}{Stay\+To\+Take\+Damage}
+\item 
+float \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a5522f80dbe9e815e4a9b93a9c2c1750e}{enemy\+H\+O\+L\+D\+\_\+\+R\+U\+Ntime}
+\item 
+bool \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a7e1e5fe7c3605c499e8ed688724dafc0}{flag\+T\+Ohold}
+\item 
+float \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_ade8867fc2ce6bbc6773aea88419f213c}{enemy\+I\+N\+V\+I\+S\+\_\+\+R\+U\+Ntime}
+\item 
+bool \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_acb35c64bf3e42d2b62f86a3c9884c74b}{invisibility}
+\item 
+float \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_aba00640ae5d9ff2ad61df62fb364d797}{enemy\+R\+E\+S\+I\+S\+T\+\_\+\+R\+U\+Ntime}
+\item 
+bool \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a99a16eec760b123dc7fa1f642c694076}{damage\+Resist}
+\item 
+int \hyperlink{classGameObject_1_1Enemys_1_1EnemyTemlate_a175ca6339d90d12804b5b8fa97ec8853}{cut\+Damage\+Value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!Enemy\+Temlate@{Enemy\+Temlate}}
+\index{Enemy\+Temlate@{Enemy\+Temlate}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{Enemy\+Temlate(int enemy\+Index, float enemy\+\_\+x, float enemy\+\_\+y, float target\+\_\+x, float target\+\_\+y, float index, int \&added\+Dmg\+In\+Perct, int \&added\+Hp\+In\+Perct)}{EnemyTemlate(int enemyIndex, float enemy_x, float enemy_y, float target_x, float target_y, float index, int &addedDmgInPerct, int &addedHpInPerct)}}]{\setlength{\rightskip}{0pt plus 5cm}Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::\+Enemy\+Temlate (
+\begin{DoxyParamCaption}
+\item[{int}]{enemy\+Index, }
+\item[{float}]{enemy\+\_\+x, }
+\item[{float}]{enemy\+\_\+y, }
+\item[{float}]{target\+\_\+x, }
+\item[{float}]{target\+\_\+y, }
+\item[{float}]{index, }
+\item[{int \&}]{added\+Dmg\+In\+Perct, }
+\item[{int \&}]{added\+Hp\+In\+Perct}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_accd430f7aa9e273cdb31bc0f3ae29d64}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_accd430f7aa9e273cdb31bc0f3ae29d64}
+
+
+\subsection{Методы}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!load\+Enemy\+Parametrs@{load\+Enemy\+Parametrs}}
+\index{load\+Enemy\+Parametrs@{load\+Enemy\+Parametrs}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{load\+Enemy\+Parametrs(int enemy\+Index, int \&added\+Dmg\+In\+Perct, int \&added\+Hp\+In\+Perct)}{loadEnemyParametrs(int enemyIndex, int &addedDmgInPerct, int &addedHpInPerct)}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::load\+Enemy\+Parametrs (
+\begin{DoxyParamCaption}
+\item[{int}]{enemy\+Index, }
+\item[{int \&}]{added\+Dmg\+In\+Perct, }
+\item[{int \&}]{added\+Hp\+In\+Perct}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a5f9b71a23bb65baf0af246a2fd6f7439}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a5f9b71a23bb65baf0af246a2fd6f7439}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!load\+Frame\+Parametrs@{load\+Frame\+Parametrs}}
+\index{load\+Frame\+Parametrs@{load\+Frame\+Parametrs}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{load\+Frame\+Parametrs()}{loadFrameParametrs()}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::load\+Frame\+Parametrs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a781585615f490f3033e6be408f437ebf}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a781585615f490f3033e6be408f437ebf}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!load\+Sprite@{load\+Sprite}}
+\index{load\+Sprite@{load\+Sprite}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{load\+Sprite(int enemy\+Index, int frme\+\_\+x, int frme\+\_\+y, int frme\+\_\+w, int frme\+\_\+h)}{loadSprite(int enemyIndex, int frme_x, int frme_y, int frme_w, int frme_h)}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::load\+Sprite (
+\begin{DoxyParamCaption}
+\item[{int}]{enemy\+Index, }
+\item[{int}]{frme\+\_\+x, }
+\item[{int}]{frme\+\_\+y, }
+\item[{int}]{frme\+\_\+w, }
+\item[{int}]{frme\+\_\+h}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_ae65af0b44209fea4e92e5f13d2a09f6f}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_ae65af0b44209fea4e92e5f13d2a09f6f}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!update\+A\+T\+T\+A\+C\+Kframe@{update\+A\+T\+T\+A\+C\+Kframe}}
+\index{update\+A\+T\+T\+A\+C\+Kframe@{update\+A\+T\+T\+A\+C\+Kframe}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{update\+A\+T\+T\+A\+C\+Kframe()}{updateATTACKframe()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::update\+A\+T\+T\+A\+C\+Kframe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a63fc3c91c32d4094ba613331a3be9fb7}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a63fc3c91c32d4094ba613331a3be9fb7}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!update\+D\+E\+A\+T\+Hframe@{update\+D\+E\+A\+T\+Hframe}}
+\index{update\+D\+E\+A\+T\+Hframe@{update\+D\+E\+A\+T\+Hframe}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{update\+D\+E\+A\+T\+Hframe()}{updateDEATHframe()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::update\+D\+E\+A\+T\+Hframe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a95af63af76be29f49e8b5f13202c3078}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a95af63af76be29f49e8b5f13202c3078}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!update\+H\+U\+R\+Tframe@{update\+H\+U\+R\+Tframe}}
+\index{update\+H\+U\+R\+Tframe@{update\+H\+U\+R\+Tframe}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{update\+H\+U\+R\+Tframe()}{updateHURTframe()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::update\+H\+U\+R\+Tframe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a0d5ab41f2654eef85f7019e22e363cb5}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a0d5ab41f2654eef85f7019e22e363cb5}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!update\+I\+D\+L\+Eframe@{update\+I\+D\+L\+Eframe}}
+\index{update\+I\+D\+L\+Eframe@{update\+I\+D\+L\+Eframe}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{update\+I\+D\+L\+Eframe()}{updateIDLEframe()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::update\+I\+D\+L\+Eframe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_ad214c3fa0f38bdb49ac63d87fa61f812}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_ad214c3fa0f38bdb49ac63d87fa61f812}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!update\+M\+O\+V\+Eframe@{update\+M\+O\+V\+Eframe}}
+\index{update\+M\+O\+V\+Eframe@{update\+M\+O\+V\+Eframe}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{update\+M\+O\+V\+Eframe()}{updateMOVEframe()}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::update\+M\+O\+V\+Eframe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_afbc5887043ffe63e87a396365902cf23}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_afbc5887043ffe63e87a396365902cf23}
+
+
+\subsection{Поля}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!colomn@{colomn}}
+\index{colomn@{colomn}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{colomn}{colomn}}]{\setlength{\rightskip}{0pt plus 5cm}float Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::colomn}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_af2d7a8e83f70bb6c3bdf8a5760ab5f92}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_af2d7a8e83f70bb6c3bdf8a5760ab5f92}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!cut\+Damage\+Value@{cut\+Damage\+Value}}
+\index{cut\+Damage\+Value@{cut\+Damage\+Value}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{cut\+Damage\+Value}{cutDamageValue}}]{\setlength{\rightskip}{0pt plus 5cm}int Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::cut\+Damage\+Value}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a175ca6339d90d12804b5b8fa97ec8853}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a175ca6339d90d12804b5b8fa97ec8853}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!damage@{damage}}
+\index{damage@{damage}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{damage}{damage}}]{\setlength{\rightskip}{0pt plus 5cm}int Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::damage}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a0ebc979de5e65a6f8ad1d3177a11dbb4}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a0ebc979de5e65a6f8ad1d3177a11dbb4}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!damage\+Resist@{damage\+Resist}}
+\index{damage\+Resist@{damage\+Resist}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{damage\+Resist}{damageResist}}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::damage\+Resist}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a99a16eec760b123dc7fa1f642c694076}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a99a16eec760b123dc7fa1f642c694076}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!E\+HP@{E\+HP}}
+\index{E\+HP@{E\+HP}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{E\+HP}{EHP}}]{\setlength{\rightskip}{0pt plus 5cm}int Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::\+E\+HP}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a250d0b4ec3f0d897a564866fc07d88ba}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a250d0b4ec3f0d897a564866fc07d88ba}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!enemy\+H\+O\+L\+D\+\_\+\+R\+U\+Ntime@{enemy\+H\+O\+L\+D\+\_\+\+R\+U\+Ntime}}
+\index{enemy\+H\+O\+L\+D\+\_\+\+R\+U\+Ntime@{enemy\+H\+O\+L\+D\+\_\+\+R\+U\+Ntime}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{enemy\+H\+O\+L\+D\+\_\+\+R\+U\+Ntime}{enemyHOLD_RUNtime}}]{\setlength{\rightskip}{0pt plus 5cm}float Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::enemy\+H\+O\+L\+D\+\_\+\+R\+U\+Ntime}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a5522f80dbe9e815e4a9b93a9c2c1750e}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a5522f80dbe9e815e4a9b93a9c2c1750e}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!enemy\+I\+N\+V\+I\+S\+\_\+\+R\+U\+Ntime@{enemy\+I\+N\+V\+I\+S\+\_\+\+R\+U\+Ntime}}
+\index{enemy\+I\+N\+V\+I\+S\+\_\+\+R\+U\+Ntime@{enemy\+I\+N\+V\+I\+S\+\_\+\+R\+U\+Ntime}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{enemy\+I\+N\+V\+I\+S\+\_\+\+R\+U\+Ntime}{enemyINVIS_RUNtime}}]{\setlength{\rightskip}{0pt plus 5cm}float Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::enemy\+I\+N\+V\+I\+S\+\_\+\+R\+U\+Ntime}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_ade8867fc2ce6bbc6773aea88419f213c}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_ade8867fc2ce6bbc6773aea88419f213c}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!enemy\+R\+E\+S\+I\+S\+T\+\_\+\+R\+U\+Ntime@{enemy\+R\+E\+S\+I\+S\+T\+\_\+\+R\+U\+Ntime}}
+\index{enemy\+R\+E\+S\+I\+S\+T\+\_\+\+R\+U\+Ntime@{enemy\+R\+E\+S\+I\+S\+T\+\_\+\+R\+U\+Ntime}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{enemy\+R\+E\+S\+I\+S\+T\+\_\+\+R\+U\+Ntime}{enemyRESIST_RUNtime}}]{\setlength{\rightskip}{0pt plus 5cm}float Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::enemy\+R\+E\+S\+I\+S\+T\+\_\+\+R\+U\+Ntime}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_aba00640ae5d9ff2ad61df62fb364d797}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_aba00640ae5d9ff2ad61df62fb364d797}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!enemy\+Type@{enemy\+Type}}
+\index{enemy\+Type@{enemy\+Type}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{enemy\+Type}{enemyType}}]{\setlength{\rightskip}{0pt plus 5cm}int Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::enemy\+Type}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a1fc3161000f20c3f67c148dade9d7cc3}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a1fc3161000f20c3f67c148dade9d7cc3}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!enemy\+U\+P\+D\+A\+T\+Eframe\+Time@{enemy\+U\+P\+D\+A\+T\+Eframe\+Time}}
+\index{enemy\+U\+P\+D\+A\+T\+Eframe\+Time@{enemy\+U\+P\+D\+A\+T\+Eframe\+Time}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{enemy\+U\+P\+D\+A\+T\+Eframe\+Time}{enemyUPDATEframeTime}}]{\setlength{\rightskip}{0pt plus 5cm}float Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::enemy\+U\+P\+D\+A\+T\+Eframe\+Time}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_aa0fd588c672bd7f0b6531645f59712f3}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_aa0fd588c672bd7f0b6531645f59712f3}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!flag\+T\+Ohold@{flag\+T\+Ohold}}
+\index{flag\+T\+Ohold@{flag\+T\+Ohold}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{flag\+T\+Ohold}{flagTOhold}}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::flag\+T\+Ohold}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a7e1e5fe7c3605c499e8ed688724dafc0}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a7e1e5fe7c3605c499e8ed688724dafc0}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!frame\+\_\+h@{frame\+\_\+h}}
+\index{frame\+\_\+h@{frame\+\_\+h}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{frame\+\_\+h}{frame_h}}]{\setlength{\rightskip}{0pt plus 5cm}float Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::frame\+\_\+h}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a0d99581516d74d630535f1e4aff35938}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a0d99581516d74d630535f1e4aff35938}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!frame\+\_\+w@{frame\+\_\+w}}
+\index{frame\+\_\+w@{frame\+\_\+w}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{frame\+\_\+w}{frame_w}}]{\setlength{\rightskip}{0pt plus 5cm}float Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::frame\+\_\+w}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_af58fe662ebf3cfd487d9863660c85956}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_af58fe662ebf3cfd487d9863660c85956}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!frame\+\_\+x@{frame\+\_\+x}}
+\index{frame\+\_\+x@{frame\+\_\+x}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{frame\+\_\+x}{frame_x}}]{\setlength{\rightskip}{0pt plus 5cm}float Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::frame\+\_\+x}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a4b48fcaa524fb492767f4de6ff10df91}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a4b48fcaa524fb492767f4de6ff10df91}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!frame\+\_\+y@{frame\+\_\+y}}
+\index{frame\+\_\+y@{frame\+\_\+y}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{frame\+\_\+y}{frame_y}}]{\setlength{\rightskip}{0pt plus 5cm}float Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::frame\+\_\+y}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a675a141480e64ba5ba85ad8d5c61fd3c}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a675a141480e64ba5ba85ad8d5c61fd3c}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!frames\+Complited@{frames\+Complited}}
+\index{frames\+Complited@{frames\+Complited}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{frames\+Complited}{framesComplited}}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::frames\+Complited}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a3badead3c542bc494f789967e985f878}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a3badead3c542bc494f789967e985f878}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!health@{health}}
+\index{health@{health}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{health}{health}}]{\setlength{\rightskip}{0pt plus 5cm}int Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::health}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a500bead42bbb856a6ac92351917a4045}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a500bead42bbb856a6ac92351917a4045}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!invisibility@{invisibility}}
+\index{invisibility@{invisibility}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{invisibility}{invisibility}}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::invisibility}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_acb35c64bf3e42d2b62f86a3c9884c74b}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_acb35c64bf3e42d2b62f86a3c9884c74b}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!row@{row}}
+\index{row@{row}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{row}{row}}]{\setlength{\rightskip}{0pt plus 5cm}float Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::row}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_affccc0ff4550536288e4c916980b2080}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_affccc0ff4550536288e4c916980b2080}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!speed@{speed}}
+\index{speed@{speed}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{speed}{speed}}]{\setlength{\rightskip}{0pt plus 5cm}float Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::speed}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_aa69529ceced0b3815dcd558250cdbb87}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_aa69529ceced0b3815dcd558250cdbb87}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!sprite@{sprite}}
+\index{sprite@{sprite}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{sprite}{sprite}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::sprite}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a496de410039d81c0d23a48baac8b358f}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a496de410039d81c0d23a48baac8b358f}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!Stay\+To\+Deal\+Damage@{Stay\+To\+Deal\+Damage}}
+\index{Stay\+To\+Deal\+Damage@{Stay\+To\+Deal\+Damage}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{Stay\+To\+Deal\+Damage}{StayToDealDamage}}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::\+Stay\+To\+Deal\+Damage}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_aa4aadf0cffb76a80a1156ae3a9a478d1}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_aa4aadf0cffb76a80a1156ae3a9a478d1}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!Stay\+To\+Take\+Damage@{Stay\+To\+Take\+Damage}}
+\index{Stay\+To\+Take\+Damage@{Stay\+To\+Take\+Damage}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{Stay\+To\+Take\+Damage}{StayToTakeDamage}}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::\+Stay\+To\+Take\+Damage}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a1eea8a7e90380a00980e220f20ed6dd0}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a1eea8a7e90380a00980e220f20ed6dd0}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!target\+Position@{target\+Position}}
+\index{target\+Position@{target\+Position}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{target\+Position}{targetPosition}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::target\+Position}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_af55e75dec7fbff129ad75ee582718045}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_af55e75dec7fbff129ad75ee582718045}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!type\+Side@{type\+Side}}
+\index{type\+Side@{type\+Side}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{type\+Side}{typeSide}}]{\setlength{\rightskip}{0pt plus 5cm}int Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::type\+Side}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_a865ae14d9ee1f89d89b6add772db0256}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_a865ae14d9ee1f89d89b6add772db0256}
+\index{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}!vector\+To\+Target@{vector\+To\+Target}}
+\index{vector\+To\+Target@{vector\+To\+Target}!Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate@{Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate}}
+\subsubsection[{\texorpdfstring{vector\+To\+Target}{vectorToTarget}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Game\+Object\+::\+Enemys\+::\+Enemy\+Temlate\+::vector\+To\+Target}\hypertarget{classGameObject_1_1Enemys_1_1EnemyTemlate_af50eeadd76fdc2654945568205f7aef4}{}\label{classGameObject_1_1Enemys_1_1EnemyTemlate_af50eeadd76fdc2654945568205f7aef4}

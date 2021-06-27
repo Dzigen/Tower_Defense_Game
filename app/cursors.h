@@ -3,6 +3,14 @@
 
 #include <SFML/Graphics.hpp>
 
+/**
+ * \defgroup objectClasses Классы объектов
+ */
+
+/**
+ * @ingroup objectClasses
+ * @brief Хранимые параметры кастомного курсора в игре
+ */
 class Cursors{
 
     public:
@@ -13,7 +21,7 @@ class Cursors{
     Cursors(){
 
         /*обычный кастомный курсор*/
-        pict.loadFromFile("../../Tower_Defense_Game/external/Sprites/cursor.png");
+        pict.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/cursor.png");
 
         /*ставим прозрачность белых пискселей*/
         pict.createMaskFromColor(sf::Color(255,255,255));

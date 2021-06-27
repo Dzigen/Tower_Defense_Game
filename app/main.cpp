@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * @brief Отрисовка главного меню
+ *
+ * @ingroup menu
+ */
 int main(){
 
     /*создаём  главное окно*/
@@ -14,7 +19,7 @@ int main(){
     window.setPosition(centerWindow);
 
     sf::Image icon;
-    icon.loadFromFile("../../Tower_Defense_Game/external/Sprites/icon_game.png");
+    icon.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/icon_game.png");
     window.setIcon(32,32,icon.getPixelsPtr());
 
     /*выключаем обычный курсор*/
@@ -27,23 +32,23 @@ int main(){
 
        /*загружаем картинку с текстом об авторе программы*/
        sf::Texture shapeAL;
-       shapeAL.loadFromFile("../../Tower_Defense_Game/external/Sprites/Autor.png");
+       shapeAL.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/Autor.png");
        sf::Sprite about(shapeAL);
 
         /*загружаем стиль текста*/
         sf::Font font;
-        font.loadFromFile("../../Tower_Defense_Game/external/Text/Roboto-Italic.ttf");
+        font.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Text/Roboto-Italic.ttf");
 
 
         /*загружаем задний фон главного меню для отображения*/
         sf::Texture shapeBGM;
         sf::RectangleShape BackgroundPictureMenu(sf::Vector2f(1200,800));
-        shapeBGM.loadFromFile("../../Tower_Defense_Game/external/Sprites/BackgroungMainMenu.png");
+        shapeBGM.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/BackgroungMainMenu.png");
         BackgroundPictureMenu.setTexture(&shapeBGM);
 
         /*загружаем кнопку "Начать игру" для главного меню*/
         sf::Texture shapeNG;
-        shapeNG.loadFromFile("../../Tower_Defense_Game/external/Sprites/Button.png");
+        shapeNG.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/Button.png");
         sf::Sprite NewGameButton(shapeNG);
 
         /*устанавливаем позицию кнопки*/
@@ -57,7 +62,7 @@ int main(){
 
         /*загружаем кнопку "Об авторе" для главного меню*/
         sf::Texture shapeAA;
-        shapeAA.loadFromFile("../../Tower_Defense_Game/external/Sprites/Button.png");
+        shapeAA.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/Button.png");
         sf::Sprite AboutAutorButton(shapeAA);
 
         /*устанавливаем позицию кнопки*/
@@ -71,7 +76,7 @@ int main(){
 
         /*загружаем кнопку "Выход" для главного меню*/
         sf::Texture shapeQ;
-        shapeQ.loadFromFile("../../Tower_Defense_Game/external/Sprites/Button.png");
+        shapeQ.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/Button.png");
         sf::Sprite QuitButton(shapeQ);
 
         /*устанавливаем позицию кнопки*/

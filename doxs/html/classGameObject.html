@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Игра &quot;Одинокая Турелька&quot;: Класс GameObject</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="tower_defense.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Игра &quot;Одинокая Турелька&quot;
+   </div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classGameObject.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Структуры данных</a> &#124;
+<a href="#pub-attribs">Поля данных</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс GameObject<div class="ingroups"><a class="el" href="group__objectClasses.html">Классы объектов</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Параметры игровых объектов  
+ <a href="classGameObject.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="game__objects_8h_source.html">game_objects.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса GameObject:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGameObject__coll__graph.png" border="0" usemap="#GameObject_coll__map" alt="Collaboration graph"/></div>
+<map name="GameObject_coll__map" id="GameObject_coll__map">
+<area shape="rect" id="node2" href="classGameObject_1_1Hero.html" title="The Hero class. " alt="" coords="341,5,471,32"/>
+<area shape="rect" id="node3" href="classGameObject_1_1Base.html" title="The Base class. " alt="" coords="339,56,473,83"/>
+<area shape="rect" id="node4" href="classGameObject_1_1Map.html" title="GameObject::Map" alt="" coords="342,107,470,133"/>
+<area shape="rect" id="node5" href="classGameObject_1_1BaseExplosion.html" title="The BaseExplosion class. " alt="" coords="311,157,501,184"/>
+<area shape="rect" id="node6" href="classGameObject_1_1Enemys_1_1EnemyUpdates.html" title="GameObject::Enemys\l::EnemyUpdates" alt="" coords="331,209,481,250"/>
+<area shape="rect" id="node7" href="classGameObject_1_1HeroExplosion.html" title="The HeroExplosion class. " alt="" coords="312,275,500,301"/>
+<area shape="rect" id="node8" href="classGameObject_1_1Bullet.html" title="The Bullet class. " alt="" coords="338,325,474,352"/>
+<area shape="rect" id="node9" href="classGameObject_1_1Runes.html" title="The Runes class. " alt="" coords="335,376,477,403"/>
+<area shape="rect" id="node10" href="classGameObject_1_1Runes_1_1Hp__hero.html" title="The Hp_hero class. " alt="" coords="19,270,168,311"/>
+<area shape="rect" id="node11" href="classGameObject_1_1Runes_1_1Plus__damage.html" title="The Plus_damage class. " alt="" coords="19,335,168,377"/>
+<area shape="rect" id="node12" href="classGameObject_1_1Runes_1_1Hp__base.html" title="The Hp_base class. " alt="" coords="19,401,168,442"/>
+<area shape="rect" id="node13" href="classGameObject_1_1Runes_1_1Coin.html" title="The Coin class. " alt="" coords="5,467,181,493"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Структуры данных</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject_1_1Base.html">Base</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classGameObject_1_1Base.html" title="The Base class. ">Base</a> class.  <a href="classGameObject_1_1Base.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject_1_1BaseExplosion.html">BaseExplosion</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classGameObject_1_1BaseExplosion.html" title="The BaseExplosion class. ">BaseExplosion</a> class.  <a href="classGameObject_1_1BaseExplosion.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject_1_1Bullet.html">Bullet</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classGameObject_1_1Bullet.html" title="The Bullet class. ">Bullet</a> class.  <a href="classGameObject_1_1Bullet.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject_1_1Enemys.html">Enemys</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classGameObject_1_1Enemys.html" title="The Enemys class. ">Enemys</a> class.  <a href="classGameObject_1_1Enemys.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject_1_1Hero.html">Hero</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classGameObject_1_1Hero.html" title="The Hero class. ">Hero</a> class.  <a href="classGameObject_1_1Hero.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject_1_1HeroExplosion.html">HeroExplosion</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classGameObject_1_1HeroExplosion.html" title="The HeroExplosion class. ">HeroExplosion</a> class.  <a href="classGameObject_1_1HeroExplosion.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject_1_1Map.html">Map</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject_1_1Runes.html">Runes</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classGameObject_1_1Runes.html" title="The Runes class. ">Runes</a> class.  <a href="classGameObject_1_1Runes.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Поля данных</h2></td></tr>
+<tr class="memitem:a49b8b56419192fd29243f4ae9ad8c7f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGameObject_1_1Map.html">Map</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#a49b8b56419192fd29243f4ae9ad8c7f3">map</a></td></tr>
+<tr class="separator:a49b8b56419192fd29243f4ae9ad8c7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d441ea1c04535a1bcfcf0dacd3e46b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGameObject_1_1Base.html">Base</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#a0d441ea1c04535a1bcfcf0dacd3e46b6">base</a></td></tr>
+<tr class="separator:a0d441ea1c04535a1bcfcf0dacd3e46b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03d9b8baaf2b58f0074fe183f4843379"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGameObject_1_1BaseExplosion.html">BaseExplosion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#a03d9b8baaf2b58f0074fe183f4843379">baseExplosion</a></td></tr>
+<tr class="separator:a03d9b8baaf2b58f0074fe183f4843379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492285ce87e02288a1d532f5c83ff773"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGameObject_1_1Hero.html">Hero</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#a492285ce87e02288a1d532f5c83ff773">hero</a></td></tr>
+<tr class="separator:a492285ce87e02288a1d532f5c83ff773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dd518a4cbc7316edf2a4d43efa3dd52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGameObject_1_1HeroExplosion.html">HeroExplosion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#a3dd518a4cbc7316edf2a4d43efa3dd52">heroExplosion</a></td></tr>
+<tr class="separator:a3dd518a4cbc7316edf2a4d43efa3dd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef75ff75d6d246e532f47f54b6fac398"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGameObject_1_1Runes.html">Runes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#aef75ff75d6d246e532f47f54b6fac398">rune</a></td></tr>
+<tr class="separator:aef75ff75d6d246e532f47f54b6fac398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfec990ef1d0b3124c838ee9b6357948"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGameObject_1_1Bullet.html">Bullet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#abfec990ef1d0b3124c838ee9b6357948">bullet</a></td></tr>
+<tr class="separator:abfec990ef1d0b3124c838ee9b6357948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c4f71551f2ab511cca56814f3678a11"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classGameObject_1_1Bullet.html">Bullet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#a6c4f71551f2ab511cca56814f3678a11">bullets</a></td></tr>
+<tr class="separator:a6c4f71551f2ab511cca56814f3678a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be22120f03e9c3332dbd74ecb57d8f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGameObject_1_1Enemys_1_1EnemyUpdates.html">Enemys::EnemyUpdates</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#a1be22120f03e9c3332dbd74ecb57d8f5">enemyUpdates</a></td></tr>
+<tr class="separator:a1be22120f03e9c3332dbd74ecb57d8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ef32e6a46460a1db1d6005eb8a12cdd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classGameObject_1_1Enemys_1_1EnemyTemlate.html">Enemys::EnemyTemlate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#a9ef32e6a46460a1db1d6005eb8a12cdd">enemy</a></td></tr>
+<tr class="separator:a9ef32e6a46460a1db1d6005eb8a12cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Параметры игровых объектов </p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="classGameObject_1_1Hero.html" title="The Hero class. ">Hero</a>, <a class="el" href="classGameObject_1_1Runes.html" title="The Runes class. ">Runes</a>, <a class="el" href="classGameObject_1_1Enemys.html" title="The Enemys class. ">Enemys</a>, <a class="el" href="classGameObject_1_1Base.html" title="The Base class. ">Base</a> </dd></dl>
+</div><h2 class="groupheader">Поля</h2>
+<a class="anchor" id="a0d441ea1c04535a1bcfcf0dacd3e46b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGameObject_1_1Base.html">Base</a> GameObject::base</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a03d9b8baaf2b58f0074fe183f4843379"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGameObject_1_1BaseExplosion.html">BaseExplosion</a> GameObject::baseExplosion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abfec990ef1d0b3124c838ee9b6357948"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGameObject_1_1Bullet.html">Bullet</a> GameObject::bullet</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6c4f71551f2ab511cca56814f3678a11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classGameObject_1_1Bullet.html">Bullet</a>&gt; GameObject::bullets</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9ef32e6a46460a1db1d6005eb8a12cdd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classGameObject_1_1Enemys_1_1EnemyTemlate.html">Enemys::EnemyTemlate</a>&gt; GameObject::enemy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1be22120f03e9c3332dbd74ecb57d8f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGameObject_1_1Enemys_1_1EnemyUpdates.html">Enemys::EnemyUpdates</a> GameObject::enemyUpdates</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a492285ce87e02288a1d532f5c83ff773"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGameObject_1_1Hero.html">Hero</a> GameObject::hero</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3dd518a4cbc7316edf2a4d43efa3dd52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGameObject_1_1HeroExplosion.html">HeroExplosion</a> GameObject::heroExplosion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a49b8b56419192fd29243f4ae9ad8c7f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGameObject_1_1Map.html">Map</a> GameObject::map</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aef75ff75d6d246e532f47f54b6fac398"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGameObject_1_1Runes.html">Runes</a> GameObject::rune</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classGameObject.html">GameObject</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

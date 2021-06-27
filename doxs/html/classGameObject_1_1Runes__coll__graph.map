@@ -1,0 +1,6 @@
+<map id="GameObject::Runes" name="GameObject::Runes">
+<area shape="rect" id="node2" href="$classGameObject_1_1Runes_1_1Hp__hero.html" title="The Hp_hero class. " alt="" coords="19,5,168,47"/>
+<area shape="rect" id="node3" href="$classGameObject_1_1Runes_1_1Plus__damage.html" title="The Plus_damage class. " alt="" coords="19,71,168,112"/>
+<area shape="rect" id="node4" href="$classGameObject_1_1Runes_1_1Hp__base.html" title="The Hp_base class. " alt="" coords="19,136,168,177"/>
+<area shape="rect" id="node5" href="$classGameObject_1_1Runes_1_1Coin.html" title="The Coin class. " alt="" coords="5,202,181,229"/>
+</map>

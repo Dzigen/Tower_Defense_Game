@@ -1,0 +1,7 @@
+<map id="game_draw" name="game_draw">
+<area shape="rect" id="node2" href="$game__process_8h.html#a4b8f8d1c761e24c0a8480a7489d349d1" title="base_hero_explosion" alt="" coords="143,5,287,32"/>
+<area shape="rect" id="node3" href="$main_8h.html#a9c3324e8c5f0e0ddcd96bbe89e0f7f16" title="game_process" alt="" coords="335,81,441,108"/>
+<area shape="rect" id="node5" href="$game__process_8h.html#aac2382a6b5fa5b0687116caf16837b35" title="game_end_window" alt="" coords="148,107,281,133"/>
+<area shape="rect" id="node6" href="$pause__menu_8cpp.html#a41b04beddc9426c2999858fabc479ac0" title="pause_menu" alt="" coords="167,157,263,184"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="489,81,540,108"/>
+</map>

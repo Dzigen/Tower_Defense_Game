@@ -1,0 +1,5 @@
+<map id="MenuBar::MenuBar" name="MenuBar::MenuBar">
+<area shape="rect" id="node2" href="$classMenuBar.html#a803dd882281e407e0494d2e5c45962bc" title="MenuBar::change_round" alt="" coords="188,5,351,32"/>
+<area shape="rect" id="node3" href="$classMenuBar.html#a7a4dec33f791733c1babad22ac06d6e3" title="MenuBar::incr_counter\l_added_damage" alt="" coords="193,57,346,98"/>
+<area shape="rect" id="node4" href="$classMenuBar.html#a8517c956a4d36cdacdcb42989b5dccf3" title="MenuBar::incr_counter\l_coins" alt="" coords="193,122,346,163"/>
+</map>

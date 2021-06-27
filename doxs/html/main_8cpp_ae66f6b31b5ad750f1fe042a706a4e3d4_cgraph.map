@@ -1,0 +1,34 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$group__mainLoop.html#ga9c3324e8c5f0e0ddcd96bbe89e0f7f16" title="Главный цикл игрового процесса " alt="" coords="104,464,211,491"/>
+<area shape="rect" id="node3" href="$classToolBar.html#acb6ec6dffc23783cd110667e3a012c2a" title="ToolBar::get_time" alt="" coords="268,56,393,83"/>
+<area shape="rect" id="node6" href="$classMenuBar.html#ab23d3bd560cb6a83deddad9ca2880c5b" title="MenuBar::check_for\l_next_round" alt="" coords="261,129,400,170"/>
+<area shape="rect" id="node8" href="$game__process_8h.html#ab2905c57e79ad2fcc3e51dd7fd5916dc" title="Обработка выстрелов главного героя и последующее отслеживание взаимодействий пули с объектами ..." alt="" coords="291,216,370,243"/>
+<area shape="rect" id="node11" href="$game__process_8h.html#a3eed5602a3e229026dfc84af49007688" title="Передвижение главного героя в окне игрового процесса " alt="" coords="287,388,374,415"/>
+<area shape="rect" id="node12" href="$enemy__hit_8cpp.html#a6965d0b7bc93883e1089dd9a326a584a" title="Обработка атаки врагов на карте игрового процесса " alt="" coords="289,280,372,307"/>
+<area shape="rect" id="node13" href="$game__process_8h.html#a95a06e0efaa583439b679f0b28419ba9" title="Обработка движений противников по карте игрового процесса " alt="" coords="281,439,381,465"/>
+<area shape="rect" id="node17" href="$group__mainLoop.html#ga11dd1886453909da6eff52362bac59b8" title="Обработка нажатий кнопок мыши " alt="" coords="283,489,378,516"/>
+<area shape="rect" id="node18" href="$group__mainLoop.html#ga41b04beddc9426c2999858fabc479ac0" title="Остановка игры и вывод меню&#45;паузы " alt="" coords="283,544,379,571"/>
+<area shape="rect" id="node20" href="$group__mainLoop.html#gaf2266f0127d085329a1b7e092832e8a3" title="Вывод игрового процесса в игровом окне " alt="" coords="515,645,605,672"/>
+<area shape="rect" id="node22" href="$game__process_8h.html#af2bb7b78f028e61a0c6674cd9b976a8c" title="Обработка взаимодействия главного героя с заспавненной руной на карте игрового процесса ..." alt="" coords="291,333,370,360"/>
+<area shape="rect" id="node26" href="$game__process_8h.html#a813bbb2330c07f4bf303406c4efab35d" title="Анимация руны и её вывод на карту игрового процесса " alt="" coords="261,763,400,789"/>
+<area shape="rect" id="node28" href="$group__mainLoop.html#ga3259e0d309cf137b40488db0226f91f6" title="Обработка завершения игрового цроцесса " alt="" coords="289,847,372,873"/>
+<area shape="rect" id="node30" href="$base__hero__explosion_8cpp.html#a4b8f8d1c761e24c0a8480a7489d349d1" title="Отрисовка и анимация взрыва базы " alt="" coords="259,645,403,672"/>
+<area shape="rect" id="node31" href="$group__mainLoop.html#gaac2382a6b5fa5b0687116caf16837b35" title="Вывод диалогового окна &quot;конец игры&quot;. " alt="" coords="264,696,397,723"/>
+<area shape="rect" id="node4" href="$classToolBar.html#a704da8346e935b2724aba9d80bbdd66b" title="ToolBar::randomizeRune" alt="" coords="477,5,643,32"/>
+<area shape="rect" id="node5" href="$classToolBar.html#a6b8c6075b58347e259cabf177adfd687" title="ToolBar::update_spawnTimer" alt="" coords="464,56,656,83"/>
+<area shape="rect" id="node7" href="$classMenuBar.html#a803dd882281e407e0494d2e5c45962bc" title="MenuBar::change_round" alt="" coords="479,107,641,133"/>
+<area shape="rect" id="node9" href="$classToolBar.html#a7f2fbad05b0511c585283fe5377c6096" title="ToolBar::change_hero\l_base_hp" alt="" coords="730,253,879,294"/>
+<area shape="rect" id="node10" href="$classToolBar.html#a4cc86d8767581aaa437f851d5782c61e" title="ToolBar::change_enemy\l_hp_line" alt="" coords="479,209,641,250"/>
+<area shape="rect" id="node14" href="$move__enemy_8h.html#acc579aee4d796c717e760e72c1c75ec3" title="randomize_enemy_coordinates" alt="" coords="459,376,661,403"/>
+<area shape="rect" id="node15" href="$move__enemy_8h.html#a778c7ea2e26eb1d80652bf61d1661fb1" title="randomize_enemy_target\l_coordinates" alt="" coords="476,427,644,469"/>
+<area shape="rect" id="node16" href="$move__enemy_8h.html#a21c57a411b6aa06a0f36c9eefab38b5b" title="randomize_enemy_type" alt="" coords="480,493,640,520"/>
+<area shape="rect" id="node19" href="$classToolBar.html#ae8d52640262d6e25d07e65ad5cfe8a54" title="ToolBar::add_to_time" alt="" coords="487,544,633,571"/>
+<area shape="rect" id="node21" href="$classToolBar.html#a6c030d2393dd9ad33fb51e59b9ae9d6b" title="ToolBar::reset_clock" alt="" coords="489,595,631,621"/>
+<area shape="rect" id="node23" href="$effect__of__the__rune_8cpp.html#a0078b36ac662e224e1913996193c1c98" title="effect_of_the_rune" alt="" coords="495,325,625,352"/>
+<area shape="rect" id="node24" href="$classMenuBar.html#a7a4dec33f791733c1babad22ac06d6e3" title="MenuBar::incr_counter\l_added_damage" alt="" coords="728,318,881,359"/>
+<area shape="rect" id="node25" href="$classMenuBar.html#a8517c956a4d36cdacdcb42989b5dccf3" title="MenuBar::incr_counter\l_coins" alt="" coords="728,383,881,425"/>
+<area shape="rect" id="node27" href="$randomize__rune__coordinates_8cpp.html#ad3bb6254181bfa4913a3ec9a0f206f69" title="randomize_rune_coordinates" alt="" coords="466,813,654,840"/>
+<area shape="rect" id="node29" href="$classGameEndWindow.html#a2f5dcaf5df932f64323d14f58b5649e6" title="GameEndWindow::setDescription" alt="" coords="451,864,669,891"/>
+<area shape="rect" id="node32" href="$classGameEndWindow.html#a91d7d99ae0dac923a1bf764f7b5d996f" title="GameEndWindow::update\l_timer" alt="" coords="717,718,892,759"/>
+<area shape="rect" id="node33" href="$classGameEndWindow.html#a00ec6d032219c692a678b7ddac55a3b3" title="GameEndWindow::check\l_timer" alt="" coords="475,747,645,789"/>
+</map>

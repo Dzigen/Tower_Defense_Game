@@ -1,0 +1,202 @@
+\hypertarget{group__runeHandler}{}\section{Обработчики рун}
+\label{group__runeHandler}\index{Обработчики рун@{Обработчики рун}}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__runeHandler_ga813bbb2330c07f4bf303406c4efab35d}{update\+\_\+spawn\+\_\+rune} (\hyperlink{classGameObject}{Game\+Object} \&object, \hyperlink{classToolBar}{Tool\+Bar} \&toolbar, float \&rune\+U\+P\+D\+A\+T\+Etime, float \&time, std\+::minstd\+\_\+rand \&simple\+\_\+rand)
+\begin{DoxyCompactList}\small\item\em Анимация руны и её вывод на карту игрового процесса \end{DoxyCompactList}\item 
+void \hyperlink{group__runeHandler_gaf2bb7b78f028e61a0c6674cd9b976a8c}{take\+\_\+rune} (\hyperlink{classGameObject}{Game\+Object} \&object, \hyperlink{classToolBar}{Tool\+Bar} \&toolbar, \hyperlink{classMenuBar}{Menu\+Bar} \&menubar)
+\begin{DoxyCompactList}\small\item\em Обработка взаимодействия главного героя с заспавненной руной на карте игрового процесса \end{DoxyCompactList}\item 
+void \hyperlink{group__runeHandler_ga0078b36ac662e224e1913996193c1c98}{effect\+\_\+of\+\_\+the\+\_\+rune} (\hyperlink{classGameObject}{Game\+Object} \&object, \hyperlink{classToolBar}{Tool\+Bar} \&toolbar, \hyperlink{classMenuBar}{Menu\+Bar} \&menubar)
+\begin{DoxyCompactList}\small\item\em Обрабатывается эффект применения руны в соответствии с её типом \end{DoxyCompactList}\item 
+void \hyperlink{group__runeHandler_gad3bb6254181bfa4913a3ec9a0f206f69}{randomize\+\_\+rune\+\_\+coordinates} (\hyperlink{classGameObject}{Game\+Object} \&object, \hyperlink{classToolBar}{Tool\+Bar} \&toolbar, std\+::minstd\+\_\+rand \&simple\+\_\+rand)
+\begin{DoxyCompactList}\small\item\em Выбираются случайным образом координаты руны для отображения на карте \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+\subsection{Функции}
+\index{Обработчики рун@{Обработчики рун}!effect\+\_\+of\+\_\+the\+\_\+rune@{effect\+\_\+of\+\_\+the\+\_\+rune}}
+\index{effect\+\_\+of\+\_\+the\+\_\+rune@{effect\+\_\+of\+\_\+the\+\_\+rune}!Обработчики рун@{Обработчики рун}}
+\subsubsection[{\texorpdfstring{effect\+\_\+of\+\_\+the\+\_\+rune(\+Game\+Object \&object, Tool\+Bar \&toolbar, Menu\+Bar \&menubar)}{effect_of_the_rune(GameObject &object, ToolBar &toolbar, MenuBar &menubar)}}]{\setlength{\rightskip}{0pt plus 5cm}void effect\+\_\+of\+\_\+the\+\_\+rune (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Object} \&}]{object, }
+\item[{{\bf Tool\+Bar} \&}]{toolbar, }
+\item[{{\bf Menu\+Bar} \&}]{menubar}
+\end{DoxyParamCaption}
+)}\hypertarget{group__runeHandler_ga0078b36ac662e224e1913996193c1c98}{}\label{group__runeHandler_ga0078b36ac662e224e1913996193c1c98}
+
+
+Обрабатывается эффект применения руны в соответствии с её типом 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em объект} & класса Game\+Objects с игровыми объектами \\
+\hline
+{\em toolbar} & объект класса Toolbar с параметрами нижней полоски(тулбара) на экране игрового процесса \\
+\hline
+{\em menubar} & объект класса \hyperlink{classMenuBar}{Menu\+Bar} с параметрами верхней полоски полоски(меню бара) на экране игрового процесса \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+none 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{group__runeHandler_ga0078b36ac662e224e1913996193c1c98_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__runeHandler_ga0078b36ac662e224e1913996193c1c98_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Обработчики рун@{Обработчики рун}!randomize\+\_\+rune\+\_\+coordinates@{randomize\+\_\+rune\+\_\+coordinates}}
+\index{randomize\+\_\+rune\+\_\+coordinates@{randomize\+\_\+rune\+\_\+coordinates}!Обработчики рун@{Обработчики рун}}
+\subsubsection[{\texorpdfstring{randomize\+\_\+rune\+\_\+coordinates(\+Game\+Object \&object, Tool\+Bar \&toolbar, std\+::minstd\+\_\+rand \&simple\+\_\+rand)}{randomize_rune_coordinates(GameObject &object, ToolBar &toolbar, std::minstd_rand &simple_rand)}}]{\setlength{\rightskip}{0pt plus 5cm}void randomize\+\_\+rune\+\_\+coordinates (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Object} \&}]{object, }
+\item[{{\bf Tool\+Bar} \&}]{toolbar, }
+\item[{std\+::minstd\+\_\+rand \&}]{simple\+\_\+rand}
+\end{DoxyParamCaption}
+)}\hypertarget{group__runeHandler_gad3bb6254181bfa4913a3ec9a0f206f69}{}\label{group__runeHandler_gad3bb6254181bfa4913a3ec9a0f206f69}
+
+
+Выбираются случайным образом координаты руны для отображения на карте 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em object} & объект класса Game\+Objects с игровыми объектами \\
+\hline
+{\em toolbar} & объект класса \hyperlink{classToolBar}{Tool\+Bar} с параметрами нижней полоски(тулбара) на экране игрового процесса \\
+\hline
+{\em simple\+\_\+rand} & рандомайзер для получения случайных велечин \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+none 
+\end{DoxyReturn}
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__runeHandler_gad3bb6254181bfa4913a3ec9a0f206f69_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Обработчики рун@{Обработчики рун}!take\+\_\+rune@{take\+\_\+rune}}
+\index{take\+\_\+rune@{take\+\_\+rune}!Обработчики рун@{Обработчики рун}}
+\subsubsection[{\texorpdfstring{take\+\_\+rune(\+Game\+Object \&object, Tool\+Bar \&toolbar, Menu\+Bar \&menubar)}{take_rune(GameObject &object, ToolBar &toolbar, MenuBar &menubar)}}]{\setlength{\rightskip}{0pt plus 5cm}void take\+\_\+rune (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Object} \&}]{object, }
+\item[{{\bf Tool\+Bar} \&}]{toolbar, }
+\item[{{\bf Menu\+Bar} \&}]{menubar}
+\end{DoxyParamCaption}
+)}\hypertarget{group__runeHandler_gaf2bb7b78f028e61a0c6674cd9b976a8c}{}\label{group__runeHandler_gaf2bb7b78f028e61a0c6674cd9b976a8c}
+
+
+Обработка взаимодействия главного героя с заспавненной руной на карте игрового процесса 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em object} & класса Game\+Objects с игровыми объектами \\
+\hline
+{\em toolbar} & объект класса Toolbar с параметрами нижней полоски(тулбара) на экране игрового процесса \\
+\hline
+{\em menubar} & объект класса \hyperlink{classMenuBar}{Menu\+Bar} с параметрами верхней полоски полоски(меню бара) на экране игрового процесса \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+none 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__runeHandler_gaf2bb7b78f028e61a0c6674cd9b976a8c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{group__runeHandler_gaf2bb7b78f028e61a0c6674cd9b976a8c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Обработчики рун@{Обработчики рун}!update\+\_\+spawn\+\_\+rune@{update\+\_\+spawn\+\_\+rune}}
+\index{update\+\_\+spawn\+\_\+rune@{update\+\_\+spawn\+\_\+rune}!Обработчики рун@{Обработчики рун}}
+\subsubsection[{\texorpdfstring{update\+\_\+spawn\+\_\+rune(\+Game\+Object \&object, Tool\+Bar \&toolbar, float \&rune\+U\+P\+D\+A\+T\+Etime, float \&time, std\+::minstd\+\_\+rand \&simple\+\_\+rand)}{update_spawn_rune(GameObject &object, ToolBar &toolbar, float &runeUPDATEtime, float &time, std::minstd_rand &simple_rand)}}]{\setlength{\rightskip}{0pt plus 5cm}void update\+\_\+spawn\+\_\+rune (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Object} \&}]{object, }
+\item[{{\bf Tool\+Bar} \&}]{toolbar, }
+\item[{float \&}]{rune\+U\+P\+D\+A\+T\+Etime, }
+\item[{float \&}]{time, }
+\item[{std\+::minstd\+\_\+rand \&}]{simple\+\_\+rand}
+\end{DoxyParamCaption}
+)}\hypertarget{group__runeHandler_ga813bbb2330c07f4bf303406c4efab35d}{}\label{group__runeHandler_ga813bbb2330c07f4bf303406c4efab35d}
+
+
+Анимация руны и её вывод на карту игрового процесса 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em object} & класса Game\+Objects с игровыми объектами \\
+\hline
+{\em toolbar} & объект класса Toolbar с параметрами нижней полоски(тулбара) на экране игрового процесса \\
+\hline
+{\em rune\+U\+P\+D\+A\+T\+Etime} & время с прошлого спавна руны \\
+\hline
+{\em time} & врямя работы предыдущего цикла игры \\
+\hline
+{\em simple\+\_\+rand} & рандомайзер для получения случайных велечин \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+none 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__runeHandler_ga813bbb2330c07f4bf303406c4efab35d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__runeHandler_ga813bbb2330c07f4bf303406c4efab35d_icgraph}
+\end{center}
+\end{figure}
+
+

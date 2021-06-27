@@ -1,0 +1,228 @@
+\hypertarget{classMenuBar}{}\section{Класс Menu\+Bar}
+\label{classMenuBar}\index{Menu\+Bar@{Menu\+Bar}}
+
+
+Паметры счётчиков,выводимых в верхней полоске игрового окна  
+
+
+
+
+{\ttfamily \#include $<$menu\+\_\+bar.\+h$>$}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMenuBar_a8517c956a4d36cdacdcb42989b5dccf3}{incr\+\_\+counter\+\_\+coins} (int value)
+\item 
+void \hyperlink{classMenuBar_a7a4dec33f791733c1babad22ac06d6e3}{incr\+\_\+counter\+\_\+added\+\_\+damage} (int value)
+\item 
+void \hyperlink{classMenuBar_ab23d3bd560cb6a83deddad9ca2880c5b}{check\+\_\+for\+\_\+next\+\_\+round} (sf\+::\+Clock \&clock, int add\+To\+Timer, int \&added\+Dmg\+In\+Perct, int \&added\+Hp\+In\+Perct)
+\item 
+void \hyperlink{classMenuBar_a803dd882281e407e0494d2e5c45962bc}{change\+\_\+round} ()
+\item 
+\hyperlink{classMenuBar_a76a0ec8b0b4cba2775fa71e1791efc6d}{Menu\+Bar} ()
+\end{DoxyCompactItemize}
+\subsection*{Поля данных}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Sprite \hyperlink{classMenuBar_a7c9348add51432373a0ac9ba34e0cc4a}{menubarline}
+\item 
+sf\+::\+Sprite \hyperlink{classMenuBar_a607b5c0461ef7951f3c0476bfd2ff00f}{pause\+Button}
+\item 
+sf\+::\+Sprite \hyperlink{classMenuBar_a68d781e6301956723cf9826650ad7d2c}{pause\+Button\+Text}
+\item 
+int \hyperlink{classMenuBar_a3e9680e7db9109858b09c1ade97fd5d4}{w}
+\item 
+int \hyperlink{classMenuBar_a47f733e89c961de1ff15c2534b2c6f9b}{h}
+\item 
+sf\+::\+Sprite \hyperlink{classMenuBar_a8ba645ebcb1785788ea4763822fac236}{Pause\+Menu}
+\item 
+sf\+::\+Sprite \hyperlink{classMenuBar_a985fe3e19ae94063f676bcedab881b21}{Pause\+Menu\+Button\+Exit}
+\item 
+sf\+::\+Text \hyperlink{classMenuBar_ae9cd84f5d9a3b53d45b27cae6a7c44e6}{Exit\+Text}
+\item 
+sf\+::\+Sprite \hyperlink{classMenuBar_a85b1a76501dd0d2ab5989a36b18299f2}{Pause\+Menu\+Button\+Continue}
+\item 
+sf\+::\+Text \hyperlink{classMenuBar_aa01962756e77381b16471f863ed3c9c0}{Continue\+Text}
+\item 
+sf\+::\+Text \hyperlink{classMenuBar_af2f5d854bc3f91aec40595f84c232be3}{round\+Text}
+\item 
+sf\+::\+Sprite \hyperlink{classMenuBar_a05af15dc315210fef5dc78cd30a1e213}{icon\+Counter\+Coins}
+\item 
+sf\+::\+Text \hyperlink{classMenuBar_ade87fea2a3773189c1c984f78598354f}{text\+Counter\+Coins}
+\item 
+sf\+::\+Sprite \hyperlink{classMenuBar_a4bd5e603c2fc8611f804f69d82786077}{icon\+Counter\+Added\+Damage}
+\item 
+sf\+::\+Text \hyperlink{classMenuBar_a91e93f244c42b092b1ac1708ad2376e0}{text\+Counter\+Added\+Damage}
+\item 
+int \hyperlink{classMenuBar_aca77c1b966ce3084c899dab8268cefc5}{counter\+Added\+Damage}
+\item 
+sf\+::\+Text \hyperlink{classMenuBar_a3093b55d6033fe43bf05afa0c6c9b1a8}{basis\+\_\+damage}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Паметры счётчиков,выводимых в верхней полоске игрового окна 
+
+\subsection{Конструктор(ы)}
+\index{Menu\+Bar@{Menu\+Bar}!Menu\+Bar@{Menu\+Bar}}
+\index{Menu\+Bar@{Menu\+Bar}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{Menu\+Bar()}{MenuBar()}}]{\setlength{\rightskip}{0pt plus 5cm}Menu\+Bar\+::\+Menu\+Bar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMenuBar_a76a0ec8b0b4cba2775fa71e1791efc6d}{}\label{classMenuBar_a76a0ec8b0b4cba2775fa71e1791efc6d}
+
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classMenuBar_a76a0ec8b0b4cba2775fa71e1791efc6d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Методы}
+\index{Menu\+Bar@{Menu\+Bar}!change\+\_\+round@{change\+\_\+round}}
+\index{change\+\_\+round@{change\+\_\+round}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{change\+\_\+round()}{change_round()}}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+Bar\+::change\+\_\+round (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMenuBar_a803dd882281e407e0494d2e5c45962bc}{}\label{classMenuBar_a803dd882281e407e0494d2e5c45962bc}
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuBar_a803dd882281e407e0494d2e5c45962bc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Menu\+Bar@{Menu\+Bar}!check\+\_\+for\+\_\+next\+\_\+round@{check\+\_\+for\+\_\+next\+\_\+round}}
+\index{check\+\_\+for\+\_\+next\+\_\+round@{check\+\_\+for\+\_\+next\+\_\+round}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{check\+\_\+for\+\_\+next\+\_\+round(sf\+::\+Clock \&clock, int add\+To\+Timer, int \&added\+Dmg\+In\+Perct, int \&added\+Hp\+In\+Perct)}{check_for_next_round(sf::Clock &clock, int addToTimer, int &addedDmgInPerct, int &addedHpInPerct)}}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+Bar\+::check\+\_\+for\+\_\+next\+\_\+round (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Clock \&}]{clock, }
+\item[{int}]{add\+To\+Timer, }
+\item[{int \&}]{added\+Dmg\+In\+Perct, }
+\item[{int \&}]{added\+Hp\+In\+Perct}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMenuBar_ab23d3bd560cb6a83deddad9ca2880c5b}{}\label{classMenuBar_ab23d3bd560cb6a83deddad9ca2880c5b}
+
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classMenuBar_ab23d3bd560cb6a83deddad9ca2880c5b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuBar_ab23d3bd560cb6a83deddad9ca2880c5b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Menu\+Bar@{Menu\+Bar}!incr\+\_\+counter\+\_\+added\+\_\+damage@{incr\+\_\+counter\+\_\+added\+\_\+damage}}
+\index{incr\+\_\+counter\+\_\+added\+\_\+damage@{incr\+\_\+counter\+\_\+added\+\_\+damage}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{incr\+\_\+counter\+\_\+added\+\_\+damage(int value)}{incr_counter_added_damage(int value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+Bar\+::incr\+\_\+counter\+\_\+added\+\_\+damage (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMenuBar_a7a4dec33f791733c1babad22ac06d6e3}{}\label{classMenuBar_a7a4dec33f791733c1babad22ac06d6e3}
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuBar_a7a4dec33f791733c1babad22ac06d6e3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Menu\+Bar@{Menu\+Bar}!incr\+\_\+counter\+\_\+coins@{incr\+\_\+counter\+\_\+coins}}
+\index{incr\+\_\+counter\+\_\+coins@{incr\+\_\+counter\+\_\+coins}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{incr\+\_\+counter\+\_\+coins(int value)}{incr_counter_coins(int value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+Bar\+::incr\+\_\+counter\+\_\+coins (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMenuBar_a8517c956a4d36cdacdcb42989b5dccf3}{}\label{classMenuBar_a8517c956a4d36cdacdcb42989b5dccf3}
+
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuBar_a8517c956a4d36cdacdcb42989b5dccf3_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Поля}
+\index{Menu\+Bar@{Menu\+Bar}!basis\+\_\+damage@{basis\+\_\+damage}}
+\index{basis\+\_\+damage@{basis\+\_\+damage}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{basis\+\_\+damage}{basis_damage}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Text Menu\+Bar\+::basis\+\_\+damage}\hypertarget{classMenuBar_a3093b55d6033fe43bf05afa0c6c9b1a8}{}\label{classMenuBar_a3093b55d6033fe43bf05afa0c6c9b1a8}
+\index{Menu\+Bar@{Menu\+Bar}!Continue\+Text@{Continue\+Text}}
+\index{Continue\+Text@{Continue\+Text}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{Continue\+Text}{ContinueText}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Text Menu\+Bar\+::\+Continue\+Text}\hypertarget{classMenuBar_aa01962756e77381b16471f863ed3c9c0}{}\label{classMenuBar_aa01962756e77381b16471f863ed3c9c0}
+\index{Menu\+Bar@{Menu\+Bar}!counter\+Added\+Damage@{counter\+Added\+Damage}}
+\index{counter\+Added\+Damage@{counter\+Added\+Damage}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{counter\+Added\+Damage}{counterAddedDamage}}]{\setlength{\rightskip}{0pt plus 5cm}int Menu\+Bar\+::counter\+Added\+Damage}\hypertarget{classMenuBar_aca77c1b966ce3084c899dab8268cefc5}{}\label{classMenuBar_aca77c1b966ce3084c899dab8268cefc5}
+\index{Menu\+Bar@{Menu\+Bar}!Exit\+Text@{Exit\+Text}}
+\index{Exit\+Text@{Exit\+Text}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{Exit\+Text}{ExitText}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Text Menu\+Bar\+::\+Exit\+Text}\hypertarget{classMenuBar_ae9cd84f5d9a3b53d45b27cae6a7c44e6}{}\label{classMenuBar_ae9cd84f5d9a3b53d45b27cae6a7c44e6}
+\index{Menu\+Bar@{Menu\+Bar}!h@{h}}
+\index{h@{h}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{h}{h}}]{\setlength{\rightskip}{0pt plus 5cm}int Menu\+Bar\+::h}\hypertarget{classMenuBar_a47f733e89c961de1ff15c2534b2c6f9b}{}\label{classMenuBar_a47f733e89c961de1ff15c2534b2c6f9b}
+\index{Menu\+Bar@{Menu\+Bar}!icon\+Counter\+Added\+Damage@{icon\+Counter\+Added\+Damage}}
+\index{icon\+Counter\+Added\+Damage@{icon\+Counter\+Added\+Damage}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{icon\+Counter\+Added\+Damage}{iconCounterAddedDamage}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Menu\+Bar\+::icon\+Counter\+Added\+Damage}\hypertarget{classMenuBar_a4bd5e603c2fc8611f804f69d82786077}{}\label{classMenuBar_a4bd5e603c2fc8611f804f69d82786077}
+\index{Menu\+Bar@{Menu\+Bar}!icon\+Counter\+Coins@{icon\+Counter\+Coins}}
+\index{icon\+Counter\+Coins@{icon\+Counter\+Coins}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{icon\+Counter\+Coins}{iconCounterCoins}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Menu\+Bar\+::icon\+Counter\+Coins}\hypertarget{classMenuBar_a05af15dc315210fef5dc78cd30a1e213}{}\label{classMenuBar_a05af15dc315210fef5dc78cd30a1e213}
+\index{Menu\+Bar@{Menu\+Bar}!menubarline@{menubarline}}
+\index{menubarline@{menubarline}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{menubarline}{menubarline}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Menu\+Bar\+::menubarline}\hypertarget{classMenuBar_a7c9348add51432373a0ac9ba34e0cc4a}{}\label{classMenuBar_a7c9348add51432373a0ac9ba34e0cc4a}
+\index{Menu\+Bar@{Menu\+Bar}!pause\+Button@{pause\+Button}}
+\index{pause\+Button@{pause\+Button}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{pause\+Button}{pauseButton}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Menu\+Bar\+::pause\+Button}\hypertarget{classMenuBar_a607b5c0461ef7951f3c0476bfd2ff00f}{}\label{classMenuBar_a607b5c0461ef7951f3c0476bfd2ff00f}
+\index{Menu\+Bar@{Menu\+Bar}!pause\+Button\+Text@{pause\+Button\+Text}}
+\index{pause\+Button\+Text@{pause\+Button\+Text}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{pause\+Button\+Text}{pauseButtonText}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Menu\+Bar\+::pause\+Button\+Text}\hypertarget{classMenuBar_a68d781e6301956723cf9826650ad7d2c}{}\label{classMenuBar_a68d781e6301956723cf9826650ad7d2c}
+\index{Menu\+Bar@{Menu\+Bar}!Pause\+Menu@{Pause\+Menu}}
+\index{Pause\+Menu@{Pause\+Menu}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{Pause\+Menu}{PauseMenu}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Menu\+Bar\+::\+Pause\+Menu}\hypertarget{classMenuBar_a8ba645ebcb1785788ea4763822fac236}{}\label{classMenuBar_a8ba645ebcb1785788ea4763822fac236}
+\index{Menu\+Bar@{Menu\+Bar}!Pause\+Menu\+Button\+Continue@{Pause\+Menu\+Button\+Continue}}
+\index{Pause\+Menu\+Button\+Continue@{Pause\+Menu\+Button\+Continue}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{Pause\+Menu\+Button\+Continue}{PauseMenuButtonContinue}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Menu\+Bar\+::\+Pause\+Menu\+Button\+Continue}\hypertarget{classMenuBar_a85b1a76501dd0d2ab5989a36b18299f2}{}\label{classMenuBar_a85b1a76501dd0d2ab5989a36b18299f2}
+\index{Menu\+Bar@{Menu\+Bar}!Pause\+Menu\+Button\+Exit@{Pause\+Menu\+Button\+Exit}}
+\index{Pause\+Menu\+Button\+Exit@{Pause\+Menu\+Button\+Exit}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{Pause\+Menu\+Button\+Exit}{PauseMenuButtonExit}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Menu\+Bar\+::\+Pause\+Menu\+Button\+Exit}\hypertarget{classMenuBar_a985fe3e19ae94063f676bcedab881b21}{}\label{classMenuBar_a985fe3e19ae94063f676bcedab881b21}
+\index{Menu\+Bar@{Menu\+Bar}!round\+Text@{round\+Text}}
+\index{round\+Text@{round\+Text}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{round\+Text}{roundText}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Text Menu\+Bar\+::round\+Text}\hypertarget{classMenuBar_af2f5d854bc3f91aec40595f84c232be3}{}\label{classMenuBar_af2f5d854bc3f91aec40595f84c232be3}
+\index{Menu\+Bar@{Menu\+Bar}!text\+Counter\+Added\+Damage@{text\+Counter\+Added\+Damage}}
+\index{text\+Counter\+Added\+Damage@{text\+Counter\+Added\+Damage}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{text\+Counter\+Added\+Damage}{textCounterAddedDamage}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Text Menu\+Bar\+::text\+Counter\+Added\+Damage}\hypertarget{classMenuBar_a91e93f244c42b092b1ac1708ad2376e0}{}\label{classMenuBar_a91e93f244c42b092b1ac1708ad2376e0}
+\index{Menu\+Bar@{Menu\+Bar}!text\+Counter\+Coins@{text\+Counter\+Coins}}
+\index{text\+Counter\+Coins@{text\+Counter\+Coins}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{text\+Counter\+Coins}{textCounterCoins}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Text Menu\+Bar\+::text\+Counter\+Coins}\hypertarget{classMenuBar_ade87fea2a3773189c1c984f78598354f}{}\label{classMenuBar_ade87fea2a3773189c1c984f78598354f}
+\index{Menu\+Bar@{Menu\+Bar}!w@{w}}
+\index{w@{w}!Menu\+Bar@{Menu\+Bar}}
+\subsubsection[{\texorpdfstring{w}{w}}]{\setlength{\rightskip}{0pt plus 5cm}int Menu\+Bar\+::w}\hypertarget{classMenuBar_a3e9680e7db9109858b09c1ade97fd5d4}{}\label{classMenuBar_a3e9680e7db9109858b09c1ade97fd5d4}

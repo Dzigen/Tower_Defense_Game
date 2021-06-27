@@ -1,0 +1,57 @@
+Реализованный проект представляет из себя простую компьютерную игрув жанре Tower Defense\+: \char`\"{}\+Lonely turret\char`\"{}. Игроку предлагается управление танком, с помо-\/щью которого он должен отбиваться от наступающих врагов, чтобы не дать им разрушитьбазу. Игровой цикл является бесконечным, поэтому игра заканчивается, когда противни-\/ки разрушают базу или главный герой погибает.\+Каждые 5 секунд наступает новый противник случайного типа.
+
+Каждые 10 минут характеристики врагов повышаются. Каждую минуту на карте появляется случайная руна,которую главный герой может подобрать.
+
+\subsubsection*{Типы появляющихся рун\+:}
+
+
+\begin{DoxyEnumerate}
+\item здоровье для базы\+: повышает здоровье базы.
+\item здоровье для героя\+: повышает здоровье героя.
+\item увеличение урона героя\+: повышает урон главного героя.
+\item монетка\+: повышает счётчик подобранных монеток.
+\end{DoxyEnumerate}
+
+\subsubsection*{Типы появляющихся врагов\+:}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*5{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}{\bf тип }&{\bf здоровье }&{\bf урон }&{\bf скорость }&{\bf способности  }\\\cline{1-5}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}{\bf тип }&{\bf здоровье }&{\bf урон }&{\bf скорость }&{\bf способности  }\\\cline{1-5}
+\endhead
+\char`\"{}силач\char`\"{} &среднее &средний&средняя &нет \\\cline{1-5}
+\char`\"{}летучая мышь\char`\"{} &низкое &низкий &высокая &нет \\\cline{1-5}
+\char`\"{}куча\char`\"{}&высокое &средний&низкая &нет \\\cline{1-5}
+\char`\"{}бык\char`\"{}&высокое &высокий&низкая &останавливается \\\cline{1-5}
+\char`\"{}грязевая капля\char`\"{}&низкое &низкий &средняя &исчезает \\\cline{1-5}
+\char`\"{}гриб\char`\"{}&средние &средний&низкая &снижает урон \\\cline{1-5}
+\end{longtabu}
+
+
+Использовалась графическая библиотека \href{https://www.sfml-dev.org/}{\tt S\+F\+ML}. 
+
+\subsubsection*{Игровое поле\+:}
+
+
+
+\subsubsection*{Пример включения учатка кода в документацию\+:}
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include<random>}
+
+\textcolor{keywordtype}{int} \hyperlink{group__enemyHandler_ga21c57a411b6aa06a0f36c9eefab38b5b}{randomize\_enemy\_type}(std::minstd\_rand &simple\_rand)\{
+
+    \textcolor{keywordtype}{int} enemyType;
+
+    enemyType=simple\_rand()%6;
+
+    \textcolor{keywordflow}{return} enemyType;
+\}
+\end{DoxyCode}
+ 

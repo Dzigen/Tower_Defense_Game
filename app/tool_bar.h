@@ -3,6 +3,10 @@
 
 #include<SFML/Graphics.hpp>
 
+/**
+ * @ingroup objectClasses
+ * @brief Праметры счётчиков,выводимых в нижней полоске игровогоокна
+ */
 class ToolBar{
 
     public:
@@ -152,18 +156,18 @@ class ToolBar{
         void change_enemy_hp_line(int health,int MaxHealth,int enemyType){
 
             switch (enemyType) {
-                case 0:{shapeIE.loadFromFile("../../Tower_Defense_Game/external/Sprites/icon_enemy_butch.png"); break;}
-                case 1:{shapeIE.loadFromFile("../../Tower_Defense_Game/external/Sprites/icon_enemy_bat.png"); break;}
-                case 2:{shapeIE.loadFromFile("../../Tower_Defense_Game/external/Sprites/icon_enemy_heap.png"); break;}
-                case 3:{shapeIE.loadFromFile("../../Tower_Defense_Game/external/Sprites/icon_enemy_bull.png"); break;}
-                case 4:{shapeIE.loadFromFile("../../Tower_Defense_Game/external/Sprites/icon_enemy_mud_drop.png"); break;}
-                case 5:{shapeIE.loadFromFile("../../Tower_Defense_Game/external/Sprites/icon_enemy_mushroom.png"); break;}
+                case 0:{shapeIE.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/icon_enemy_butch.png"); break;}
+                case 1:{shapeIE.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/icon_enemy_bat.png"); break;}
+                case 2:{shapeIE.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/icon_enemy_heap.png"); break;}
+                case 3:{shapeIE.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/icon_enemy_bull.png"); break;}
+                case 4:{shapeIE.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/icon_enemy_mud_drop.png"); break;}
+                case 5:{shapeIE.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/icon_enemy_mushroom.png"); break;}
             }
 
             iconEnemy.setTexture(shapeIE);
 
             if(health==0){
-                iconDE.loadFromFile("../../Tower_Defense_Game/external/Sprites/icon_enemy_dead.png");
+                iconDE.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/icon_enemy_dead.png");
                 iconDE.createMaskFromColor(sf::Color::White);
                 shapeIDE.loadFromImage(iconDE);
                 iconDeadEnemy.setTexture(shapeIDE);
@@ -197,15 +201,15 @@ class ToolBar{
         addToTimer=0;
 
         /*загружаем текст шрифта*/
-        font.loadFromFile("../../Tower_Defense_Game/external/Text/Roboto-Italic.ttf");
+        font.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Text/Roboto-Italic.ttf");
 
         /*загружаем полоску tool bar*/
-        shapeTBL.loadFromFile("../../Tower_Defense_Game/external/Sprites/line.png");
+        shapeTBL.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/line.png");
         toolbarline.setTexture(shapeTBL);
         toolbarline.setPosition(0,685);
 
         /*загружаем иконку часов для таймера*/
-        shape.loadFromFile("../../Tower_Defense_Game/external/Sprites/iconTime.png");
+        shape.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/iconTime.png");
         shape.createMaskFromColor(sf::Color(255,255,255));
         shapeIC.loadFromImage(shape);
         iconClock.setTexture(shapeIC);
@@ -217,11 +221,11 @@ class ToolBar{
         timer.setFillColor(sf::Color(0,0,0));
 
         /*загружаем полоску здоровья танка , соответствующий текст "Здоровье Героя" , а также иконку*/
-        shapeHPF.loadFromFile("../../Tower_Defense_Game/external/Sprites/hp_foreground.png");
+        shapeHPF.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/hp_foreground.png");
         hp_hero_green.setTexture(shapeHPF);
         hp_hero_green.setPosition(300,720);
 
-        shapeHPB.loadFromFile("../../Tower_Defense_Game/external/Sprites/hp_background.png");
+        shapeHPB.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/hp_background.png");
         hp_hero_red.setTexture(shapeHPB);
         hp_hero_red.setPosition(300,720);
 
@@ -231,7 +235,7 @@ class ToolBar{
         textHHP.setCharacterSize(20);
         textHHP.setPosition(300,695);
 
-        iconH.loadFromFile("../../Tower_Defense_Game/external/Sprites/icon_hp_hero.png");
+        iconH.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/icon_hp_hero.png");
         iconH.createMaskFromColor(sf::Color::White);
         shapeIHPH.loadFromImage(iconH);
         iconHPhero.setTexture(shapeIHPH);
@@ -244,11 +248,11 @@ class ToolBar{
         valueHHPof.setPosition(440,695);
 
         /*загружаем полоску здоровья базы , соответствующий текст "Здоровье базы",а также иконку*/
-        shapeHPF.loadFromFile("../../Tower_Defense_Game/external/Sprites/hp_foreground.png");
+        shapeHPF.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/hp_foreground.png");
         hp_base_green.setTexture(shapeHPF);
         hp_base_green.setPosition(520,720);
 
-        shapeHPAB.loadFromFile("../../Tower_Defense_Game/external/Sprites/hp_additnly_background.png");
+        shapeHPAB.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/hp_additnly_background.png");
         hp_base_red_orange.setTexture(shapeHPAB);
         hp_base_red_orange.setPosition(520,720);
 
@@ -258,7 +262,7 @@ class ToolBar{
         textBHP.setCharacterSize(20);
         textBHP.setPosition(520,695);
 
-        iconB.loadFromFile("../../Tower_Defense_Game/external/Sprites/icon_hp_base.png");
+        iconB.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/icon_hp_base.png");
         iconB.createMaskFromColor(sf::Color::White);
         shapeIHPB.loadFromImage(iconB);
         iconHPbase.setTexture(shapeIHPB);
@@ -272,17 +276,17 @@ class ToolBar{
 
 
         /*загружаем полоску здоровья противника , соответствующий текст "Здоровье противника",а также иконку*/
-        shapeIE.loadFromFile("../../Tower_Defense_Game/external/Sprites/unknown_enemy.png");
+        shapeIE.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/unknown_enemy.png");
         iconEnemy.setTexture(shapeIE);
         iconEnemy.setPosition(770,692);
         iconDeadEnemy.setPosition(770,692);
         drawIconDeadEnemy=false;
 
-        shapeHPF.loadFromFile("../../Tower_Defense_Game/external/Sprites/hp_foreground.png");
+        shapeHPF.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/hp_foreground.png");
         hp_enemy_green.setTexture(shapeHPF);
         hp_enemy_green.setPosition(820,720);
 
-        shapeHPB.loadFromFile("../../Tower_Defense_Game/external/Sprites/hp_background.png");
+        shapeHPB.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/hp_background.png");
         hp_enemy_red.setTexture(shapeHPB);
         hp_enemy_red.setPosition(820,720);
 
@@ -292,7 +296,7 @@ class ToolBar{
         textEHP.setCharacterSize(20);
         textEHP.setPosition(820,695);
 
-        iconE.loadFromFile("../../Tower_Defense_Game/external/Sprites/icon_hp_enemy.png");
+        iconE.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/icon_hp_enemy.png");
         iconE.createMaskFromColor(sf::Color::White);
         shapeIHPE.loadFromImage(iconE);
         iconHPenemy.setTexture(shapeIHPE);
@@ -305,7 +309,7 @@ class ToolBar{
         valueEHPof.setPosition(940,695);
 
         /*загружаем иконку случайной руны и указываем позиции таймера на понеле тул бара*/
-        iconRR.loadFromFile("../../Tower_Defense_Game/external/Sprites/iconRandomRune.png");
+        iconRR.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/iconRandomRune.png");
         iconRR.createMaskFromColor(sf::Color::White);
         shapeRR.loadFromImage(iconRR);
         iconTimer.setTexture(shapeRR);

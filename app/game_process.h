@@ -11,7 +11,30 @@
 #include "game_end_window.h"
 
 /**
- *Вывод игрового процесса в игровом окне
+ * \defgroup mainLoop Главные функции игрового цикла
+ */
+
+/**
+ * \defgroup menu Отрисовка окон меню игры
+ */
+
+/**
+ * \defgroup heroBaseHandler Обработчики главного героя и базы
+ */
+
+/**
+ * \defgroup enemyHandler Обработчики противников
+ */
+
+/**
+ * \defgroup runeHandler Обработчики рун
+ */
+
+
+/**
+ * @ingroup mainLoop
+ * @brief Вывод игрового процесса в игровом окне
+ *
  *
  * @param window окно игры
  * @param upperParametr объект класса MenuBar с параметрами верхней полоски полоски(меню бара) на экране игрового процесса
@@ -22,7 +45,8 @@
 void game_draw(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerParametr ,GameObject &object);
 
 /**
- *Передвижение главного героя в окне игрового процесса
+ * @ingroup heroBaseHandler
+ * @brief Передвижение главного героя в окне игрового процесса
  *
  * @param object класса GameObjects с игровыми объектами
  * @param time врямя работы предыдущего цикла игры
@@ -32,7 +56,9 @@ void game_draw(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerPar
 void move_hero(GameObject &object ,float time,int flag);
 
 /**
- *Обработка движений противников по карте игрового процесса
+ * @ingroup enemyHandler
+ * @brief Обработка движений противников по карте игрового процесса
+ * @todo Требуется улучшить обработчик взаимодействия с объектами на карте
  *
  * @param object класса GameObjects с игровыми объектами
  * @param time врямя работы предыдущего цикла игры
@@ -41,7 +67,8 @@ void move_hero(GameObject &object ,float time,int flag);
 void move_enemy(GameObject &object, float time,std::minstd_rand &simple_rand);
 
 /**
- *Обработка выстрелов главного героя и последующее отслеживание взаимодействий пули с объектами
+ * @ingroup heroBaseHandler
+ * @brief Обработка выстрелов главного героя и последующее отслеживание взаимодействий пули с объектами
  *
  * @param object класса GameObjects с игровыми объектами
  * @param menubar объект класса MenuBar с параметрами верхней полоски полоски(меню бара) на экране игрового процесса
@@ -53,7 +80,8 @@ void move_enemy(GameObject &object, float time,std::minstd_rand &simple_rand);
 void hero_shot(GameObject &object,MenuBar &menubar,ToolBar &toolbar,float time,sf::RenderWindow &window);
 
 /**
- *Обработка атаки врагов на карте игрового процесса
+ * @ingroup enemyHandler
+ * @brief Обработка атаки врагов на карте игрового процесса
  *
  * @param object класса GameObjects с игровыми объектами
  * @param toolbar объект класса Toolbar с параметрами нижней полоски(тулбара) на экране игрового процесса
@@ -62,7 +90,8 @@ void hero_shot(GameObject &object,MenuBar &menubar,ToolBar &toolbar,float time,s
 void enemy_hit(GameObject &object,ToolBar &toolbar,float time);
 
 /**
- *Остановка игры и вывод меню-паузы
+ * @ingroup menu
+ * @brief Остановка игры и вывод меню-паузы
  *
  * @param window окно игры
  * @param upperParametr объект класса MenuBar с параметрами верхней полоски полоски(меню бара) на экране игрового процесса
@@ -78,7 +107,8 @@ void enemy_hit(GameObject &object,ToolBar &toolbar,float time);
 bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerParametr ,Cursors &cursor, GameObject &object,sf::Clock &globalTime,sf::Clock &gameTime);
 
 /**
- *Обработка нажатий кнопок мыши
+ * @ingroup menu
+ * @brief Обработка нажатий кнопок мыши
  *
  * @param menubar объект класса MenuBar с параметрами верхней полоски полоски(меню бара) на экране игрового процесса
  * @param cursor объект класса Cursors  для отображения кастомного курсора в ркне игры
@@ -90,7 +120,8 @@ bool pause_menu(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerPa
 bool mouse_click(MenuBar &menubar,Cursors &cursor,sf::RenderWindow &window);
 
 /**
- *Обработка завершения игрового цроцесса
+ * @ingroup menu
+ * @brief Обработка завершения игрового цроцесса
  *
  * @param object класса GameObjects с игровыми объектами
  * @param endWindow
@@ -101,7 +132,8 @@ bool mouse_click(MenuBar &menubar,Cursors &cursor,sf::RenderWindow &window);
 bool end_game(GameObject &object,GameEndWindow &endWindow);
 
 /**
- *Вывод диалогового окна "конец игры"
+ * @ingroup menu
+ * @brief Вывод диалогового окна "конец игры"
  *
  * @param window окно игры
  * @param endWindow объект класса GameEndWindow c параметрами диалогового окна, выводимого при завершении игры
@@ -116,7 +148,8 @@ bool end_game(GameObject &object,GameEndWindow &endWindow);
 void game_end_window(sf::RenderWindow &window,GameEndWindow &endWindow,MenuBar &upperParametr,ToolBar &lowerParametr ,Cursors &cursor, GameObject &object,sf::Clock &globalTime);
 
 /**
- *Анимация руны и её вывод на карту игрового процесса
+ * @ingroup runeHandler
+ * @brief Анимация руны и её вывод на карту игрового процесса
  *
  * @param object класса GameObjects с игровыми объектами
  * @param toolbar объект класса Toolbar с параметрами нижней полоски(тулбара) на экране игрового процесса
@@ -128,7 +161,8 @@ void game_end_window(sf::RenderWindow &window,GameEndWindow &endWindow,MenuBar &
 void update_spawn_rune(GameObject &object,ToolBar &toolbar,float &runeUPDATEtime,float &time,std::minstd_rand &simple_rand);
 
 /**
- *Отрисовка и анимация взрыва базы
+ * @ingroup heroBaseHandler
+ * @brief Отрисовка и анимация взрыва базы
  *
  * @param window окно игры
  * @param upperParametr объект класса MenuBar с параметрами верхней полоски полоски(меню бара) на экране игрового процесса
@@ -141,7 +175,8 @@ void update_spawn_rune(GameObject &object,ToolBar &toolbar,float &runeUPDATEtime
 void base_hero_explosion(sf::RenderWindow &window,MenuBar &upperParametr,ToolBar &lowerParametr ,Cursors &cursor, GameObject &object,sf::Clock &gameTime);
 
 /**
- *Обработка взаимодействия главного героя с заспавненной руной на карте игрового процесса
+ * @ingroup runeHandler
+ * @brief Обработка взаимодействия главного героя с заспавненной руной на карте игрового процесса
  *
  * @param object класса GameObjects с игровыми объектами
  * @param toolbar объект класса Toolbar с параметрами нижней полоски(тулбара) на экране игрового процесса

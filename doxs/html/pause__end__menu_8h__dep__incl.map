@@ -1,0 +1,5 @@
+<map id="/home/dzigen/inf1/CS/task12/Tower_Defense_Game/app/pause_end_menu.h" name="/home/dzigen/inf1/CS/task12/Tower_Defense_Game/app/pause_end_menu.h">
+<area shape="rect" id="node2" href="$base__hero__explosion_8cpp.html" title="/home/dzigen/inf1/CS\l/task12/Tower_Defense\l_Game/app/base_hero_explosion.cpp" alt="" coords="5,109,245,165"/>
+<area shape="rect" id="node3" href="$game__end__window_8cpp.html" title="/home/dzigen/inf1/CS\l/task12/Tower_Defense\l_Game/app/game_end_window.cpp" alt="" coords="269,109,499,165"/>
+<area shape="rect" id="node4" href="$pause__menu_8cpp.html" title="/home/dzigen/inf1/CS\l/task12/Tower_Defense\l_Game/app/pause_menu.cpp" alt="" coords="523,109,715,165"/>
+</map>

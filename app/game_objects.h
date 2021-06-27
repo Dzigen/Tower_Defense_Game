@@ -6,9 +6,14 @@
 #include<iostream>
 #include <vector>
 
+/**
+ * @ingroup objectClasses
+ * @brief Параметры игровых объектов
+ *
+ * @see Hero, Runes, Enemys, Base
+ */
 class GameObject{
     public:
-
 
         class Map{
 
@@ -22,7 +27,7 @@ class GameObject{
             Map(){
 
                 /*загружаем игровую карту*/
-                shapeBF.loadFromFile("../../Tower_Defense_Game/external/Sprites/battle_field.png");
+                shapeBF.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/battle_field.png");
                 sprite.setTexture(shapeBF);
                 w=1200;
                 h=630;
@@ -34,8 +39,9 @@ class GameObject{
                 sf::Texture shapeBF;
 
         };
-
-
+        /**
+         * @brief The Base class
+         */
         class Base{
 
             public:
@@ -56,7 +62,7 @@ class GameObject{
 
                 /*Загружаем базу,которую нужно будет оборонять.*/
                 /*Также указываем её позицию на карте*/
-                imageB.loadFromFile("../../Tower_Defense_Game/external/Sprites/Base.png");
+                imageB.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/Base.png");
                 imageB.createMaskFromColor(sf::Color::White);
                 shapeB.loadFromImage(imageB);
                 sprite.setTexture(shapeB);
@@ -70,7 +76,7 @@ class GameObject{
                 live=true;
 
                 /*отдельно загружаем крышу базы в качестве независимого объекта*/
-                imageBR.loadFromFile("../../Tower_Defense_Game/external/Sprites/Base_roof.png");
+                imageBR.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/Base_roof.png");
                 imageBR.createMaskFromColor(sf::Color::White);
                 shapeBR.loadFromImage(imageBR);
                 base_roof.setTexture(shapeBR);
@@ -88,7 +94,9 @@ class GameObject{
 
         };
 
-
+        /**
+         * @brief The Hero class
+         */
         class Hero{
 
             public:
@@ -110,7 +118,7 @@ class GameObject{
 
             Hero(){
 
-                heroImage.loadFromFile("../../Tower_Defense_Game/external/Sprites/hero.png");
+                heroImage.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/hero.png");
                 heroImage.createMaskFromColor(sf::Color(255,255,255));
                 heroTexture.loadFromImage(heroImage);
                 sprite.setTexture(heroTexture);
@@ -137,11 +145,16 @@ class GameObject{
 
         };
 
-
+        /**
+         * @brief The Runes class
+         * @see Hp_hero, Hp_base, Plus_damage, Coin
+         */
         class Runes{
 
             public:
-
+                /**
+                 * @brief The Hp_hero class
+                 */
                 class Hp_hero{
 
                     public:
@@ -156,7 +169,7 @@ class GameObject{
 
                     Hp_hero(){
 
-                        iconHPH.loadFromFile("../../Tower_Defense_Game/external/Sprites/rune_hp_hero.png");
+                        iconHPH.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/rune_hp_hero.png");
                         iconHPH.createMaskFromColor(sf::Color::White);
                         shapeHPH.loadFromImage(iconHPH);
                         sprite.setTexture(shapeHPH);
@@ -177,7 +190,9 @@ class GameObject{
                         sf::Texture shapeHPH;
 
                 };
-
+                /**
+                 * @brief The Hp_base class
+                 */
                 class Hp_base{
 
                     public:
@@ -192,7 +207,7 @@ class GameObject{
 
                     Hp_base(){
 
-                        iconHPB.loadFromFile("../../Tower_Defense_Game/external/Sprites/rune_hp_base.png");
+                        iconHPB.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/rune_hp_base.png");
                         iconHPB.createMaskFromColor(sf::Color::White);
                         shapeHPB.loadFromImage(iconHPB);
                         sprite.setTexture(shapeHPB);
@@ -213,7 +228,9 @@ class GameObject{
                         sf::Texture shapeHPB;
 
                 };
-
+                /**
+                 * @brief The Plus_damage class
+                 */
                 class Plus_damage{
 
                     public:
@@ -228,7 +245,7 @@ class GameObject{
 
                     Plus_damage(){
 
-                        iconDD.loadFromFile("../../Tower_Defense_Game/external/Sprites/rune_plus_damage.png");
+                        iconDD.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/rune_plus_damage.png");
                         iconDD.createMaskFromColor(sf::Color(255,0,0));
                         shapeDD.loadFromImage(iconDD);
                         sprite.setTexture(shapeDD);
@@ -249,7 +266,10 @@ class GameObject{
                         sf::Texture shapeDD;
 
                 };
-
+                /**
+                 * @brief The Coin class
+                 *
+                 */
                 class Coin{
 
                     public:
@@ -264,7 +284,7 @@ class GameObject{
 
                     Coin(){
 
-                        iconC.loadFromFile("../../Tower_Defense_Game/external/Sprites/rune_point.png");
+                        iconC.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/rune_point.png");
                         iconC.createMaskFromColor(sf::Color(0,255,0));
                         shapeC.loadFromImage(iconC);
                         sprite.setTexture(shapeC);
@@ -325,7 +345,9 @@ class GameObject{
                 Coin coin;
 
         };
-
+        /**
+         * @brief The Bullet class
+         */
         class Bullet{
 
             public:
@@ -353,7 +375,7 @@ class GameObject{
                 sprite.setOrigin((float)(w/2),(float)(h/2));
 
                 /*формируем спрайт взрыва*/
-                imageExp.loadFromFile("../../Tower_Defense_Game/external/Sprites/explosion.png");
+                imageExp.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/explosion.png");
                 imageExp.createMaskFromColor(sf::Color::White);
                 shapeExp.loadFromImage(imageExp);
                 explosion.setTexture(shapeExp);
@@ -398,7 +420,7 @@ class GameObject{
             void load_sprite(){
 
                 /*формируем спрайт пули*/
-                imageBul.loadFromFile("../../Tower_Defense_Game/external/Sprites/bullet.png");
+                imageBul.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/bullet.png");
                 imageBul.createMaskFromColor(sf::Color::White);
                 shapeBul.loadFromImage(imageBul);
                 sprite.setTexture(shapeBul);
@@ -414,7 +436,9 @@ class GameObject{
                 sf::Texture shapeExp;
 
         };
-
+        /**
+         * @brief The BaseExplosion class
+         */
         class BaseExplosion{
             public:
 
@@ -434,7 +458,7 @@ class GameObject{
                 w=170;
                 h=185;
 
-                imageBE.loadFromFile("../../Tower_Defense_Game/external/Sprites/base_explosion.png");
+                imageBE.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/base_explosion.png");
                 imageBE.createMaskFromColor(sf::Color(255,255,255));
                 shapeBE.loadFromImage(imageBE);
                 sprite.setTexture(shapeBE);
@@ -476,7 +500,9 @@ class GameObject{
 
         };
 
-
+        /**
+         * @brief The HeroExplosion class
+         */
         class HeroExplosion{
 
             public:
@@ -495,7 +521,7 @@ class GameObject{
                 w=85;
                 h=69;
 
-                imageHE.loadFromFile("../../Tower_Defense_Game/external/Sprites/hero_explosion.png");
+                imageHE.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/hero_explosion.png");
                 imageHE.createMaskFromColor(sf::Color(255,255,255));
                 shapeHE.loadFromImage(imageHE);
                 sprite.setTexture(shapeHE);
@@ -529,7 +555,11 @@ class GameObject{
 
         };
 
-
+        /**
+         * @brief The Enemys class
+         *
+         * @todo Очень слабо реализована масштабируемость класс. Требуется упростить способ добавления новых объектов в качестве врагов.
+         */
         class Enemys{
 
             public:
@@ -610,12 +640,12 @@ class GameObject{
                         void loadSprite(int enemyIndex,int frme_x,int frme_y,int frme_w,int frme_h){
 
                             switch (enemyIndex) {
-                                case 0:{imageE.loadFromFile("../../Tower_Defense_Game/external/Sprites/enemy_butch.png");break;}
-                                case 1:{imageE.loadFromFile("../../Tower_Defense_Game/external/Sprites/enemy_bat.png");break;}
-                                case 2:{imageE.loadFromFile("../../Tower_Defense_Game/external/Sprites/enemy_heap.png");break;}
-                                case 3:{imageE.loadFromFile("../../Tower_Defense_Game/external/Sprites/enemy_bull.png");break;}
-                                case 4:{imageE.loadFromFile("../../Tower_Defense_Game/external/Sprites/enemy_mud_drop.png");break;}
-                                case 5:{imageE.loadFromFile("../../Tower_Defense_Game/external/Sprites/enemy_mushroom.png");break;}
+                                case 0:{imageE.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/enemy_butch.png");break;}
+                                case 1:{imageE.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/enemy_bat.png");break;}
+                                case 2:{imageE.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/enemy_heap.png");break;}
+                                case 3:{imageE.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/enemy_bull.png");break;}
+                                case 4:{imageE.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/enemy_mud_drop.png");break;}
+                                case 5:{imageE.loadFromFile("/home/dzigen/inf1/CS/task12/Tower_Defense_Game/external/Sprites/enemy_mushroom.png");break;}
                             }
 
                             imageE.createMaskFromColor(sf::Color(255,255,255));

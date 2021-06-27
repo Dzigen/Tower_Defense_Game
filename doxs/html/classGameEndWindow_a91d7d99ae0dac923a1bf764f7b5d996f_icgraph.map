@@ -1,0 +1,6 @@
+<map id="GameEndWindow::update_timer" name="GameEndWindow::update_timer">
+<area shape="rect" id="node2" href="$group__menu.html#gaac2382a6b5fa5b0687116caf16837b35" title="Вывод диалогового окна &quot;конец игры&quot;. " alt="" coords="447,13,580,39"/>
+<area shape="rect" id="node5" href="$classGameEndWindow.html#a00ec6d032219c692a678b7ddac55a3b3" title="GameEndWindow::check\l_timer" alt="" coords="228,35,399,76"/>
+<area shape="rect" id="node3" href="$group__mainLoop.html#ga9c3324e8c5f0e0ddcd96bbe89e0f7f16" title="Главный цикл игрового процесса " alt="" coords="628,13,735,39"/>
+<area shape="rect" id="node4" href="$group__menu.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title="Отрисовка главного меню " alt="" coords="783,13,833,39"/>
+</map>

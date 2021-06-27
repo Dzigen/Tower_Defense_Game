@@ -1,0 +1,5 @@
+<map id="pause_menu" name="pause_menu">
+<area shape="rect" id="node2" href="$classToolBar.html#ae8d52640262d6e25d07e65ad5cfe8a54" title="ToolBar::add_to_time" alt="" coords="149,5,296,32"/>
+<area shape="rect" id="node3" href="$game__draw_8cpp.html#af2266f0127d085329a1b7e092832e8a3" title="game_draw" alt="" coords="178,56,267,83"/>
+<area shape="rect" id="node4" href="$classToolBar.html#a6c030d2393dd9ad33fb51e59b9ae9d6b" title="ToolBar::reset_clock" alt="" coords="151,107,294,133"/>
+</map>
